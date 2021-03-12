@@ -1,6 +1,3 @@
-git remote add origin https://github.com/NAJacobs1/D-P-II-Final-Project.git
-
-
 library(tidyverse)
 library(rworldmap)
 library(fredr)
@@ -9,6 +6,10 @@ library(plotly)
 library(wesanderson)
 library(tidytext)
 library(textdata)
+library(SnowballC)
+library(udpipe)
+library(ggraph)
+library(igraph)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -81,8 +82,9 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 
+## NLP
 
-#Conducting NLP
+#Conducting basic sentiment analysis
 nyt2021 <- read_file("NYT2021.txt")
 dec_bis <- read_file("december_2020_bis.txt")
 
@@ -91,13 +93,6 @@ word_tokens_df <- unnest_tokens(text_df, word_tokens, text, token = "words")
 word_tokens_df_nsw <- anti_join(word_tokens_df, stop_words, by = c("word_tokens" = "word"))
 
 count(word_tokens_df_nsw, word_tokens, sort = TRUE)
-
-for (s in c("afinn", "bing", "nrc")) {
-  word_tokens_df_nsw <- word_tokens_df_nsw %>% 
-    left_join(get_sentiments(s), by = c("word_tokens", "word")) %>% 
-    plyr::rename(replace = c(sentiment = s, value = s), warn_missing = FALSE)
-}
-
 
 
 #GENERALIZING: Writing a function to produce a plot of sentiments
@@ -123,6 +118,70 @@ sentiments_function <- function(article) {
 
 sentiments_function(nyt2021)
 sentiments_function(dec_bis)
+
+#More advanced NLP
+word_tokens_df_nsw$stem <- wordStem(word_tokens_df_nsw$word_tokens, language = "porter")
+
+word_tokens_df_nsw %>% 
+  dplyr::group_by(stem) %>% 
+  count(sort = TRUE)
+
+
+parsed_nyt <- udpipe(nyt2021, "english")
+
+parsed_nyt$stem <- wordStem(parsed_nyt$token, language = "porter")
+
+view(select(parsed_nyt, "token", "stem", "lemma", "upos"))
+
+#Bag of words
+parsed_nyt %>% 
+  filter(upos != "PUNCT") %>% 
+  anti_join(stop_words, by = c("token" = "word")) %>% 
+  count(lemma) %>% 
+  pivot_wider(names_from = lemma, values_from = n)
+    
+
+parsed_dtfs <- parsed_nyt %>% 
+  filter(!lemma %in% stop_words,
+         !upos %in% c("PUNCT", "CCONJ")) %>% 
+  mutate_if(is.character, str_to_lower) %>% 
+  document_term_frequencies(term = "token")
+         
+nyt_wide <- pivot_wider(parsed_dtfs, id_cols = doc_id, names_from = term, values_from = freq)
+    
+    
+nyt_mat <- document_term_matrix(parsed_dtfs)
+print(nyt_mat)    
+    
+
+#Dependency parsing
+nyt_deps <- cbind_dependencies(parsed_nyt, type = "parent_rowid", recursive = TRUE)
+
+nyt_deps %>% 
+  select(c(token_id, token, upos, dep_rel, parent_rowid, parent_rowids)) %>% 
+  View()
+
+
+#Plotting
+nyt_deps <- nyt_deps %>% 
+  select(-"stem")
+
+one_nyt <- filter(nyt_deps, doc_id == "doc1", sentence_id == 1)
+  
+edges <- subset(one_nyt, head_token_id != 0, select = c("token_id", "head_token_id", "dep_rel"))
+
+edges$label <- edges$dep_rel
+
+g <- graph_from_data_frame(edges,
+                           vertices = one_nyt[, c("token_id", "token", "lemma", "upos", "xpos", "feats")], 
+                           directed = TRUE)
+
+ggraph(g, layout = "fr") +
+  geom_edge_link(aes(label = dep_rel), arrow = arrow(length = unit(4, 'mm')), end_cap = circle(3, 'mm')) +
+  geom_node_point(color = "lightblue", size = 5) +
+  theme_void(base_family = "") +
+  geom_node_text(aes(label = token), vjust = 1.8) + 
+  ggtitle("Showing dependencies")
 
 
 
