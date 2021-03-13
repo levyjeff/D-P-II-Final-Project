@@ -15,7 +15,7 @@ library(janitor)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
-rm(list = ls())
+rm(list = ls(gravity_data))
 
 #PART 1: Data wrangling
 
@@ -27,7 +27,9 @@ us_ex_to_china_2020 <- read_csv("US_Ex_to_China_OEC_2020.csv")
 us_im_from_china_2018 <- read_csv("US_Im_from_China_OEC_2018.csv")
 us_im_from_china_2019 <- read_csv("US_Im_from_China_OEC_2019.csv")
 us_im_from_china_2020 <- read_csv("US_Im_from_China_OEC_2020.csv")
-
+world_trade_flows <- read_csv("BACI_HS17_Y2019_V202102.csv")
+country_codes <- read_csv("country_codes_V202102.csv")
+product_codes <- read_csv("product_codes_HS17_V202102.csv")
 
 # Tidying trade data
 str(us_fdi)
@@ -52,6 +54,39 @@ us_china_totals <- clean_names(us_china_totals)
 str(us_china_totals)
 
 us_china_totals$time <- as.character(us_china_totals$time)
+
+#World trade flows data--see documentation  here: http://www.cepii.fr/DATA_DOWNLOAD/baci/doc/DescriptionBACI.html
+world_trade_flows <- world_trade_flows %>% 
+  rename(year = "t", product_cat = "k", exporter = "i", importer = "j", trade_flow = "v", quantity_tons = "q")
+  
+world_trade_flows <- world_trade_flows %>% 
+  inner_join(country_codes, by = c("exporter" = "country_code"))
+
+world_trade_flows <- world_trade_flows %>% 
+  rename(exporter_name = country_name_full)
+
+world_trade_flows <- world_trade_flows %>% 
+  select(-country_name_abbreviation)
+
+world_trade_flows <- world_trade_flows %>% 
+  select(-c(iso_2digit_alpha, iso_3digit_alpha))
+
+world_trade_flows <- world_trade_flows %>% 
+  inner_join(country_codes, by = c("importer" = "country_code"))
+
+world_trade_flows <- world_trade_flows %>% 
+  rename(importer_name = country_name_full)
+
+world_trade_flows <- world_trade_flows %>% 
+  select(-country_name_abbreviation)
+
+world_trade_flows <- world_trade_flows %>% 
+  select(-c(iso_2digit_alpha, iso_3digit_alpha))
+
+product_codes$code <- as.character(product_codes$code)
+
+world_trade_flows <- world_trade_flows %>% 
+  inner_join(product_codes, by = c("product_cat" = "code"))
 
 
 #PART 2: Plotting data
