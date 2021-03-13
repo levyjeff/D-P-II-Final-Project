@@ -10,6 +10,8 @@ library(SnowballC)
 library(udpipe)
 library(ggraph)
 library(igraph)
+library(fredr)
+library(MASS)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -90,7 +92,10 @@ shinyApp(ui = ui, server = server)
 
 # Reading in articles, and conducting sentiment analysis on the first NYT article
 nyt2021 <- read_file("NYT2021.txt")
-peoplesdailymarch4 <- read_file("PeoplesDailyMarch4.txt")
+peoplesdailymarch4_21 <- read_file("PeoplesDailyMarch4.txt")
+peoplesdailysept28_18 <- read_file("PeoplesDailySept28_18.txt")
+nytsep25_18 <- read_file("NYTSept25_18.txt")
+
 
 text_df <- tibble(text = nyt2021)
 word_tokens_df <- unnest_tokens(text_df, word_tokens, text, token = "words")
@@ -119,7 +124,9 @@ sentiments_function <- function(article) {
 }
 
 sentiments_function(nyt2021)
-sentiments_function(peoplesdailymarch4)
+sentiments_function(peoplesdailymarch4_21)
+sentiments_function(peoplesdailysept28_18)
+sentiments_function(nytsep25_18)
 
 #Conducting more advanced NLP
 word_tokens_df_nsw$stem <- wordStem(word_tokens_df_nsw$word_tokens, language = "porter")
@@ -165,7 +172,7 @@ ggraph(g, layout = "fr") +
 
 
 #GENERALIZING: Writing a function to do dependency parsing on any given sentence in any given article.
-#THe point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles. 
+#The point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles. 
 dependency_parsing_func <- function(article, sentence_num) {
   text_data <- tibble(text = article)
   word_tokens_df <- unnest_tokens(text_data, word_tokens, text, token = "words")
@@ -195,19 +202,21 @@ dependency_parsing_func <- function(article, sentence_num) {
     )
 
     g_graph <- ggraph(g, layout = "fr") +
-      geom_edge_link(aes(label = dep_rel), arrow = arrow(length = unit(4, "mm")), end_cap = circle(3, "mm")) +
+      geom_edge_link(aes(label = dep_rel), arrow = arrow(length = unit(2, "mm")), end_cap = circle(3, "mm")) +
       geom_node_point(color = "darkred", size = 3) +
       theme_void(base_family = "") +
-      geom_node_text(aes(label = token, size = 4), vjust = 1.8) +
+      geom_node_text(aes(label = token), vjust = 1.8) +
       ggtitle("Showing Dependencies for Given Sentence of Given Article")
 
     return(g_graph)
   }
 }
 
-dependency_parsing_func(peoplesdailymarch4, 3)
-dependency_parsing_func(peoplesdailymarch4, 4)
-dependency_parsing_func(nyt2021, 6)
+dependency_parsing_func(peoplesdailymarch4, 1)
+dependency_parsing_func(nyt2021, 1)
+dependency_parsing_func(peoplesdailysept28_18, 1)
+dependency_parsing_func(nytsep25_18, 4)
+
 
 
 
