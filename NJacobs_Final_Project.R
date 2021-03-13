@@ -11,9 +11,12 @@ library(udpipe)
 library(ggraph)
 library(igraph)
 library(fredr)
-library(MASS)
+library(janitor)
+
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
+
+#PART 1: Data wrangling
 
 # Reading in trade data
 us_fdi <- read_csv("US_FdiFlowsStock_ST202007161100_v1.csv")
@@ -24,9 +27,6 @@ us_im_from_china_2018 <- read_csv("US_Im_from_China_OEC_2018.csv")
 us_im_from_china_2019 <- read_csv("US_Im_from_China_OEC_2019.csv")
 us_im_from_china_2020 <- read_csv("US_Im_from_China_OEC_2020.csv")
 
-# Some EDA
-unique(us_fdi$Year)
-
 
 # Tidying trade data
 str(us_fdi)
@@ -34,7 +34,7 @@ str(us_fdi)
 us_fdi <- us_fdi %>%
   subset(select = -c(9, 11, 13, 15, 17))
 
-# Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
+#Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
 exports_merged <- do.call("rbind", list(us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
 imports_merged <- do.call("rbind", list(us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
 
@@ -46,51 +46,53 @@ imports_merged <- imports_merged %>%
 
 us_china_totals <- rbind(exports_merged, imports_merged)
 
-shiny_test <- us_china_totals %>%
-  group_by(Section, Time) %>%
-  summarise(total_trade = sum(`Trade Value`))
+us_china_totals <- clean_names(us_china_totals)
 
-write.csv(shiny_test, file = "shiny_test.csv")
+str(us_china_totals)
 
-# Creating a Shiny app of trade value data
-ui <- fluidPage(
-  selectInput(
-    inputId = "category",
-    label = "Choose a Category",
-    choices = unique(shiny_test[["Section"]])
-  ),
-  plotlyOutput("trade_table"),
-  tableOutput("cat_disp")
-)
+us_china_totals$time <- as.character(us_china_totals$time)
 
-server <- function(input, output) {
-  path <- "/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project/"
-  df <- read_csv(paste0(path, "shiny_test.csv"))
 
-  data <- reactive({
-    d <- filter(df, Section == input$category)
-    return(d)
-  })
+#PART 2: Plotting data
+  
+#Interactive Plot of Trade Volume Between the US and China
+  ui <- fluidPage(
+    selectInput(
+      inputId = "category",
+      label = "Choose a Category",
+      choices = unique(us_china_totals[["section"]])),
+    plotlyOutput("trade_table"),
+    tableOutput("cat_disp"),
+  )  
+  
+  server <- function(input, output) {
+    df <- us_china_totals %>% 
+      group_by(section, time, type) %>% 
+      summarise(total_value = sum(trade_value))
+    
+    data <- reactive({
+      d <- filter(df, section == input$category)
+      return(d)
+    })
+    
+    output$cat_disp <- renderTable({
+      data()
+    })
+    
+    output$trade_table <- renderPlotly({
+      plt <- ggplot(data = data()) +
+        geom_bar(aes(time, total_value, fill = type), stat = "identity") +
+        labs(title = input$category, x = "Year", y = "Trade Volume") 
+      ggplotly(plt) 
+       
+    })
+  } 
 
-  output$cat_disp <- renderTable({
-    data()
-  })
+  shinyApp(ui = ui, server = server)
 
-  output$trade_table <- renderPlotly({
-    plt <- ggplot(data = data()) +
-      geom_bar(aes(Time, total_trade), stat = "identity") +
-      scale_fill_manual(values = wes_palette(4, name = "GrandBudapest1", type = "continuous"), name = "") +
-      scale_y_continuous(labels = NULL) +
-      labs(title = input$category, x = "Year", y = "Trade Volume")
-    ggplotly(plt)
-  })
-}
+##PART 3: NLP Section
 
-shinyApp(ui = ui, server = server)
-
-## NLP Section
-
-# Reading in articles, and conducting sentiment analysis on the first NYT article
+#Reading in articles, and conducting sentiment analysis on the first NYT article
 nyt2021 <- read_file("NYT2021.txt")
 peoplesdailymarch4_21 <- read_file("PeoplesDailyMarch4.txt")
 peoplesdailysept28_18 <- read_file("PeoplesDailySept28_18.txt")
@@ -172,7 +174,7 @@ ggraph(g, layout = "fr") +
 
 
 #GENERALIZING: Writing a function to do dependency parsing on any given sentence in any given article.
-#The point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles. 
+#The point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles.
 dependency_parsing_func <- function(article, sentence_num) {
   text_data <- tibble(text = article)
   word_tokens_df <- unnest_tokens(text_data, word_tokens, text, token = "words")
@@ -218,14 +220,7 @@ dependency_parsing_func(peoplesdailysept28_18, 1)
 dependency_parsing_func(nytsep25_18, 4)
 
 
-
-
-
-
-
-
-
-
+# PART 4: Fitting a Model
 
 
 
