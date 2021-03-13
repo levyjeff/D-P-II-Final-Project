@@ -17,6 +17,8 @@ setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Da
 
 rm(list = ls(gravity_data))
 
+options(scipen = 999)
+
 #PART 1: Data wrangling
 
 # Reading in trade data
@@ -30,6 +32,7 @@ us_im_from_china_2020 <- read_csv("US_Im_from_China_OEC_2020.csv")
 world_trade_flows <- read_csv("BACI_HS17_Y2019_V202102.csv")
 country_codes <- read_csv("country_codes_V202102.csv")
 product_codes <- read_csv("product_codes_HS17_V202102.csv")
+gdp_data <- read_csv("2b68fee6-4c0f-4592-a63f-ff85acd68db3_Data.csv")
 
 # Tidying trade data
 str(us_fdi)
@@ -88,6 +91,62 @@ product_codes$code <- as.character(product_codes$code)
 world_trade_flows <- world_trade_flows %>% 
   inner_join(product_codes, by = c("product_cat" = "code"))
 
+#Tidying and reshaping GDP data
+gdp_data_tidy <- gdp_data %>% 
+  select(-'Series Code')
+
+gdp_data_tidy <- gdp_data_tidy %>% 
+  clean_names()
+
+gdp_data_tidy <- gdp_data_tidy %>% #Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
+  group_by(series_name) %>% 
+  mutate(row = row_number()) %>% 
+  pivot_wider(names_from = series_name, values_from = c(x2017_yr2017, x2018_yr2018, x2019_yr2019, x2020_yr2020)) %>% 
+  select(-row)
+
+gdp_data_tidy <- gdp_data_tidy %>% 
+  select(-c(8, 14, 20:26))
+
+gdp_data_tidy <- gdp_data_tidy %>% 
+  rename('2017_gdp' = 3, '2017_gdpgrowth' = 4,
+         '2017_gdppercap2010usd' = 5, '2017_gdppercapcurrentusd' = 6,
+         '2017_percenttradegpd' = 7, 
+         '2018_gdp' = 8, '2018_gdpgrowth' = 9,
+         '2018_gdppercap2010usd' = 10, '2018_gdppercapcurrentusd' = 11,
+         '2018_percenttradegpd' = 12, 
+         '2019_gdp' = 13, '2019_gdpgrowth' = 14,
+         '2019_gdppercap2010usd' = 15, '2019_gdppercapcurrentusd' = 16,
+         '2019_percenttradegpd' = 17) 
+
+gdp_part <- gdp_data_tidy %>% pivot_longer(
+  cols = starts_with(c("2017", "2018", "2019")),
+  names_to = c("year"),
+  values_to = c("value"),
+  values_drop_na = TRUE
+)
+
+gdp_part$value <- as.numeric(gdp_part$value)
+
+gdp_part <- gdp_part %>% 
+  separate(col = year,
+           into = c("year", "measure"),
+           sep = "_") %>% 
+  filter(!is.na(value))
+
+gdp_part %>% 
+  group_by(country_name, year, measure, value) %>% 
+  summarise(value = sum(value)) 
+
+gdp_part <- gdp_part %>% 
+group_by(country_name, year, measure) %>% 
+summarise(value = sum(value))
+
+gdp_part <- gdp_part %>% 
+  pivot_wider(names_from = measure, values_from = value)
+
+gdp_part[complete.cases(gdp_part), ] #Checking for NAs
+
+gdp_final <- na.omit(gdp_part) #Omitting NAs
 
 #PART 2: Plotting data
   
