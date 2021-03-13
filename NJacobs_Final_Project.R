@@ -13,8 +13,9 @@ library(igraph)
 library(fredr)
 library(janitor)
 
-
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
+
+rm(list = ls())
 
 #PART 1: Data wrangling
 
@@ -59,7 +60,7 @@ us_china_totals$time <- as.character(us_china_totals$time)
   ui <- fluidPage(
     selectInput(
       inputId = "category",
-      label = "Choose a Category",
+      label = "Choose an Import/Export Category",
       choices = unique(us_china_totals[["section"]])),
     plotlyOutput("trade_table"),
     tableOutput("cat_disp"),
@@ -117,7 +118,7 @@ sentiments_function <- function(article) {
       plyr::rename(replace = c(sentiment = s, value = s), warn_missing = FALSE)
 
     sentiment_plot <- ggplot(data = filter(word_tokens_df_nsw, !is.na(nrc))) +
-      geom_histogram(aes(nrc), stat = "count") +
+      geom_histogram(aes(nrc, fill = nrc), stat = "count") +
       scale_x_discrete(guide = guide_axis(angle = 45)) +
       labs(title = ("Sentiments"))
 
@@ -214,7 +215,7 @@ dependency_parsing_func <- function(article, sentence_num) {
   }
 }
 
-dependency_parsing_func(peoplesdailymarch4, 1)
+dependency_parsing_func(peoplesdailymarch4_21, 1)
 dependency_parsing_func(nyt2021, 1)
 dependency_parsing_func(peoplesdailysept28_18, 1)
 dependency_parsing_func(nytsep25_18, 4)
