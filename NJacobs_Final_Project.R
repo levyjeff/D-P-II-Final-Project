@@ -15,7 +15,7 @@ library(janitor)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
-rm(list = ls(gravity_data))
+rm(list = ls())
 
 options(scipen = 999)
 
@@ -33,6 +33,8 @@ world_trade_flows <- read_csv("BACI_HS17_Y2019_V202102.csv")
 country_codes <- read_csv("country_codes_V202102.csv")
 product_codes <- read_csv("product_codes_HS17_V202102.csv")
 gdp_data <- read_csv("2b68fee6-4c0f-4592-a63f-ff85acd68db3_Data.csv")
+us_asia_world_flows <- read_csv("comtrade.csv")
+world_ex_im <- read_csv("f4dc9c88-9144-422d-aa34-42550a9c844f_Data.csv")
 
 # Tidying trade data
 str(us_fdi)
@@ -58,7 +60,7 @@ str(us_china_totals)
 
 us_china_totals$time <- as.character(us_china_totals$time)
 
-#World trade flows data--see documentation  here: http://www.cepii.fr/DATA_DOWNLOAD/baci/doc/DescriptionBACI.html
+#World trade flows data--for more info, see documentation here: http://www.cepii.fr/DATA_DOWNLOAD/baci/doc/DescriptionBACI.html
 world_trade_flows <- world_trade_flows %>% 
   rename(year = "t", product_cat = "k", exporter = "i", importer = "j", trade_flow = "v", quantity_tons = "q")
   
@@ -90,6 +92,10 @@ product_codes$code <- as.character(product_codes$code)
 
 world_trade_flows <- world_trade_flows %>% 
   inner_join(product_codes, by = c("product_cat" = "code"))
+
+world_trade_flows <- world_trade_flows %>% #Restricting the dataset from the whole world to just the US and Asian trade partners reduces the size from over 10 million rows to about 44000.
+  filter(year == 2019, importer_name %in% c("China", "Japan", "USA", "Puerto Rico and US Virgin Islands", "India", "Republic of Korea"), 
+         exporter_name %in% c("China", "Japan", "USA", "Puerto Rico and US Virgin Islands", "India", "Republic of Korea"))
 
 #Tidying and reshaping GDP data
 gdp_data_tidy <- gdp_data %>% 
@@ -133,10 +139,6 @@ gdp_part <- gdp_part %>%
            sep = "_") %>% 
   filter(!is.na(value))
 
-gdp_part %>% 
-  group_by(country_name, year, measure, value) %>% 
-  summarise(value = sum(value)) 
-
 gdp_part <- gdp_part %>% 
 group_by(country_name, year, measure) %>% 
 summarise(value = sum(value))
@@ -146,10 +148,56 @@ gdp_part <- gdp_part %>%
 
 gdp_part[complete.cases(gdp_part), ] #Checking for NAs
 
-gdp_final <- na.omit(gdp_part) #Omitting NAs
+gdp_final <- na.omit(gdp_part) #Omitting NAs, because it is unclear what to impute for them
 
-#PART 2: Plotting data
+total_trade_flows <- world_trade_flows %>% 
+  group_by(exporter_name, importer_name) %>% 
+  summarise(total = sum(trade_flow))
+
+#Reshaping and merging export-import data
+world_ex_im_tidy <- world_ex_im %>% 
+  pivot_longer(cols = starts_with(c("2017", "2018", "2019")),
+               names_to = c("year"),
+               values_to = c("value"),
+               values_drop_na = TRUE
+)
+
+world_ex_im_tidy <- world_ex_im_tidy %>% 
+  select(-`Series Code`)
+
+world_ex_im_tidy <- clean_names(world_ex_im_tidy)
+
+gdp_data_tidy <- gdp_data_tidy %>% #Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
+  group_by(series_name) %>% 
+  mutate(row = row_number()) %>% 
+  pivot_wider(names_from = series_name, values_from = c(x2017_yr2017, x2018_yr2018, x2019_yr2019, x2020_yr2020)) %>% 
+  select(-row)
+
+world_ex_im_tidy <- world_ex_im_tidy %>% 
+  pivot_wider(names_from = series_name, values_from = value)
   
+world_ex_im_tidy$year <- str_extract(world_ex_im_tidy$year,"20..")
+
+world_ex_im_tidy$exports_of_goods_and_services_current_us <- as.numeric(world_ex_im_tidy$exports_of_goods_and_services_current_us)
+world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us <- as.numeric(world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us)
+
+world_ex_im_tidy <- na.omit(world_ex_im_tidy) #Omitting NAs, because it is unclear what to impute for them
+
+#Merg
+
+#names(gdp_and_trade_flows)
+
+#gdp_and_trade_flows <- gdp_and_trade_flows %>% 
+ # select(-c(9:14, 16:18, 20, 21:35, 41))
+
+#gdp_and_trade_flows <- gdp_and_trade_flows %>% 
+#  select(-c(11, 12, 14, 15))
+
+ #gdp_and_trade_flows %>% 
+  #group_by(country_name, year.x, trade_flow, partner, gdp, gdpgrowth, gdppercap2010usd, gdppercapcurrentusd) %>% 
+  #dplyr::summarise(trade_value = max(trade_value_us))
+ 
+#PART 2: Plotting data
 #Interactive Plot of Trade Volume Between the US and China
   ui <- fluidPage(
     selectInput(
@@ -184,7 +232,7 @@ gdp_final <- na.omit(gdp_part) #Omitting NAs
   } 
 
   shinyApp(ui = ui, server = server)
-
+  
 ##PART 3: NLP Section
 
 #Reading in articles, and conducting sentiment analysis on the first NYT article
@@ -236,7 +284,7 @@ parsed_nyt <- udpipe(nyt2021, "english")
 
 parsed_nyt$stem <- wordStem(parsed_nyt$token, language = "porter")
 
-view(select(parsed_nyt, "token", "stem", "lemma", "upos"))
+#view(select(parsed_nyt, "token", "stem", "lemma", "upos")) commenting out the view() command
 
 #Conducting dependency parsing on the first NYT article
 nyt_deps <- cbind_dependencies(parsed_nyt, type = "parent_rowid", recursive = TRUE)
@@ -309,6 +357,7 @@ dependency_parsing_func <- function(article, sentence_num) {
   }
 }
 
+#Examining the first sentence of each article
 dependency_parsing_func(peoplesdailymarch4_21, 1)
 dependency_parsing_func(nyt2021, 1)
 dependency_parsing_func(peoplesdailysept28_18, 1)
