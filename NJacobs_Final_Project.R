@@ -29,18 +29,18 @@ us_ex_to_china_2020 <- read_csv("US_Ex_to_China_OEC_2020.csv")
 us_im_from_china_2018 <- read_csv("US_Im_from_China_OEC_2018.csv")
 us_im_from_china_2019 <- read_csv("US_Im_from_China_OEC_2019.csv")
 us_im_from_china_2020 <- read_csv("US_Im_from_China_OEC_2020.csv")
-world_trade_flows <- read_csv("BACI_HS17_Y2019_V202102.csv")
 country_codes <- read_csv("country_codes_V202102.csv")
 product_codes <- read_csv("product_codes_HS17_V202102.csv")
 gdp_data <- read_csv("2b68fee6-4c0f-4592-a63f-ff85acd68db3_Data.csv")
-us_asia_world_flows <- read_csv("comtrade.csv")
 world_ex_im <- read_csv("f4dc9c88-9144-422d-aa34-42550a9c844f_Data.csv")
 
-# Tidying trade data
+# Tidying data on Foreign Direct Investment into and out of the US
 str(us_fdi)
 
 us_fdi <- us_fdi %>%
   subset(select = -c(9, 11, 13, 15, 17))
+
+us_fdi <- clean_names(us_fdi)
 
 #Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
 exports_merged <- do.call("rbind", list(us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
@@ -186,26 +186,27 @@ world_trade_final <- world_trade_final %>%
   mutate(trade_openness = ((exports_of_goods_and_services_current_us + imports_of_goods_and_services_bo_p_current_us)/gdp))
   
 #Adding dummies for years, to account for year fixed effects in the model
-
 world_trade_final <- world_trade_final %>% 
   mutate(is_2017 = ifelse(year == 2017, 1, 0)) %>% 
   mutate(is_2018 = ifelse(year == 2018, 1, 0)) %>% 
   mutate(is_2019 = ifelse(year == 2019, 1, 0))
 
-#Merg
+#Joining FDI data to tidied export-import data, again by country-year
+us_fdi$year <- as.character(us_fdi$year)
+us_fdi <- us_fdi %>% 
+  filter(direction_label == "Inward", mode_label == "Flow", year %in% c("2017", "2018", "2019")) #Limiting to inbound FDI to the United States for 2017-2019
 
-#names(gdp_and_trade_flows)
+us_fdi_for_join <- us_fdi %>% #Eliminating unnecessary columns
+  select(1, 3, 8:11)
 
-#gdp_and_trade_flows <- gdp_and_trade_flows %>% 
- # select(-c(9:14, 16:18, 20, 21:35, 41))
+world_trade_final <- world_trade_final %>% 
+  inner_join(us_fdi_for_join, by = c("country_name" = "economy_label", "year" = "year"))
 
-#gdp_and_trade_flows <- gdp_and_trade_flows %>% 
-#  select(-c(11, 12, 14, 15))
+world_trade_final <- na.omit(world_trade_final)
 
- #gdp_and_trade_flows %>% 
-  #group_by(country_name, year.x, trade_flow, partner, gdp, gdpgrowth, gdppercap2010usd, gdppercapcurrentusd) %>% 
-  #dplyr::summarise(trade_value = max(trade_value_us))
- 
+world_trade_final <- world_trade_final %>% 
+  filter(country_name != "World")
+
 #PART 2: Plotting data
 #Interactive Plot of Trade Volume Between the US and China
   ui <- fluidPage(
@@ -374,7 +375,10 @@ dependency_parsing_func(nytsep25_18, 4)
 
 
 # PART 4: Fitting a Model
+prelim_model <- lm(trade_openness ~ gdp + gdppercapcurrentusd + is_2017 + is_2019, data = world_trade_final)
+summary(prelim_model)
 
+openness <- lm(gdp ~ trade_openness + is_2017 + is_2018, data = world_trade_final)
 
 
 
