@@ -167,12 +167,6 @@ world_ex_im_tidy <- world_ex_im_tidy %>%
 
 world_ex_im_tidy <- clean_names(world_ex_im_tidy)
 
-gdp_data_tidy <- gdp_data_tidy %>% #Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
-  group_by(series_name) %>% 
-  mutate(row = row_number()) %>% 
-  pivot_wider(names_from = series_name, values_from = c(x2017_yr2017, x2018_yr2018, x2019_yr2019, x2020_yr2020)) %>% 
-  select(-row)
-
 world_ex_im_tidy <- world_ex_im_tidy %>% 
   pivot_wider(names_from = series_name, values_from = value)
   
@@ -182,6 +176,21 @@ world_ex_im_tidy$exports_of_goods_and_services_current_us <- as.numeric(world_ex
 world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us <- as.numeric(world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us)
 
 world_ex_im_tidy <- na.omit(world_ex_im_tidy) #Omitting NAs, because it is unclear what to impute for them
+
+#Joining world export/import data to GDP data, on country-year
+world_trade_final <- gdp_final %>% 
+  inner_join(world_ex_im_tidy, by = c("country_name" = "country_name", "year" = "year"))
+
+#Computing trade openness
+world_trade_final <- world_trade_final %>% 
+  mutate(trade_openness = ((exports_of_goods_and_services_current_us + imports_of_goods_and_services_bo_p_current_us)/gdp))
+  
+#Adding dummies for years, to account for year fixed effects in the model
+
+world_trade_final <- world_trade_final %>% 
+  mutate(is_2017 = ifelse(year == 2017, 1, 0)) %>% 
+  mutate(is_2018 = ifelse(year == 2018, 1, 0)) %>% 
+  mutate(is_2019 = ifelse(year == 2019, 1, 0))
 
 #Merg
 
