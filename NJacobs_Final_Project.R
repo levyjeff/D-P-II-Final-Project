@@ -15,6 +15,9 @@ library(stargazer)
 library(modelr)
 library(spData)
 library(scales)
+library(countrycode)
+library(StandardizeText)
+library(sf)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -45,6 +48,8 @@ us_fdi <- us_fdi %>%
 
 us_fdi <- clean_names(us_fdi)
 
+us_fdi$economy_label <- standardize.countrynames(us_fdi$economy_label, standard = "iso", suggest = "auto") #Standardizing country names. Citation: https://cran.r-project.org/web/packages/StandardizeText/StandardizeText.pdf
+
 # Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
 exports_merged <- do.call("rbind", list(us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
 imports_merged <- do.call("rbind", list(us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
@@ -69,6 +74,8 @@ gdp_data_tidy <- gdp_data %>%
 
 gdp_data_tidy <- gdp_data_tidy %>%
   clean_names()
+
+gdp_data_tidy$country_name <- standardize.countrynames(gdp_data_tidy$country_name, standard = "iso", suggest = "auto") 
 
 gdp_data_tidy <- gdp_data_tidy %>% # Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
   group_by(series_name) %>%
@@ -118,11 +125,13 @@ gdp_part <- gdp_part %>%
 
 gdp_part[complete.cases(gdp_part), ] # Checking for NAs
 
-gdp_final <- na.omit(gdp_part) # Omitting NAs, because it is unclear what to impute for them
+ gdp_part[is.na(gdp_part)] = 0
+ 
+ gdp_final <- gdp_part
 
-total_trade_flows <- world_trade_flows %>%
-  group_by(exporter_name, importer_name) %>%
-  summarise(total = sum(trade_flow))
+#gdp_final <- na.omit(gdp_part) # Omitting NAs, because it is unclear what to impute for them
+ 
+ gdp_final$country_name <- standardize.countrynames(gdp_final$country_name, standard = "iso", suggest = "auto")
 
 # Reshaping export-import data
 world_ex_im_tidy <- world_ex_im %>%
@@ -138,15 +147,18 @@ world_ex_im_tidy <- world_ex_im_tidy %>%
 
 world_ex_im_tidy <- clean_names(world_ex_im_tidy)
 
-world_ex_im_tidy <- world_ex_im_tidy %>%
-  pivot_wider(names_from = series_name, values_from = value)
+world_ex_im_tidy$country_name <- standardize.countrynames(world_ex_im_tidy$country_name, standard = "iso", suggest = "auto")
+
+#world_ex_im_tidy <- world_ex_im_tidy %>%
+ # pivot_wider(names_from = series_name, values_from = value)
 
 world_ex_im_tidy$year <- str_extract(world_ex_im_tidy$year, "20..")
 
 world_ex_im_tidy$exports_of_goods_and_services_current_us <- as.numeric(world_ex_im_tidy$exports_of_goods_and_services_current_us)
 world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us <- as.numeric(world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us)
 
-world_ex_im_tidy <- na.omit(world_ex_im_tidy) # Omitting NAs, because it is unclear what to impute for them
+#world_ex_im_tidy <- na.omit(world_ex_im_tidy) # Omitting NAs, because it is unclear what to impute for them
+world_ex_im_tidy[is.na(world_ex_im_tidy)] = 0
 
 # Joining world export/import data to GDP data, on country-year
 world_trade_final <- gdp_final %>%
@@ -170,12 +182,10 @@ us_fdi <- us_fdi %>%
 us_fdi_for_join <- us_fdi %>% # Eliminating unnecessary columns
   select(1, 3, 8:11)
 
-us_fdi_for_join$economy_label[us_fdi_for_join$economy_label == "United States of America"] <- "United States" # Standardizing name of United States
-
 world_trade_final <- world_trade_final %>%
   inner_join(us_fdi_for_join, by = c("country_name" = "economy_label", "year" = "year"))
 
-world_trade_final <- na.omit(world_trade_final)
+#world_trade_final <- na.omit(world_trade_final)
 
 world_trade_final <- world_trade_final %>%
   filter(country_name != "World")
@@ -238,29 +248,45 @@ shinyApp(ui = ui, server = server)
 
 # Another plot. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
 
-world_trade_mapping_17 <- world %>% 
-  inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
+world2 <- world 
+
+world2$name_long <- standardize.countrynames(world2$name_long, standard = "iso", suggest = "auto")
+
+view(world_trade_final %>% 
+  filter(year == 2017))
+
+world_trade_mapping_17 <- world2 %>% 
+  left_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
   filter(year == "2017")
 
-world_trade_mapping_18 <- world %>% 
+world_trade_mapping_18 <- world2 %>% 
   inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
   filter(year == "2018")
 
-world_trade_mapping_19 <- world %>% 
+world_trade_mapping_19 <- world2 %>% 
   inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
   filter(year == "2019")
   
+ggplot() +
+  geom_sf(data = world_trade_mapping_17, aes(fill = ln_gdp_per_cap_current)) +
+  scale_fill_viridis_c(option = "magma") +
+  ggtitle("Inbound FDI Per Capita in 2017") +
+  labs(fill = "Inbound FDI (Million USD")
 
 ggplot() +
-  geom_sf(data = world_trade_mapping_17, aes(fill = value_of_inbound_fdi_mil_usd)) +
+  geom_sf(data = world_trade_mapping_18, aes(fill = value_of_inbound_fdi_mil_usd)) +
   scale_fill_viridis_c(option = "magma")
 
-?scale_fill_viridis_c
-  
+ggplot() +
+  geom_sf(data = world_trade_mapping_19, aes(fill = value_of_inbound_fdi_mil_usd)) +
+  scale_fill_viridis_c(option = "magma") +
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5, panel.background = element_rect(fill = "aliceblue")))
+
+world_points <- st_centroid(world_trade_mapping_19)
+world_points <- cbind(world_trade_mapping_19, st_coordinates(st_centroid(world_trade_mapping_19$geom)))
 
 
 
-?geom_sf
 
 ## PART 3: NLP Section
 # Reading in articles, and conducting sentiment analysis on the first NYT article
