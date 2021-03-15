@@ -21,6 +21,9 @@ library(sf)
 library(ggmap)
 library(fastDummies)
 library(plm)
+library(RColorBrewer)
+library(classInt)
+library(scales)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -289,7 +292,7 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 
-# Another plot. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
+# A choropleth showing inbound FDI in 2017. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
 
 #Further tidying for mapping purposes
 world2 <- world 
@@ -307,48 +310,16 @@ world_trade_mapping_18 <- world2 %>%
 world_trade_mapping_19 <- world2 %>% 
   inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
   filter(year == "2019")
-  
-ggplot() +
+
+inbound_fdi_2017 <- ggplot() +
   geom_sf(data = world_trade_mapping_17, aes(fill = value_of_inbound_fdi_mil_usd)) +
-  scale_fill_viridis_c(option = "magma") +
-  ggtitle("Inbound FDI in 2017") +
-  labs(fill = "Inbound FDI Value")
+  coord_sf(datum = NA) +
+  scale_fill_gradient(low = "red", high = "green", labels = dollar_format()) +
+  ggtitle("Inbound FDI in 2017, Millions of USD") +
+  theme(legend.text = element_text(size = 5), legend.title = element_blank(), legend.position = "top", panel.background = element_blank())
 
 
-ggplot() +
-  geom_sf(data = world_trade_mapping_18, aes(fill = value_of_inbound_fdi_mil_usd)) +
-  scale_fill_viridis_c(option = "magma")
 
-ggplot() +
-  geom_sf(data = world_trade_mapping_19, aes(fill = value_of_inbound_fdi_mil_usd)) +
-  scale_fill_viridis_c(option = "magma") +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5, panel.background = element_rect(fill = "aliceblue")))
-
-world_points <- st_centroid(world_trade_mapping_19)
-world_points <- cbind(world_trade_mapping_19, st_coordinates(st_centroid(world_trade_mapping_19$geom)))
-
-ggplot() +
-  geom_sf(data = world_trade_mapping_19, aes(fill = value_of_inbound_fdi_mil_usd)) +
-  scale_fill_viridis_c(option = "magma") +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5, panel.background = element_rect(fill = "aliceblue")))
-
-
-ggplot() +
-  geom_sf(data = world_trade_mapping_17, aes(fill = trade_openness)) +
-  scale_fill_gradientn(colors = topo.colors(20),
-                       breaks = c(0, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1)) +
-  ggtitle("Inbound FDI in 2017") +
-  labs(fill = "Inbound FDI Value")
-
-world_trade_mapping_19 %>% 
-ggplot() +
-  geom_sf(aes(fill = ln_gdp_per_cap_current)) +
-  scale_fill_gradientn(colors = topo.colors(20),
-                       limits = c(0, 12),
-                       breaks = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)) +
-  ggtitle("Inbound FDI in 2019") +
-  theme(legend.text = element_text(size = 5)) +
-  labs(fill = "Inbound FDI Value") 
 
 
 
@@ -385,11 +356,12 @@ sentiments_function <- function(article) {
     return(sentiment_plot)
   }
 }
-
+#TURN into a loop
 sentiments_function(nyt2021)
 sentiments_function(peoplesdailymarch4_21)
 sentiments_function(peoplesdailysept28_18)
 sentiments_function(nytsep25_18)
+
 
 # Conducting more advanced NLP
 word_tokens_df_nsw$stem <- wordStem(word_tokens_df_nsw$word_tokens, language = "porter")
@@ -494,5 +466,17 @@ resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>%
 
 plm(formula = value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current, index = c("country_name", "year"), model = "within", data = world_trade_final)
 
-summary(lm(formula = trade_openness ~ gdp + year -1 + country_name - 1, data = world_trade_final))
+summary(plm(formula = trade_openness ~ gdp, data = world_trade_final, effect = "individual"), index = c("country_name", "year"))
+
+
+
+?lm
+?plm
+
+
+
+
+
+
+
 
