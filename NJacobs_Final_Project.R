@@ -24,6 +24,7 @@ library(plm)
 library(RColorBrewer)
 library(classInt)
 library(scales)
+library(grid)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -321,16 +322,22 @@ inbound_fdi_2017 <- ggplot() +
 
 #Another plot, showing trade openness 
 
+world_avg <- grobTree(textGrob("World Average = 0.79", vjust = -10, gp=gpar(col = "blue", fontsize = 14, fontface = "italic")))
+
 world_trade_final %>% 
   filter(country_name == "United States" | country_name == "China") %>% 
   ggplot() +
-  geom_col(aes(x = year, y = trade_openness)) +
-  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1)) +
+  geom_col(aes(x = year, y = trade_openness, fill = trade_openness)) +
+  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1), color = "darkgreen") +
+  scale_fill_gradient(low = "red", high = "orange") +
   xlab("Year") +
   ylab("Ratio of Trade Volume to GDP") +
   ylim(0, 0.5) +
   ggtitle("Trade Openness, 2017-19") +
-  facet_wrap(~country_name) 
+  theme_bw() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
+  facet_wrap(~country_name) +
+  annotation_custom(world_avg)
 
 
 
