@@ -319,6 +319,18 @@ inbound_fdi_2017 <- ggplot() +
   theme(legend.text = element_text(size = 5), legend.title = element_blank(), legend.position = "top", panel.background = element_blank())
 
 
+#Another plot, showing trade openness 
+
+world_trade_final %>% 
+  filter(country_name == "United States" | country_name == "China") %>% 
+  ggplot() +
+  geom_col(aes(x = year, y = trade_openness)) +
+  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1)) +
+  xlab("Year") +
+  ylab("Ratio of Trade Volume to GDP") +
+  ylim(0, 0.5) +
+  ggtitle("Trade Openness, 2017-19") +
+  facet_wrap(~country_name) 
 
 
 
