@@ -142,17 +142,19 @@ world_ex_im_tidy <- world_ex_im %>%
     values_drop_na = TRUE
   )
 
-world_ex_im_tidy <- world_ex_im_tidy %>%
-  select(-`Series Code`)
-
 world_ex_im_tidy <- clean_names(world_ex_im_tidy)
+
+world_ex_im_tidy <- world_ex_im_tidy %>%
+  select(-series_code)
 
 world_ex_im_tidy$country_name <- standardize.countrynames(world_ex_im_tidy$country_name, standard = "iso", suggest = "auto")
 
-#world_ex_im_tidy <- world_ex_im_tidy %>%
- # pivot_wider(names_from = series_name, values_from = value)
-
 world_ex_im_tidy$year <- str_extract(world_ex_im_tidy$year, "20..")
+
+world_ex_im_tidy <- world_ex_im_tidy %>%
+ pivot_wider(names_from = series_name, values_from = value)
+
+world_ex_im_tidy <- clean_names(world_ex_im_tidy)
 
 world_ex_im_tidy$exports_of_goods_and_services_current_us <- as.numeric(world_ex_im_tidy$exports_of_goods_and_services_current_us)
 world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us <- as.numeric(world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us)
