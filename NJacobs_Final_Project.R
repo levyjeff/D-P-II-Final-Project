@@ -18,6 +18,9 @@ library(scales)
 library(countrycode)
 library(StandardizeText)
 library(sf)
+library(ggmap)
+library(fastDummies)
+library(plm)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -212,6 +215,44 @@ world_trade_final <- world_trade_final %>%
 world_trade_final <- world_trade_final %>% 
   filter(country_name != "Euro area" & country_name != "Sub-Saharan Africa") 
 
+is.na(world_trade_final) <- sapply(world_trade_final, is.infinite) #Imputing 0's for NaN
+world_trade_final[is.na(world_trade_final)] <- 0
+
+#Adding dummy columns for entity fixed effects--panel data set complete
+world_trade_final <- dummy_cols(world_trade_final, select_columns = c("country_name"))
+
+
+
+
+#Adding blank rows for Libya, Venezuela, and South Sudan, for mapping purposes
+#libya17 <- c("Libya", "2017", 0, 0, 0, 0, 0, "LBY", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)
+#libya18 <- c("Libya", "2018", 0, 0, 0, 0, 0, "LBY", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)
+#libya19 <- c("Libya", "2019", 0, 0, 0, 0, 0, "LBY", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)
+
+#ven17 <- c("Venezuela", "2017", 0, 0, 0, 0, 0, "VEN", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)
+#ven18 <- c("Venezuela", "2018", 0, 0, 0, 0, 0, "VEN", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)
+#ven19 <- c("Venezuela", "2019", 0, 0, 0, 0, 0, "VEN", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)
+
+#ssud17 <- c("South Sudan", "2017", 0, 0, 0, 0, 0, "SS", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)
+#ssud18 <- c("South Sudan", "2018", 0, 0, 0, 0, 0, "SS", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)
+#ssud19 <- c("South Sudan", "2019", 0, 0, 0, 0, 0, "SS", 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0)
+
+#libya17 <- data.frame(libya17)
+#libya18 <- data.frame(libya18)
+#libya19 <- data.frame(libya19)
+
+#ven17 <- data.frame(ven17)
+#ven18 <- data.frame(ven18)
+#ven19 <- data.frame(ven19)
+
+#ssud17 <- data.frame(ssud17)
+#ssud18 <- data.frame(ssud18)
+#ssud19 <- data.frame(ssud19)
+
+#world_trade_final %>% 
+ # add_row(libya17)
+
+
 # PART 2: Plotting data
 # Interactive Plot of Trade Volume Between the US and China, using US--China trade flow data
 ui <- fluidPage(
@@ -250,12 +291,10 @@ shinyApp(ui = ui, server = server)
 
 # Another plot. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
 
+#Further tidying for mapping purposes
 world2 <- world 
 
 world2$name_long <- standardize.countrynames(world2$name_long, standard = "iso", suggest = "auto")
-
-view(world_trade_final %>% 
-  filter(year == 2017))
 
 world_trade_mapping_17 <- world2 %>% 
   left_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
@@ -270,10 +309,11 @@ world_trade_mapping_19 <- world2 %>%
   filter(year == "2019")
   
 ggplot() +
-  geom_sf(data = world_trade_mapping_17, aes(fill = ln_gdp_per_cap_current)) +
+  geom_sf(data = world_trade_mapping_17, aes(fill = value_of_inbound_fdi_mil_usd)) +
   scale_fill_viridis_c(option = "magma") +
-  ggtitle("Inbound FDI Per Capita in 2017") +
-  labs(fill = "Inbound FDI (Million USD")
+  ggtitle("Inbound FDI in 2017") +
+  labs(fill = "Inbound FDI Value")
+
 
 ggplot() +
   geom_sf(data = world_trade_mapping_18, aes(fill = value_of_inbound_fdi_mil_usd)) +
@@ -287,6 +327,28 @@ ggplot() +
 world_points <- st_centroid(world_trade_mapping_19)
 world_points <- cbind(world_trade_mapping_19, st_coordinates(st_centroid(world_trade_mapping_19$geom)))
 
+ggplot() +
+  geom_sf(data = world_trade_mapping_19, aes(fill = value_of_inbound_fdi_mil_usd)) +
+  scale_fill_viridis_c(option = "magma") +
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5, panel.background = element_rect(fill = "aliceblue")))
+
+
+ggplot() +
+  geom_sf(data = world_trade_mapping_17, aes(fill = trade_openness)) +
+  scale_fill_gradientn(colors = topo.colors(20),
+                       breaks = c(0, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4, 0.45, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75, 0.8, 0.85, 0.9, 0.95, 1)) +
+  ggtitle("Inbound FDI in 2017") +
+  labs(fill = "Inbound FDI Value")
+
+world_trade_mapping_19 %>% 
+ggplot() +
+  geom_sf(aes(fill = ln_gdp_per_cap_current)) +
+  scale_fill_gradientn(colors = topo.colors(20),
+                       limits = c(0, 12),
+                       breaks = c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)) +
+  ggtitle("Inbound FDI in 2019") +
+  theme(legend.text = element_text(size = 5)) +
+  labs(fill = "Inbound FDI Value") 
 
 
 
@@ -421,7 +483,7 @@ dependency_parsing_func(nytsep25_18, 1)
 
 
 # PART 4: Fitting a Model: How did US FDI change for China and the US from before and after the launch of the trade war, controlling for GDP?
-prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019, data = world_trade_final)
+prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019 + trade_openness, data = world_trade_final)
 
 summary(prelim_model)
 
@@ -430,4 +492,7 @@ resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>%
   select(country_name, resid) %>%
   arrange(desc(resid))
 
+plm(formula = value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current, index = c("country_name", "year"), model = "within", data = world_trade_final)
+
+summary(lm(formula = trade_openness ~ gdp + year -1 + country_name - 1, data = world_trade_final))
 
