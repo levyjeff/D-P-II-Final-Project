@@ -1,6 +1,5 @@
 library(tidyverse)
 library(rworldmap)
-library(fredr)
 library(shiny)
 library(plotly)
 library(wesanderson)
@@ -14,6 +13,8 @@ library(fredr)
 library(janitor)
 library(stargazer)
 library(modelr)
+library(spData)
+library(scales)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -21,7 +22,7 @@ rm(list = ls())
 
 options(scipen = 999)
 
-#PART 1: Data wrangling
+# PART 1: Data wrangling
 
 # Reading in trade data
 us_fdi <- read_csv("US_FdiFlowsStock_ST202007161100_v1.csv")
@@ -44,7 +45,7 @@ us_fdi <- us_fdi %>%
 
 us_fdi <- clean_names(us_fdi)
 
-#Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
+# Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
 exports_merged <- do.call("rbind", list(us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
 imports_merged <- do.call("rbind", list(us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
 
@@ -62,32 +63,34 @@ str(us_china_totals)
 
 us_china_totals$time <- as.character(us_china_totals$time)
 
-#Tidying and reshaping GDP data
-gdp_data_tidy <- gdp_data %>% 
-  select(-'Series Code')
+# Tidying and reshaping GDP data
+gdp_data_tidy <- gdp_data %>%
+  select(-"Series Code")
 
-gdp_data_tidy <- gdp_data_tidy %>% 
+gdp_data_tidy <- gdp_data_tidy %>%
   clean_names()
 
-gdp_data_tidy <- gdp_data_tidy %>% #Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
-  group_by(series_name) %>% 
-  mutate(row = row_number()) %>% 
-  pivot_wider(names_from = series_name, values_from = c(x2017_yr2017, x2018_yr2018, x2019_yr2019, x2020_yr2020)) %>% 
+gdp_data_tidy <- gdp_data_tidy %>% # Citation: https://stackoverflow.com/questions/58837773/pivot-wider-issue-values-in-values-from-are-not-uniquely-identified-output-w
+  group_by(series_name) %>%
+  mutate(row = row_number()) %>%
+  pivot_wider(names_from = series_name, values_from = c(x2017_yr2017, x2018_yr2018, x2019_yr2019, x2020_yr2020)) %>%
   select(-row)
 
-gdp_data_tidy <- gdp_data_tidy %>% 
+gdp_data_tidy <- gdp_data_tidy %>%
   select(-c(8, 14, 20:26))
 
-gdp_data_tidy <- gdp_data_tidy %>% 
-  rename('2017_gdp' = 3, '2017_gdpgrowth' = 4,
-         '2017_gdppercap2010usd' = 5, '2017_gdppercapcurrentusd' = 6,
-         '2017_percenttradegpd' = 7, 
-         '2018_gdp' = 8, '2018_gdpgrowth' = 9,
-         '2018_gdppercap2010usd' = 10, '2018_gdppercapcurrentusd' = 11,
-         '2018_percenttradegpd' = 12, 
-         '2019_gdp' = 13, '2019_gdpgrowth' = 14,
-         '2019_gdppercap2010usd' = 15, '2019_gdppercapcurrentusd' = 16,
-         '2019_percenttradegpd' = 17) 
+gdp_data_tidy <- gdp_data_tidy %>%
+  rename(
+    "2017_gdp" = 3, "2017_gdpgrowth" = 4,
+    "2017_gdppercap2010usd" = 5, "2017_gdppercapcurrentusd" = 6,
+    "2017_percenttradegpd" = 7,
+    "2018_gdp" = 8, "2018_gdpgrowth" = 9,
+    "2018_gdppercap2010usd" = 10, "2018_gdppercapcurrentusd" = 11,
+    "2018_percenttradegpd" = 12,
+    "2019_gdp" = 13, "2019_gdpgrowth" = 14,
+    "2019_gdppercap2010usd" = 15, "2019_gdppercapcurrentusd" = 16,
+    "2019_percenttradegpd" = 17
+  )
 
 gdp_part <- gdp_data_tidy %>% pivot_longer(
   cols = starts_with(c("2017", "2018", "2019")),
@@ -98,139 +101,169 @@ gdp_part <- gdp_data_tidy %>% pivot_longer(
 
 gdp_part$value <- as.numeric(gdp_part$value)
 
-gdp_part <- gdp_part %>% 
-  separate(col = year,
-           into = c("year", "measure"),
-           sep = "_") %>% 
+gdp_part <- gdp_part %>%
+  separate(
+    col = year,
+    into = c("year", "measure"),
+    sep = "_"
+  ) %>%
   filter(!is.na(value))
 
-gdp_part <- gdp_part %>% 
-group_by(country_name, year, measure) %>% 
-summarise(value = sum(value))
+gdp_part <- gdp_part %>%
+  group_by(country_name, year, measure) %>%
+  summarise(value = sum(value))
 
-gdp_part <- gdp_part %>% 
+gdp_part <- gdp_part %>%
   pivot_wider(names_from = measure, values_from = value)
 
-gdp_part[complete.cases(gdp_part), ] #Checking for NAs
+gdp_part[complete.cases(gdp_part), ] # Checking for NAs
 
-gdp_final <- na.omit(gdp_part) #Omitting NAs, because it is unclear what to impute for them
+gdp_final <- na.omit(gdp_part) # Omitting NAs, because it is unclear what to impute for them
 
-total_trade_flows <- world_trade_flows %>% 
-  group_by(exporter_name, importer_name) %>% 
+total_trade_flows <- world_trade_flows %>%
+  group_by(exporter_name, importer_name) %>%
   summarise(total = sum(trade_flow))
 
-#Reshaping export-import data
-world_ex_im_tidy <- world_ex_im %>% 
-  pivot_longer(cols = starts_with(c("2017", "2018", "2019")),
-               names_to = c("year"),
-               values_to = c("value"),
-               values_drop_na = TRUE
-)
+# Reshaping export-import data
+world_ex_im_tidy <- world_ex_im %>%
+  pivot_longer(
+    cols = starts_with(c("2017", "2018", "2019")),
+    names_to = c("year"),
+    values_to = c("value"),
+    values_drop_na = TRUE
+  )
 
-world_ex_im_tidy <- world_ex_im_tidy %>% 
+world_ex_im_tidy <- world_ex_im_tidy %>%
   select(-`Series Code`)
 
 world_ex_im_tidy <- clean_names(world_ex_im_tidy)
 
-world_ex_im_tidy <- world_ex_im_tidy %>% 
+world_ex_im_tidy <- world_ex_im_tidy %>%
   pivot_wider(names_from = series_name, values_from = value)
-  
-world_ex_im_tidy$year <- str_extract(world_ex_im_tidy$year,"20..")
+
+world_ex_im_tidy$year <- str_extract(world_ex_im_tidy$year, "20..")
 
 world_ex_im_tidy$exports_of_goods_and_services_current_us <- as.numeric(world_ex_im_tidy$exports_of_goods_and_services_current_us)
 world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us <- as.numeric(world_ex_im_tidy$imports_of_goods_and_services_bo_p_current_us)
 
-world_ex_im_tidy <- na.omit(world_ex_im_tidy) #Omitting NAs, because it is unclear what to impute for them
+world_ex_im_tidy <- na.omit(world_ex_im_tidy) # Omitting NAs, because it is unclear what to impute for them
 
-#Joining world export/import data to GDP data, on country-year
-world_trade_final <- gdp_final %>% 
+# Joining world export/import data to GDP data, on country-year
+world_trade_final <- gdp_final %>%
   inner_join(world_ex_im_tidy, by = c("country_name" = "country_name", "year" = "year"))
 
-#Computing trade openness, a measure of trade volume normalized by GDP
-world_trade_final <- world_trade_final %>% 
-  mutate(trade_openness = ((exports_of_goods_and_services_current_us + imports_of_goods_and_services_bo_p_current_us)/gdp))
-  
-#Adding dummies for years, to account for year fixed effects in the model
-world_trade_final <- world_trade_final %>% 
-  mutate(is_2017 = ifelse(year == 2017, 1, 0)) %>% 
-  mutate(is_2018 = ifelse(year == 2018, 1, 0)) %>% 
+# Computing trade openness, a measure of trade volume normalized by GDP
+world_trade_final <- world_trade_final %>%
+  mutate(trade_openness = ((exports_of_goods_and_services_current_us + imports_of_goods_and_services_bo_p_current_us) / gdp))
+
+# Adding dummies for years, to account for year fixed effects in the model
+world_trade_final <- world_trade_final %>%
+  mutate(is_2017 = ifelse(year == 2017, 1, 0)) %>%
+  mutate(is_2018 = ifelse(year == 2018, 1, 0)) %>%
   mutate(is_2019 = ifelse(year == 2019, 1, 0))
 
-#Joining FDI data to tidied export-import data, again on country-year
+# Joining FDI data to tidied export-import data, again on country-year
 us_fdi$year <- as.character(us_fdi$year)
-us_fdi <- us_fdi %>% 
-  filter(direction_label == "Inward", mode_label == "Flow", year %in% c("2017", "2018", "2019")) #Limiting to inbound FDI for 2017-2019
+us_fdi <- us_fdi %>%
+  filter(direction_label == "Inward", mode_label == "Flow", year %in% c("2017", "2018", "2019")) # Limiting to inbound FDI for 2017-2019
 
-us_fdi_for_join <- us_fdi %>% #Eliminating unnecessary columns
+us_fdi_for_join <- us_fdi %>% # Eliminating unnecessary columns
   select(1, 3, 8:11)
 
-us_fdi_for_join$economy_label[us_fdi_for_join$economy_label == "United States of America"] <- "United States" #Standardizing name of United States
+us_fdi_for_join$economy_label[us_fdi_for_join$economy_label == "United States of America"] <- "United States" # Standardizing name of United States
 
-world_trade_final <- world_trade_final %>% 
+world_trade_final <- world_trade_final %>%
   inner_join(us_fdi_for_join, by = c("country_name" = "economy_label", "year" = "year"))
 
 world_trade_final <- na.omit(world_trade_final)
 
-world_trade_final <- world_trade_final %>% 
+world_trade_final <- world_trade_final %>%
   filter(country_name != "World")
 
-#Adding log-transformations to some of the variables, for model interpretation purposes
-world_trade_final <- world_trade_final %>% 
+# Adding log-transformations to some of the variables, for model interpretation purposes
+world_trade_final <- world_trade_final %>%
   mutate(ln_gdp = log(gdp), ln_gdp_per_cap_current = log(gdppercapcurrentusd), ln_gdp_per_cap2010 = log(gdppercap2010usd))
 
-#Adding quadratic terms to some of the variables, again for model interpretation purposes
-world_trade_final <- world_trade_final %>% 
+# Adding quadratic terms to some of the variables, again for model interpretation purposes
+world_trade_final <- world_trade_final %>%
   mutate(gdppercapcurrentusd_sq = gdppercapcurrentusd^2, gdppercap2010usd = gdppercap2010usd^2)
 
-world_trade_final <- world_trade_final %>% 
+world_trade_final <- world_trade_final %>%
   select(-c(17:18))
 
-#Upating some column names to make sure they're understandable
-world_trade_final <- world_trade_final %>% 
-  rename(value_of_inbound_fdi_mil_usd = us_dollars_at_current_prices_in_millions) %>% 
+# Updating some column names to make sure they're understandable
+world_trade_final <- world_trade_final %>%
+  rename(value_of_inbound_fdi_mil_usd = us_dollars_at_current_prices_in_millions) %>%
   rename(value_of_inbound_fdi_usd_per_cap = us_dollars_at_current_prices_per_capita)
 
-#PART 2: Plotting data
-#Interactive Plot of Trade Volume Between the US and China, using US--China trade flow data
-  ui <- fluidPage(
-    selectInput(
-      inputId = "category",
-      label = "Choose an Import/Export Category",
-      choices = unique(us_china_totals[["section"]])),
-    plotlyOutput("trade_table"),
-    tableOutput("cat_disp"),
-  )  
-  
-  server <- function(input, output) {
-    df <- us_china_totals %>% 
-      group_by(section, time, type) %>% 
-      summarise(total_value = sum(trade_value))
-    
-    data <- reactive({
-      d <- filter(df, section == input$category)
-      return(d)
-    })
-    
-    output$cat_disp <- renderTable({
-      data()
-    })
-    
-    output$trade_table <- renderPlotly({
-      plt <- ggplot(data = data()) +
-        geom_bar(aes(time, total_value, fill = type), stat = "identity") +
-        labs(title = input$category, x = "Year", y = "Trade Volume") 
-      ggplotly(plt) 
-       
-    })
-  } 
+# Removing non-countries from the data
+world_trade_final <- world_trade_final %>% 
+  filter(country_name != "Euro area" & country_name != "Sub-Saharan Africa") 
 
-  shinyApp(ui = ui, server = server)
+# PART 2: Plotting data
+# Interactive Plot of Trade Volume Between the US and China, using US--China trade flow data
+ui <- fluidPage(
+  selectInput(
+    inputId = "category",
+    label = "Choose an Import/Export Category",
+    choices = unique(us_china_totals[["section"]])
+  ),
+  plotlyOutput("trade_table"),
+  tableOutput("cat_disp"),
+)
+
+server <- function(input, output) {
+  df <- us_china_totals %>%
+    group_by(section, time, type) %>%
+    summarise(total_value = sum(trade_value))
+
+  data <- reactive({
+    d <- filter(df, section == input$category)
+    return(d)
+  })
+
+  output$cat_disp <- renderTable({
+    data()
+  })
+
+  output$trade_table <- renderPlotly({
+    plt <- ggplot(data = data()) +
+      geom_bar(aes(time, total_value, fill = type), stat = "identity") +
+      labs(title = input$category, x = "Year", y = "Trade Volume")
+    ggplotly(plt)
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+# Another plot. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
+
+world_trade_mapping_17 <- world %>% 
+  inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
+  filter(year == "2017")
+
+world_trade_mapping_18 <- world %>% 
+  inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
+  filter(year == "2018")
+
+world_trade_mapping_19 <- world %>% 
+  inner_join(world_trade_final, by = c("name_long" = "country_name")) %>% 
+  filter(year == "2019")
   
-#Another plot
+
+ggplot() +
+  geom_sf(data = world_trade_mapping_17, aes(fill = value_of_inbound_fdi_mil_usd)) +
+  scale_fill_viridis_c(option = "magma")
+
+?scale_fill_viridis_c
   
-  
-##PART 3: NLP Section
-#Reading in articles, and conducting sentiment analysis on the first NYT article
+
+
+
+?geom_sf
+
+## PART 3: NLP Section
+# Reading in articles, and conducting sentiment analysis on the first NYT article
 nyt2021 <- read_file("NYT2021.txt")
 peoplesdailymarch4_21 <- read_file("PeoplesDailyMarch4.txt")
 peoplesdailysept28_18 <- read_file("PeoplesDailySept28_18.txt")
@@ -243,7 +276,7 @@ word_tokens_df_nsw <- anti_join(word_tokens_df, stop_words, by = c("word_tokens"
 
 count(word_tokens_df_nsw, word_tokens, sort = TRUE)
 
-#GENERALIZING: Writing a function to produce a plot of sentiments
+# GENERALIZING: Writing a function to produce a plot of sentiments
 sentiments_function <- function(article) {
   text_data <- tibble(text = article)
   word_tokens_df <- unnest_tokens(text_data, word_tokens, text, token = "words")
@@ -268,7 +301,7 @@ sentiments_function(peoplesdailymarch4_21)
 sentiments_function(peoplesdailysept28_18)
 sentiments_function(nytsep25_18)
 
-#Conducting more advanced NLP
+# Conducting more advanced NLP
 word_tokens_df_nsw$stem <- wordStem(word_tokens_df_nsw$word_tokens, language = "porter")
 
 word_tokens_df_nsw %>%
@@ -279,16 +312,16 @@ parsed_nyt <- udpipe(nyt2021, "english")
 
 parsed_nyt$stem <- wordStem(parsed_nyt$token, language = "porter")
 
-#view(select(parsed_nyt, "token", "stem", "lemma", "upos")) commenting out the view() command
+# view(select(parsed_nyt, "token", "stem", "lemma", "upos")) commenting out the view() command
 
-#Conducting dependency parsing on the first NYT article
+# Conducting dependency parsing on the first NYT article
 nyt_deps <- cbind_dependencies(parsed_nyt, type = "parent_rowid", recursive = TRUE)
 
 nyt_deps %>%
   select(c(token_id, token, upos, dep_rel, parent_rowid, parent_rowids)) %>%
   View()
 
-#Plotting
+# Plotting
 nyt_deps <- nyt_deps %>%
   select(-"stem")
 
@@ -311,8 +344,8 @@ ggraph(g, layout = "fr") +
   ggtitle("Showing dependencies")
 
 
-#GENERALIZING: Writing a function to do dependency parsing on any given sentence in any given article.
-#The point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles.
+# GENERALIZING: Writing a function to do dependency parsing on any given sentence in any given article.
+# The point here is to determine whether there are differences in the sentence structures of the NYT and People's Daily articles.
 dependency_parsing_func <- function(article, sentence_num) {
   text_data <- tibble(text = article)
   word_tokens_df <- unnest_tokens(text_data, word_tokens, text, token = "words")
@@ -352,25 +385,21 @@ dependency_parsing_func <- function(article, sentence_num) {
   }
 }
 
-#Examining the first sentence of each article
+# Examining the first sentence of each article
 dependency_parsing_func(peoplesdailymarch4_21, 1)
 dependency_parsing_func(nyt2021, 1)
 dependency_parsing_func(peoplesdailysept28_18, 1)
 dependency_parsing_func(nytsep25_18, 1)
 
 
-# PART 4: Fitting a Model
+# PART 4: Fitting a Model: How did US FDI change for China and the US from before and after the launch of the trade war, controlling for GDP?
 prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019, data = world_trade_final)
 
 summary(prelim_model)
 
-residuals(prelim_model)
-
-resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>% 
-  filter(!is.na(resid)) %>% 
-  filter(country_name %in% c("China", "United States")) %>% 
-  select(country_name, resid) %>% 
+resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>%
+  filter(!is.na(resid)) %>%
+  select(country_name, resid) %>%
   arrange(desc(resid))
-
 
 
