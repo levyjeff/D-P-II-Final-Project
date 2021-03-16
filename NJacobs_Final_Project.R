@@ -23,6 +23,7 @@ library(classInt)
 library(scales)
 library(grid)
 library(directlabels)
+library(ggthemes)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -261,7 +262,10 @@ server <- function(input, output) {
   output$trade_table <- renderPlotly({
     plt <- ggplot(data = data()) +
       geom_bar(aes(time, total_value, fill = type), stat = "identity") +
-      labs(title = input$category, x = "Year", y = "Trade Volume")
+      theme(legend.position = "none", panel.background = element_rect(fill = "aliceblue"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+      theme_economist() +
+      labs(title = input$category, x = "Year", y = "Trade Volume") +
+      scale_y_continuous(labels = dollar_format()) 
     ggplotly(plt)
   })
 }
