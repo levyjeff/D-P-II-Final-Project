@@ -314,11 +314,10 @@ inbound_fdi_2017 <- ggplot() +
   coord_sf(datum = NA) +
   scale_fill_gradient(low = "red", high = "green", labels = dollar_format()) +
   ggtitle("Inbound FDI in 2017, Millions of USD") +
-  theme(legend.text = element_text(size = 5), legend.title = element_blank(), legend.position = "top", panel.background = element_blank())
+  theme(legend.text = element_text(size = 5), legend.title = element_blank(), legend.position = "top", panel.background = element_rect(fill = "lightblue"))
 
 
 #Another plot, showing trade openness 
-
 world_avg <- grobTree(textGrob("World Average = 0.79", vjust = -10, gp=gpar(col = "dodgerblue4", fontsize = 14, fontface = "bold")))
 
 us_china_trade_openness_plot <- world_trade_final %>% 
@@ -342,15 +341,15 @@ us_china_totals %>%
   group_by(section) %>% 
   summarise(total_volume = sum(trade_value)) %>% 
   arrange(desc(total_volume)) %>% 
-  head(10)
+  head(10) #Determining the ten most heavily-exported product categories from US to China in 2017, the baseline year
 
-us_china_totals_plotting <- us_china_totals %>% 
+us_china_totals_plotting <- us_china_totals %>% #Isolating those product categories to prepare them for ggplot
   filter(type == "Export--US to China", time != "2020", section %in% c("Transportation", "Machines", "Vegetable Products", "Chemical Products", "Mineral Products",
                                                                        "Instruments", "Plastics and Rubbers", "Metals", "Paper Goods", "Wood Products")) %>% 
   group_by(section, time) %>% 
   summarise(total_volume = sum(trade_value))
 
-us_china_totals_plotting %>% #Citation for data labeling: https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines
+us_exports_product_categories_17_19 <- us_china_totals_plotting %>% #Citation for data labeling: https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines
   ggplot() +
   geom_line(aes(x = time, y = total_volume, group = section, color = section)) +
   geom_point(aes(x = time, y = total_volume, fill = total_volume)) +
