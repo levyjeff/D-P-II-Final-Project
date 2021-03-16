@@ -266,6 +266,7 @@ server <- function(input, output) {
       theme(legend.position = "none", panel.background = element_rect(fill = "aliceblue"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
       theme_economist() +
       labs(title = input$category, x = "Year", y = "Trade Volume") +
+      ggtitle("US-China Trade Flows by Product Category, 2017-2019") +
       scale_y_continuous(labels = dollar_format()) +
       scale_fill_manual(values = wes_palette("GrandBudapest2", n = 2))
     ggplotly(plt)
@@ -274,6 +275,7 @@ server <- function(input, output) {
 
 shinyApp(ui = ui, server = server)
 
+# STATIC PLOTS
 # A choropleth showing inbound FDI in 2017. Citation: https://journal.r-project.org/archive/2011-1/RJournal_2011-1_South.pdf
 
 # Further tidying for mapping purposes
