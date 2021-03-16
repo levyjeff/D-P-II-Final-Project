@@ -227,6 +227,8 @@ world_trade_final[is.na(world_trade_final)] <- 0
 # Adding dummy columns for entity fixed effects--panel data set complete
 world_trade_final <- dummy_cols(world_trade_final, select_columns = c("country_name"))
 
+world_trade_final <- clean_names(world_trade_final)
+
 # Adding rows for missing countries
 tribble(
   ~country_name, ~year, ~gdp, ~gdpgrowth, ~gdppercap2010usd, ~gdppercapcurrentusd, ~percenttradegdp, ~country_code, ~exports_of_goods_and_services_current_us, ~imports_of_goods_and_services_bo_p_current_us,
@@ -347,7 +349,7 @@ us_exports_product_categories_17_19 <- us_china_totals_plotting %>% # Citation f
   theme_bw() +
   scale_y_continuous(labels = dollar_format()) +
   scale_color_brewer(palette = "Spectral") +
-  ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017 (USD)") +
+  ggtitle("Value of US Exports to China, Top 10 2017 Categories (USD)") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill = "linen"), legend.position = "none")
 
 
@@ -486,15 +488,21 @@ dependency_parsing_func(nytsep25_18, 1)
 
 
 # PART 4: Fitting a Model: How did US FDI change for China and the US from before and after the launch of the trade war, controlling for GDP?
-prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019 + trade_openness, data = world_trade_final)
+#prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019 + trade_openness, data = world_trade_final)
+trade_fixed_effects <- lm(trade_openness ~ . - is_2018 - country_name_zimbabwe - country_name - year - country_code -
+  exports_of_goods_and_services_current_us - imports_of_goods_and_services_bo_p_current_us +
+  country_name_china * is_2019 + country_name_united_states * is_2019, data = world_trade_final)
 
-summary(prelim_model)
+summary(trade_fixed_effects)
 
-resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>%
-  filter(!is.na(resid)) %>%
-  select(country_name, resid) %>%
-  arrange(desc(resid))
 
-plm(formula = value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current, index = c("country_name", "year"), model = "within", data = world_trade_final)
 
-summary(plm(formula = trade_openness ~ gdp, data = world_trade_final, effect = "individual"), index = c("country_name", "year"))
+
+
+
+
+
+
+
+
+
