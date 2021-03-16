@@ -24,6 +24,7 @@ library(scales)
 library(grid)
 library(directlabels)
 library(ggthemes)
+library(wesanderson)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -265,7 +266,8 @@ server <- function(input, output) {
       theme(legend.position = "none", panel.background = element_rect(fill = "aliceblue"), panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
       theme_economist() +
       labs(title = input$category, x = "Year", y = "Trade Volume") +
-      scale_y_continuous(labels = dollar_format()) 
+      scale_y_continuous(labels = dollar_format()) +
+      scale_fill_manual(values = wes_palette("GrandBudapest2", n = 2))
     ggplotly(plt)
   })
 }
@@ -341,7 +343,6 @@ us_exports_product_categories_17_19 <- us_china_totals_plotting %>% # Citation f
   xlab("Year") +
   ylab("Total Value of US Exports to China") +
   theme_bw() +
-  scale_y_continuous(labels = comma) +
   scale_y_continuous(labels = dollar_format()) +
   ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017 (USD)") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill = "linen"), legend.position = "none")
