@@ -319,20 +319,20 @@ inbound_fdi_2017 <- ggplot() +
 
 #Another plot, showing trade openness 
 
-world_avg <- grobTree(textGrob("World Average = 0.79", vjust = -10, gp=gpar(col = "blue", fontsize = 14, fontface = "italic")))
+world_avg <- grobTree(textGrob("World Average = 0.79", vjust = -10, gp=gpar(col = "dodgerblue4", fontsize = 14, fontface = "bold")))
 
 us_china_trade_openness_plot <- world_trade_final %>% 
   filter(country_name == "United States" | country_name == "China") %>% 
   ggplot() +
   geom_col(aes(x = year, y = trade_openness, fill = trade_openness)) +
-  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1), color = "brown") +
+  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1), color = "chocolate4") +
   scale_fill_gradient(low = "red", high = "orange") +
   xlab("Year") +
   ylab("Ratio of Trade Volume to GDP") +
   ylim(0, 0.5) +
-  ggtitle("Compaing US and Chinese Trade Openness, 2017-19") +
+  ggtitle("Comparing US and Chinese Trade Openness, 2017-19") +
   theme_bw() +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill = "linen", color = "linen"), legend.position = "none") +
   facet_wrap(~country_name) +
   annotation_custom(world_avg)
 
@@ -352,9 +352,9 @@ us_china_totals_plotting <- us_china_totals %>%
 
 us_china_totals_plotting %>% #Citation for data labeling: https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines
   ggplot() +
-  geom_line(aes(x = time, y = total_volume, group = section)) +
-  geom_point(aes(x = time, y = total_volume)) +
-  geom_dl(aes(x = time, y = total_volume, label = section), method = list(dl.combine("first.points", "last.points")), cex = 0.8) +
+  geom_line(aes(x = time, y = total_volume, group = section, color = section)) +
+  geom_point(aes(x = time, y = total_volume, fill = total_volume)) +
+  geom_dl(aes(x = time, y = total_volume, label = section), method = list(dl.combine("first.points"), cex = 0.55, hjust = 1.15, vjust = 1.5, rot = 15)) +
   xlab("Year") +
   ylab("Total Value of US Exports to China") +
   theme_bw() +
