@@ -25,6 +25,7 @@ library(grid)
 library(directlabels)
 library(ggthemes)
 library(wesanderson)
+library(kableExtra)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -489,11 +490,15 @@ dependency_parsing_func(nytsep25_18, 1)
 
 # PART 4: Fitting a Model: How did US FDI change for China and the US from before and after the launch of the trade war, controlling for GDP?
 #prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019 + trade_openness, data = world_trade_final)
-trade_fixed_effects <- lm(trade_openness ~ . - is_2018 - country_name_zimbabwe - country_name - year - country_code -
-  exports_of_goods_and_services_current_us - imports_of_goods_and_services_bo_p_current_us +
-  country_name_china * is_2019 + country_name_united_states * is_2019, data = world_trade_final)
+trade_fixed_effects <- lm(trade_openness ~ . + country_name_china * is_2019 + country_name_united_states * is_2019 - is_2018 -
+                            country_name_zimbabwe - country_name - year - exports_of_goods_and_services_current_us - 
+                            imports_of_goods_and_services_bo_p_current_us - country_code - ln_gdp - 
+                            ln_gdp_per_cap_current - gdp - gdppercap2010usd -ln_gdp_per_cap2010 - gdppercapcurrentusd, data = world_trade_final)
 
-summary(trade_fixed_effects)
+stargazer(trade_fixed_effects, type = "text", order = c("is_2019:country_name_united_states", "is_2019:country_name_china", "country_name_united_states", "country_name_china"), omit = c(10:549)) #Individual countries other than the US and China omitted to keep output table manageable
+  
+
+
 
 
 
