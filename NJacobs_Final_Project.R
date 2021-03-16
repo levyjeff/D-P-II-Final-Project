@@ -346,6 +346,7 @@ us_exports_product_categories_17_19 <- us_china_totals_plotting %>% # Citation f
   ylab("Total Value of US Exports to China") +
   theme_bw() +
   scale_y_continuous(labels = dollar_format()) +
+  scale_color_brewer(palette = "Spectral") +
   ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017 (USD)") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill = "linen"), legend.position = "none")
 
