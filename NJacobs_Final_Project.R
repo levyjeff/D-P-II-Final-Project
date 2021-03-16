@@ -390,13 +390,17 @@ sentiments_function <- function(article) {
 
     sentiment_plot <- ggplot(data = filter(word_tokens_df_nsw, !is.na(nrc))) +
       geom_histogram(aes(nrc, fill = nrc), stat = "count") +
+      geom_text(stat = "count", aes(nrc, label=..count..), vjust = -0.65, size = 2.5) +
       scale_x_discrete(guide = guide_axis(angle = 45)) +
-      labs(title = ("Sentiments"))
+      labs(title = ("Sentiments Expressed by NYT and People's Daily")) +
+      xlab("Sentiment") +
+      ylab("Count of Words") +
+      theme(legend.position = "none", panel.background = element_rect(fill = "aliceblue"), panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 
     return(sentiment_plot)
   }
 }
-#TURN into a loop
+
 sentiments_function(nyt2021)
 sentiments_function(peoplesdailymarch4_21)
 sentiments_function(peoplesdailysept28_18)
