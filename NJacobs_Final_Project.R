@@ -2,14 +2,12 @@ library(tidyverse)
 library(rworldmap)
 library(shiny)
 library(plotly)
-library(wesanderson)
 library(tidytext)
 library(textdata)
 library(SnowballC)
 library(udpipe)
 library(ggraph)
 library(igraph)
-library(fredr)
 library(janitor)
 library(stargazer)
 library(modelr)
@@ -18,7 +16,6 @@ library(scales)
 library(countrycode)
 library(StandardizeText)
 library(sf)
-library(ggmap)
 library(fastDummies)
 library(plm)
 library(RColorBrewer)
@@ -36,9 +33,11 @@ options(scipen = 999)
 
 # Reading in trade data
 us_fdi <- read_csv("US_FdiFlowsStock_ST202007161100_v1.csv")
+us_ex_to_china_2017 <- read_csv("US_Ex_to_China_OEC_2017.csv")
 us_ex_to_china_2018 <- read_csv("US_Ex_to_China_OEC_2018.csv")
 us_ex_to_china_2019 <- read_csv("US_Ex_to_China_OEC_2019.csv")
 us_ex_to_china_2020 <- read_csv("US_Ex_to_China_OEC_2020.csv")
+us_im_from_china_2017 <- read_csv("US_Im_from_China_OEC_2017.csv")
 us_im_from_china_2018 <- read_csv("US_Im_from_China_OEC_2018.csv")
 us_im_from_china_2019 <- read_csv("US_Im_from_China_OEC_2019.csv")
 us_im_from_china_2020 <- read_csv("US_Im_from_China_OEC_2020.csv")
@@ -58,8 +57,8 @@ us_fdi <- clean_names(us_fdi)
 us_fdi$economy_label <- standardize.countrynames(us_fdi$economy_label, standard = "iso", suggest = "auto") #Standardizing country names. Citation: https://cran.r-project.org/web/packages/StandardizeText/StandardizeText.pdf
 
 # Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
-exports_merged <- do.call("rbind", list(us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
-imports_merged <- do.call("rbind", list(us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
+exports_merged <- do.call("rbind", list(us_ex_to_china_2017, us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
+imports_merged <- do.call("rbind", list(us_im_from_china_2017, us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
 
 exports_merged <- exports_merged %>%
   mutate(type = "Export--US to China")
@@ -225,9 +224,6 @@ world_trade_final[is.na(world_trade_final)] <- 0
 #Adding dummy columns for entity fixed effects--panel data set complete
 world_trade_final <- dummy_cols(world_trade_final, select_columns = c("country_name"))
 
-
-
-
 #Adding blank rows for Libya, Venezuela, and South Sudan, for mapping purposes
 #libya17 <- c("Libya", "2017", 0, 0, 0, 0, 0, "LBY", 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0)
 #libya18 <- c("Libya", "2018", 0, 0, 0, 0, 0, "LBY", 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0)
@@ -324,20 +320,47 @@ inbound_fdi_2017 <- ggplot() +
 
 world_avg <- grobTree(textGrob("World Average = 0.79", vjust = -10, gp=gpar(col = "blue", fontsize = 14, fontface = "italic")))
 
-world_trade_final %>% 
+us_china_trade_openness_plot <- world_trade_final %>% 
   filter(country_name == "United States" | country_name == "China") %>% 
   ggplot() +
   geom_col(aes(x = year, y = trade_openness, fill = trade_openness)) +
-  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1), color = "darkgreen") +
+  geom_text(aes(x = year, y = trade_openness, label = round(trade_openness, 2), vjust = -1), color = "brown") +
   scale_fill_gradient(low = "red", high = "orange") +
   xlab("Year") +
   ylab("Ratio of Trade Volume to GDP") +
   ylim(0, 0.5) +
-  ggtitle("Trade Openness, 2017-19") +
+  ggtitle("Compaing US and Chinese Trade Openness, 2017-19") +
   theme_bw() +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") +
   facet_wrap(~country_name) +
   annotation_custom(world_avg)
+
+# Another plot: Product categories
+us_china_totals %>% 
+  filter(type == "Export--US to China", time == "2017") %>% 
+  group_by(section) %>% 
+  summarise(total_volume = sum(trade_value)) %>% 
+  arrange(desc(total_volume)) %>% 
+  head(10)
+
+us_china_totals_plotting <- us_china_totals %>% 
+  filter(type == "Export--US to China", time != "2020", section %in% c("Transportation", "Machines", "Vegetable Products", "Chemical Products", "Mineral Products",
+                                                                       "Instruments", "Plastics and Rubbers", "Metals", "Paper Goods", "Wood Products")) %>% 
+  group_by(section, time) %>% 
+  summarise(total_volume = sum(trade_value))
+
+us_china_totals_plotting %>% 
+  ggplot() +
+  geom_line(aes(x = time, y = total_volume, group = section)) +
+  geom_text(aes(x = time, y = total_volume, label = section, hjust = -1), color = "brown") +
+  geom_point(aes(x = time, y = total_volume)) +
+  xlab("Year") +
+  ylab("Total Value of US Exports to China") +
+  theme_bw() +
+  scale_y_continuous(labels = comma) +
+  scale_y_continuous(labels = dollar_format()) +
+  ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") 
 
 
 
@@ -486,16 +509,5 @@ resids <- add_residuals(world_trade_final, prelim_model, var = "resid") %>%
 plm(formula = value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current, index = c("country_name", "year"), model = "within", data = world_trade_final)
 
 summary(plm(formula = trade_openness ~ gdp, data = world_trade_final, effect = "individual"), index = c("country_name", "year"))
-
-
-
-?lm
-?plm
-
-
-
-
-
-
 
 
