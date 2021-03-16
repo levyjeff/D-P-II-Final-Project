@@ -354,14 +354,14 @@ us_china_totals_plotting %>% #Citation for data labeling: https://stackoverflow.
   ggplot() +
   geom_line(aes(x = time, y = total_volume, group = section, color = section)) +
   geom_point(aes(x = time, y = total_volume, fill = total_volume)) +
-  geom_dl(aes(x = time, y = total_volume, label = section), method = list(dl.combine("first.points"), cex = 0.55, hjust = 1.15, vjust = 1.5, rot = 15)) +
+  geom_dl(aes(x = time, y = total_volume, label = section), method = list(dl.combine("last.points"), cex = 0.50, vjust = -0.75)) +
   xlab("Year") +
   ylab("Total Value of US Exports to China") +
   theme_bw() +
   scale_y_continuous(labels = comma) +
   scale_y_continuous(labels = dollar_format()) +
-  ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017") +
-  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") 
+  ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017 (USD)") +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_rect(fill = "linen"), legend.position = "none")
 
 
 ## PART 3: NLP Section
