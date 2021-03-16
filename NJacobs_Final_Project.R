@@ -60,6 +60,8 @@ us_fdi <- clean_names(us_fdi)
 
 us_fdi$economy_label <- standardize.countrynames(us_fdi$economy_label, standard = "iso", suggest = "auto") # Standardizing country names. Citation: https://cran.r-project.org/web/packages/StandardizeText/StandardizeText.pdf
 
+#write_csv(us_fdi, "us_fdi.csv")
+
 # Citation: https://medium.com/coinmonks/merging-multiple-dataframes-in-r-72629c4632a3
 exports_merged <- do.call("rbind", list(us_ex_to_china_2017, us_ex_to_china_2018, us_ex_to_china_2019, us_ex_to_china_2020))
 imports_merged <- do.call("rbind", list(us_im_from_china_2017, us_im_from_china_2018, us_im_from_china_2019, us_im_from_china_2020))
@@ -142,6 +144,8 @@ gdp_part[is.na(gdp_part)] <- 0
 gdp_final <- gdp_part
 
 gdp_final$country_name <- standardize.countrynames(gdp_final$country_name, standard = "iso", suggest = "auto")
+
+#write_csv(gdp_final, "gdp_final.csv")
 
 # Reshaping export-import data
 world_ex_im_tidy <- world_ex_im %>%
@@ -229,6 +233,8 @@ world_trade_final[is.na(world_trade_final)] <- 0
 world_trade_final <- dummy_cols(world_trade_final, select_columns = c("country_name"))
 
 world_trade_final <- clean_names(world_trade_final)
+
+#write_csv(world_trade_final, "world_trade_final.csv")
 
 # Adding rows for missing countries
 tribble(
@@ -377,9 +383,9 @@ parsed_nyt$stem <- wordStem(parsed_nyt$token, language = "porter")
 # Conducting dependency parsing on the first NYT article
 nyt_deps <- cbind_dependencies(parsed_nyt, type = "parent_rowid", recursive = TRUE)
 
-nyt_deps %>%
-  select(c(token_id, token, upos, dep_rel, parent_rowid, parent_rowids)) %>%
-  View()
+#nyt_deps %>%
+ # select(c(token_id, token, upos, dep_rel, parent_rowid, parent_rowids)) %>%
+  #View()
 
 # Plotting
 nyt_deps <- nyt_deps %>%
