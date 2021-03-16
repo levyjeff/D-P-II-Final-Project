@@ -22,6 +22,7 @@ library(RColorBrewer)
 library(classInt)
 library(scales)
 library(grid)
+library(directlabels)
 
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
@@ -349,11 +350,11 @@ us_china_totals_plotting <- us_china_totals %>%
   group_by(section, time) %>% 
   summarise(total_volume = sum(trade_value))
 
-us_china_totals_plotting %>% 
+us_china_totals_plotting %>% #Citation for data labeling: https://stackoverflow.com/questions/29357612/plot-labels-at-ends-of-lines
   ggplot() +
   geom_line(aes(x = time, y = total_volume, group = section)) +
-  geom_text(aes(x = time, y = total_volume, label = section, hjust = -1), color = "brown") +
   geom_point(aes(x = time, y = total_volume)) +
+  geom_dl(aes(x = time, y = total_volume, label = section), method = list(dl.combine("first.points", "last.points")), cex = 0.8) +
   xlab("Year") +
   ylab("Total Value of US Exports to China") +
   theme_bw() +
@@ -361,8 +362,6 @@ us_china_totals_plotting %>%
   scale_y_continuous(labels = dollar_format()) +
   ggtitle("Change in Value of US Exports to China, Top 10 Categories in 2017") +
   theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), legend.position = "none") 
-
-
 
 
 ## PART 3: NLP Section
