@@ -201,8 +201,6 @@ us_fdi_for_join <- us_fdi %>% # Eliminating unnecessary columns
 world_trade_final <- world_trade_final %>%
   inner_join(us_fdi_for_join, by = c("country_name" = "economy_label", "year" = "year"))
 
-# world_trade_final <- na.omit(world_trade_final)
-
 world_trade_final <- world_trade_final %>%
   filter(country_name != "World")
 
@@ -270,7 +268,7 @@ inbound_fdi_2017 <- ggplot() +
   ggtitle("Inbound FDI in 2017, Millions of USD") +
   theme(legend.text = element_text(size = 5), legend.title = element_blank(), legend.position = "top", panel.background = element_rect(fill = "lightblue"))
 
-print(inbound_fdi_2017)
+print(inbound_fdi_2017) #Could not add missing countries in time
 
 
 # Another plot, showing trade openness
@@ -460,7 +458,7 @@ dependency_parsing_func(nytsep25_18, 1)
 
 # PART 4: Fitting a Model: How did US FDI change for China and the US from before and after the launch of the trade war, controlling for GDP?
 # prelim_model <- lm(value_of_inbound_fdi_mil_usd ~ gdp + gdppercapcurrentusd + ln_gdp + ln_gdp_per_cap_current + gdppercapcurrentusd_sq + is_2018 + is_2019 + trade_openness, data = world_trade_final)
-trade_fixed_effects <- lm(trade_openness ~ . + country_name_china * is_2019 + country_name_united_states * is_2019 - is_2018 -
+trade_fixed_effects <- lm(trade_openness ~ . + country_name_china * is_2018 + country_name_united_states*is_2018 + country_name_china * is_2019 + country_name_united_states * is_2019 - is_2018 -
   country_name_zimbabwe - country_name - year - exports_of_goods_and_services_current_us -
   imports_of_goods_and_services_bo_p_current_us - country_code - ln_gdp -
   ln_gdp_per_cap_current - gdp - gdppercap2010usd - ln_gdp_per_cap2010 - gdppercapcurrentusd, data = world_trade_final)
