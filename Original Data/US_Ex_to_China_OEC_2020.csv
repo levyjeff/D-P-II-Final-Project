@@ -1,0 +1,1121 @@
+"HS2","HS2 ID","HS4","HS4 ID","Section","Section ID","Time","Time ID","Trade Value"
+"Animals; live",101,"Horses",10101,"Animal Products",1,2020,NaN,65075
+"Animals; live",101,"Bovine",10102,"Animal Products",1,2020,NaN,7281
+"Animals; live",101,"Pigs",10103,"Animal Products",1,2020,NaN,8579748
+"Animals; live",101,"Poultry",10105,"Animal Products",1,2020,NaN,7337178
+"Animals; live",101,"Other Animals",10106,"Animal Products",1,2020,NaN,2279636
+"Meat and edible meat offal",102,"Bovine Meat",10201,"Animal Products",1,2020,NaN,57919439
+"Meat and edible meat offal",102,"Frozen Bovine Meat",10202,"Animal Products",1,2020,NaN,223307757
+"Meat and edible meat offal",102,"Pig Meat",10203,"Animal Products",1,2020,NaN,1646184032
+"Meat and edible meat offal",102,"Sheep and Goat Meat",10204,"Animal Products",1,2020,NaN,77219
+"Meat and edible meat offal",102,"Edible Offal",10206,"Animal Products",1,2020,NaN,451522723
+"Meat and edible meat offal",102,"Poultry Meat",10207,"Animal Products",1,2020,NaN,764261135
+"Meat and edible meat offal",102,"Other Meat",10208,"Animal Products",1,2020,NaN,6262
+"Meat and edible meat offal",102,"Animal Fat",10209,"Animal Products",1,2020,NaN,2087382
+"Meat and edible meat offal",102,"Preserved Meat",10210,"Animal Products",1,2020,NaN,857162
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Live Fish",10301,"Animal Products",1,2020,NaN,249328
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Non-fillet Fresh Fish",10302,"Animal Products",1,2020,NaN,330479
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Non-fillet Frozen Fish",10303,"Animal Products",1,2020,NaN,400707986
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Fish Fillets",10304,"Animal Products",1,2020,NaN,27973606
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Processed Fish",10305,"Animal Products",1,2020,NaN,631920
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Crustaceans",10306,"Animal Products",1,2020,NaN,81063105
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Molluscs",10307,"Animal Products",1,2020,NaN,73400960
+"Fish and crustaceans, molluscs and other aquatic invertebrates",103,"Aquatic invertebrates, other than crustaceans and molluscs",10308,"Animal Products",1,2020,NaN,126770
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Milk",10401,"Animal Products",1,2020,NaN,684076
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Concentrated Milk",10402,"Animal Products",1,2020,NaN,62852719
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Fermented Milk Products",10403,"Animal Products",1,2020,NaN,1829203
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Whey",10404,"Animal Products",1,2020,NaN,206669406
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Butter",10405,"Animal Products",1,2020,NaN,2632033
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Cheese",10406,"Animal Products",1,2020,NaN,38750277
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Processed Egg Products",10408,"Animal Products",1,2020,NaN,163481
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Honey",10409,"Animal Products",1,2020,NaN,438954
+"Dairy produce; birds' eggs; natural honey; edible products of animal origin, not elsewhere specified or included",104,"Other Edible Animal Products",10410,"Animal Products",1,2020,NaN,31450
+"Animal originated products; not elsewhere specified or included",105,"Human Hair",10501,"Animal Products",1,2020,NaN,15000
+"Animal originated products; not elsewhere specified or included",105,"Animal Organs",10504,"Animal Products",1,2020,NaN,218693650
+"Animal originated products; not elsewhere specified or included",105,"Bird Feathers and Skins",10505,"Animal Products",1,2020,NaN,4975951
+"Animal originated products; not elsewhere specified or included",105,"Processed Bones",10506,"Animal Products",1,2020,NaN,107302
+"Animal originated products; not elsewhere specified or included",105,"Raw Bones",10507,"Animal Products",1,2020,NaN,2506437
+"Animal originated products; not elsewhere specified or included",105,"Coral and Shells",10508,"Animal Products",1,2020,NaN,49423
+"Animal originated products; not elsewhere specified or included",105,"Other Inedible Animal Products",10511,"Animal Products",1,2020,NaN,59577276
+"Trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage",206,"Bulbs and Roots",20601,"Vegetable Products",2,2020,NaN,95312
+"Trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage",206,"Other Live Plants",20602,"Vegetable Products",2,2020,NaN,5099366
+"Trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage",206,"Cut Flowers",20603,"Vegetable Products",2,2020,NaN,54652
+"Trees and other plants, live; bulbs, roots and the like; cut flowers and ornamental foliage",206,"Foliage",20604,"Vegetable Products",2,2020,NaN,816769
+"Vegetables and certain roots and tubers; edible",207,"Potatoes",20701,"Vegetable Products",2,2020,NaN,89833
+"Vegetables and certain roots and tubers; edible",207,"Tomatoes",20702,"Vegetable Products",2,2020,NaN,863153
+"Vegetables and certain roots and tubers; edible",207,"Onions",20703,"Vegetable Products",2,2020,NaN,33639
+"Vegetables and certain roots and tubers; edible",207,"Cabbages",20704,"Vegetable Products",2,2020,NaN,79473
+"Vegetables and certain roots and tubers; edible",207,"Root Vegetables",20706,"Vegetable Products",2,2020,NaN,71785
+"Vegetables and certain roots and tubers; edible",207,"Legumes",20708,"Vegetable Products",2,2020,NaN,15336
+"Vegetables and certain roots and tubers; edible",207,"Other Vegetables",20709,"Vegetable Products",2,2020,NaN,128279
+"Vegetables and certain roots and tubers; edible",207,"Frozen Vegetables",20710,"Vegetable Products",2,2020,NaN,14782312
+"Vegetables and certain roots and tubers; edible",207,"Preserved Vegetables",20711,"Vegetable Products",2,2020,NaN,300300
+"Vegetables and certain roots and tubers; edible",207,"Dried Vegetables",20712,"Vegetable Products",2,2020,NaN,12127956
+"Vegetables and certain roots and tubers; edible",207,"Dried Legumes",20713,"Vegetable Products",2,2020,NaN,51305112
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Coconuts, Brazil Nuts, and Cashews",20801,"Vegetable Products",2,2020,NaN,14527
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Other Nuts",20802,"Vegetable Products",2,2020,NaN,704931048
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Tropical Fruits",20804,"Vegetable Products",2,2020,NaN,64168
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Citrus",20805,"Vegetable Products",2,2020,NaN,25446323
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Grapes",20806,"Vegetable Products",2,2020,NaN,13103738
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Apples and Pears",20808,"Vegetable Products",2,2020,NaN,12265141
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Pitted Fruits",20809,"Vegetable Products",2,2020,NaN,58939063
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Other Fruits",20810,"Vegetable Products",2,2020,NaN,316948
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Frozen Fruits and Nuts",20811,"Vegetable Products",2,2020,NaN,838048
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Preserved Fruits and Nuts",20812,"Vegetable Products",2,2020,NaN,10368
+"Fruit and nuts, edible; peel of citrus fruit or melons",208,"Dried Fruits",20813,"Vegetable Products",2,2020,NaN,12412149
+"Coffee, tea, mate and spices",209,"Coffee",20901,"Vegetable Products",2,2020,NaN,12601661
+"Coffee, tea, mate and spices",209,"Tea",20902,"Vegetable Products",2,2020,NaN,815781
+"Coffee, tea, mate and spices",209,"Maté",20903,"Vegetable Products",2,2020,NaN,65535
+"Coffee, tea, mate and spices",209,"Pepper",20904,"Vegetable Products",2,2020,NaN,859175
+"Coffee, tea, mate and spices",209,"Vanilla",20905,"Vegetable Products",2,2020,NaN,9382
+"Coffee, tea, mate and spices",209,"Cinnamon",20906,"Vegetable Products",2,2020,NaN,18576
+"Coffee, tea, mate and spices",209,"Nutmeg, mace and cardamons",20908,"Vegetable Products",2,2020,NaN,3229
+"Coffee, tea, mate and spices",209,"Spice Seeds",20909,"Vegetable Products",2,2020,NaN,265977
+"Coffee, tea, mate and spices",209,"Spices",20910,"Vegetable Products",2,2020,NaN,1273612
+"Cereals",210,"Wheat",21001,"Vegetable Products",2,2020,NaN,569916561
+"Cereals",210,"Barley",21003,"Vegetable Products",2,2020,NaN,11025
+"Cereals",210,"Oats",21004,"Vegetable Products",2,2020,NaN,2083343
+"Cereals",210,"Corn",21005,"Vegetable Products",2,2020,NaN,1206361787
+"Cereals",210,"Rice",21006,"Vegetable Products",2,2020,NaN,94697
+"Cereals",210,"Sorghum",21007,"Vegetable Products",2,2020,NaN,1152697017
+"Cereals",210,"Buckwheat",21008,"Vegetable Products",2,2020,NaN,239964
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Wheat Flours",21101,"Vegetable Products",2,2020,NaN,1279384
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Cereal Flours",21102,"Vegetable Products",2,2020,NaN,40781
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Cereal Meal and Pellets",21103,"Vegetable Products",2,2020,NaN,18025
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Processed Cereals",21104,"Vegetable Products",2,2020,NaN,548999
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Potato Flours",21105,"Vegetable Products",2,2020,NaN,887046
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Legume Flours",21106,"Vegetable Products",2,2020,NaN,602710
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Malt",21107,"Vegetable Products",2,2020,NaN,60918
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Starches",21108,"Vegetable Products",2,2020,NaN,3143777
+"Products of the milling industry; malt, starches, inulin, wheat gluten",211,"Wheat Gluten",21109,"Vegetable Products",2,2020,NaN,2967
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Soybeans",21201,"Vegetable Products",2,2020,NaN,14202646345
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Ground Nuts",21202,"Vegetable Products",2,2020,NaN,238593238
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Linseed",21204,"Vegetable Products",2,2020,NaN,305361
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Rapeseed",21205,"Vegetable Products",2,2020,NaN,42125
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Sunflower Seeds",21206,"Vegetable Products",2,2020,NaN,43125
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Other Oily Seeds",21207,"Vegetable Products",2,2020,NaN,2907987
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Oil Seed Flower",21208,"Vegetable Products",2,2020,NaN,3803102
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Sowing Seeds",21209,"Vegetable Products",2,2020,NaN,106782761
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Hops",21210,"Vegetable Products",2,2020,NaN,7417954
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Perfume Plants",21211,"Vegetable Products",2,2020,NaN,14293238
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Locust beans, seaweed, sugar beet, cane, for food",21212,"Vegetable Products",2,2020,NaN,165394
+"Oil seeds and oleaginous fruits; miscellaneous grains, seeds and fruit, industrial or medicinal plants; straw and fodder",212,"Forage Crops",21214,"Vegetable Products",2,2020,NaN,447508268
+"Lac; gums, resins and other vegetable saps and extracts",213,"Insect Resins",21301,"Vegetable Products",2,2020,NaN,481254
+"Lac; gums, resins and other vegetable saps and extracts",213,"Vegetable Saps",21302,"Vegetable Products",2,2020,NaN,30728872
+"Vegetable plaiting materials; vegetable products not elsewhere specified or included",214,"Vegetable Plaiting Materials",21401,"Vegetable Products",2,2020,NaN,16617
+"Vegetable plaiting materials; vegetable products not elsewhere specified or included",214,"Other Vegetable Products",21404,"Vegetable Products",2,2020,NaN,5164321
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Pig and Poultry Fat",31501,"Animal and Vegetable Bi-Products",3,2020,NaN,105315
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Bovine, Sheep, and Goat Fat",31502,"Animal and Vegetable Bi-Products",3,2020,NaN,26667
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Fish Oil",31504,"Animal and Vegetable Bi-Products",3,2020,NaN,3910775
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Wool Grease",31505,"Animal and Vegetable Bi-Products",3,2020,NaN,896824
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Other Animal Fats",31506,"Animal and Vegetable Bi-Products",3,2020,NaN,324251
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Soybean Oil",31507,"Animal and Vegetable Bi-Products",3,2020,NaN,22650259
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Ground Nut Oil",31508,"Animal and Vegetable Bi-Products",3,2020,NaN,9157957
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Pure Olive Oil",31509,"Animal and Vegetable Bi-Products",3,2020,NaN,445000
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Olive Oil",31510,"Animal and Vegetable Bi-Products",3,2020,NaN,34500
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Palm Oil",31511,"Animal and Vegetable Bi-Products",3,2020,NaN,3391
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Seed Oils",31512,"Animal and Vegetable Bi-Products",3,2020,NaN,418022
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Coconut Oil",31513,"Animal and Vegetable Bi-Products",3,2020,NaN,235916
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Rapeseed Oil",31514,"Animal and Vegetable Bi-Products",3,2020,NaN,3054
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Other Pure Vegetable Oils",31515,"Animal and Vegetable Bi-Products",3,2020,NaN,10104881
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Other Vegetable Oils",31516,"Animal and Vegetable Bi-Products",3,2020,NaN,1404548
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Margarine",31517,"Animal and Vegetable Bi-Products",3,2020,NaN,6653986
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Inedible Fats and Oils",31518,"Animal and Vegetable Bi-Products",3,2020,NaN,7942299
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Glycerol",31520,"Animal and Vegetable Bi-Products",3,2020,NaN,1336881
+"Animal or vegetable fats and oils and their cleavage products; prepared animal fats; animal or vegetable waxes",315,"Waxes",31521,"Animal and Vegetable Bi-Products",3,2020,NaN,895460
+"Meat, fish or crustaceans, molluscs or other aquatic invertebrates; preparations thereof",416,"Sausages",41601,"Foodstuffs",4,2020,NaN,1812296
+"Meat, fish or crustaceans, molluscs or other aquatic invertebrates; preparations thereof",416,"Other Prepared Meat",41602,"Foodstuffs",4,2020,NaN,19317115
+"Meat, fish or crustaceans, molluscs or other aquatic invertebrates; preparations thereof",416,"Processed Fish",41604,"Foodstuffs",4,2020,NaN,736256
+"Meat, fish or crustaceans, molluscs or other aquatic invertebrates; preparations thereof",416,"Processed Crustaceans",41605,"Foodstuffs",4,2020,NaN,947098
+"Sugars and sugar confectionery",417,"Raw Sugar",41701,"Foodstuffs",4,2020,NaN,1248666
+"Sugars and sugar confectionery",417,"Other Sugars",41702,"Foodstuffs",4,2020,NaN,76183519
+"Sugars and sugar confectionery",417,"Molasses",41703,"Foodstuffs",4,2020,NaN,30702
+"Sugars and sugar confectionery",417,"Confectionery Sugar",41704,"Foodstuffs",4,2020,NaN,4803789
+"Cocoa and cocoa preparations",418,"Cocoa Butter",41804,"Foodstuffs",4,2020,NaN,3825
+"Cocoa and cocoa preparations",418,"Cocoa Powder",41805,"Foodstuffs",4,2020,NaN,1043027
+"Cocoa and cocoa preparations",418,"Chocolate",41806,"Foodstuffs",4,2020,NaN,21099447
+"Preparations of cereals, flour, starch or milk; pastrycooks' products",419,"Malt Extract",41901,"Foodstuffs",4,2020,NaN,45592282
+"Preparations of cereals, flour, starch or milk; pastrycooks' products",419,"Pasta",41902,"Foodstuffs",4,2020,NaN,69602
+"Preparations of cereals, flour, starch or milk; pastrycooks' products",419,"Tapioca",41903,"Foodstuffs",4,2020,NaN,4496
+"Preparations of cereals, flour, starch or milk; pastrycooks' products",419,"Prepared Cereals",41904,"Foodstuffs",4,2020,NaN,2593032
+"Preparations of cereals, flour, starch or milk; pastrycooks' products",419,"Baked Goods",41905,"Foodstuffs",4,2020,NaN,18116524
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Pickled Foods",42001,"Foodstuffs",4,2020,NaN,230476
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Processed Tomatoes",42002,"Foodstuffs",4,2020,NaN,4054700
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Other Frozen Vegetables",42004,"Foodstuffs",4,2020,NaN,56203968
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Other Processed Vegetables",42005,"Foodstuffs",4,2020,NaN,1355101
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Sugar Preserved Foods",42006,"Foodstuffs",4,2020,NaN,2657
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Jams",42007,"Foodstuffs",4,2020,NaN,2446398
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Other Processed Fruits and Nuts",42008,"Foodstuffs",4,2020,NaN,87837651
+"Preparations of vegetables, fruit, nuts or other parts of plants",420,"Fruit Juice",42009,"Foodstuffs",4,2020,NaN,9106428
+"Miscellaneous edible preparations",421,"Coffee and Tea Extracts",42101,"Foodstuffs",4,2020,NaN,4580311
+"Miscellaneous edible preparations",421,"Yeast",42102,"Foodstuffs",4,2020,NaN,2152670
+"Miscellaneous edible preparations",421,"Sauces and Seasonings",42103,"Foodstuffs",4,2020,NaN,10411635
+"Miscellaneous edible preparations",421,"Soups and Broths",42104,"Foodstuffs",4,2020,NaN,1715811
+"Miscellaneous edible preparations",421,"Ice Cream",42105,"Foodstuffs",4,2020,NaN,1505951
+"Miscellaneous edible preparations",421,"Other Edible Preparations",42106,"Foodstuffs",4,2020,NaN,188095046
+"Beverages, spirits and vinegar",422,"Water",42201,"Foodstuffs",4,2020,NaN,6206235
+"Beverages, spirits and vinegar",422,"Flavored Water",42202,"Foodstuffs",4,2020,NaN,3859681
+"Beverages, spirits and vinegar",422,"Beer",42203,"Foodstuffs",4,2020,NaN,13730336
+"Beverages, spirits and vinegar",422,"Wine",42204,"Foodstuffs",4,2020,NaN,20772189
+"Beverages, spirits and vinegar",422,"Vermouth",42205,"Foodstuffs",4,2020,NaN,109368
+"Beverages, spirits and vinegar",422,"Other Fermented Beverages",42206,"Foodstuffs",4,2020,NaN,325042
+"Beverages, spirits and vinegar",422,"Alcohol > 80% ABV",42207,"Foodstuffs",4,2020,NaN,31683683
+"Beverages, spirits and vinegar",422,"Hard Liquor",42208,"Foodstuffs",4,2020,NaN,19529547
+"Beverages, spirits and vinegar",422,"Vinegar",42209,"Foodstuffs",4,2020,NaN,638763
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Animal Meal and Pellets",42301,"Foodstuffs",4,2020,NaN,217003606
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Bran",42302,"Foodstuffs",4,2020,NaN,11457914
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Starch Residue",42303,"Foodstuffs",4,2020,NaN,57620319
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Soybean Meal",42304,"Foodstuffs",4,2020,NaN,1716597
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Other Vegetable Residues",42306,"Foodstuffs",4,2020,NaN,33253
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Other Vegetable Residues and Waste",42308,"Foodstuffs",4,2020,NaN,11806626
+"Food industries, residues and wastes thereof; prepared animal fodder",423,"Animal Food",42309,"Foodstuffs",4,2020,NaN,171235430
+"Tobacco and manufactured tobacco substitutes",424,"Rolled Tobacco",42402,"Foodstuffs",4,2020,NaN,45292
+"Tobacco and manufactured tobacco substitutes",424,"Processed Tobacco",42403,"Foodstuffs",4,2020,NaN,105540
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Salt",52501,"Mineral Products",5,2020,NaN,44005110
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Iron Pyrites",52502,"Mineral Products",5,2020,NaN,191902
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Sulphur",52503,"Mineral Products",5,2020,NaN,431487
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Graphite",52504,"Mineral Products",5,2020,NaN,902054
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Sand",52505,"Mineral Products",5,2020,NaN,57396619
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Quartz",52506,"Mineral Products",5,2020,NaN,4171020
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Kaolin",52507,"Mineral Products",5,2020,NaN,73876787
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Clays",52508,"Mineral Products",5,2020,NaN,22654811
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Barium Sulphate",52511,"Mineral Products",5,2020,NaN,79513
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Siliceous Fossil Meals",52512,"Mineral Products",5,2020,NaN,3443417
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Pumice",52513,"Mineral Products",5,2020,NaN,622345
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Marble, Travertine and Alabaster",52515,"Mineral Products",5,2020,NaN,422836
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Granite",52516,"Mineral Products",5,2020,NaN,3726241
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Gravel and Crushed Stone",52517,"Mineral Products",5,2020,NaN,118062
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Dolomite",52518,"Mineral Products",5,2020,NaN,20446
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Magnesium Carbonate",52519,"Mineral Products",5,2020,NaN,3072822
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Gypsum",52520,"Mineral Products",5,2020,NaN,1709596
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Limestone",52521,"Mineral Products",5,2020,NaN,9586
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Quicklime",52522,"Mineral Products",5,2020,NaN,97238
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Cement",52523,"Mineral Products",5,2020,NaN,291852
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Mica",52525,"Mineral Products",5,2020,NaN,516799
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Soapstone",52526,"Mineral Products",5,2020,NaN,26779604
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Feldspar",52529,"Mineral Products",5,2020,NaN,86037
+"Salt; sulphur; earths, stone; plastering materials, lime and cement",525,"Other Mineral",52530,"Mineral Products",5,2020,NaN,4047013
+"Ores, slag and ash",526,"Iron Ore",52601,"Mineral Products",5,2020,NaN,21256931
+"Ores, slag and ash",526,"Manganese Ore",52602,"Mineral Products",5,2020,NaN,10444
+"Ores, slag and ash",526,"Copper Ore",52603,"Mineral Products",5,2020,NaN,323120001
+"Ores, slag and ash",526,"Nickel Ore",52604,"Mineral Products",5,2020,NaN,12309
+"Ores, slag and ash",526,"Aluminium Ore",52606,"Mineral Products",5,2020,NaN,948892
+"Ores, slag and ash",526,"Lead Ore",52607,"Mineral Products",5,2020,NaN,205683577
+"Ores, slag and ash",526,"Uranium and Thorium Ore",52612,"Mineral Products",5,2020,NaN,800815
+"Ores, slag and ash",526,"Molybdenum Ore",52613,"Mineral Products",5,2020,NaN,76466215
+"Ores, slag and ash",526,"Titanium Ore",52614,"Mineral Products",5,2020,NaN,13232237
+"Ores, slag and ash",526,"Niobium, Tantalum, Vanadium and Zirconium Ore",52615,"Mineral Products",5,2020,NaN,4454790
+"Ores, slag and ash",526,"Precious Metal Ore",52616,"Mineral Products",5,2020,NaN,18000
+"Ores, slag and ash",526,"Slag Dross",52619,"Mineral Products",5,2020,NaN,27150
+"Ores, slag and ash",526,"Non-Iron and Steel Slag, Ash and Residues",52620,"Mineral Products",5,2020,NaN,1000274
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Coal Briquettes",52701,"Mineral Products",5,2020,NaN,25717798
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Lignite",52702,"Mineral Products",5,2020,NaN,242881
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Coke",52704,"Mineral Products",5,2020,NaN,125611
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Non-Petroleum Gas",52705,"Mineral Products",5,2020,NaN,9950
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Tar",52706,"Mineral Products",5,2020,NaN,24840
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Coal Tar Oil",52707,"Mineral Products",5,2020,NaN,8090829
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Crude Petroleum",52709,"Mineral Products",5,2020,NaN,6760934244
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Refined Petroleum",52710,"Mineral Products",5,2020,NaN,182903881
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Petroleum Gas",52711,"Mineral Products",5,2020,NaN,2440898413
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Petroleum Jelly",52712,"Mineral Products",5,2020,NaN,7547922
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Petroleum Coke",52713,"Mineral Products",5,2020,NaN,294543528
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Asphalt",52714,"Mineral Products",5,2020,NaN,638336
+"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",527,"Asphalt Mixtures",52715,"Mineral Products",5,2020,NaN,2760144
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Halogens",62801,"Chemical Products",6,2020,NaN,5305441
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sulfur",62802,"Chemical Products",6,2020,NaN,116720
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Carbon",62803,"Chemical Products",6,2020,NaN,34074425
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Hydrogen",62804,"Chemical Products",6,2020,NaN,88353182
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Alkaline Metals",62805,"Chemical Products",6,2020,NaN,6561058
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Hydrochloric Acid",62806,"Chemical Products",6,2020,NaN,2414107
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sulfuric Acid",62807,"Chemical Products",6,2020,NaN,32110
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Nitric Acids",62808,"Chemical Products",6,2020,NaN,49937
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Phosphoric Acid",62809,"Chemical Products",6,2020,NaN,186800
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Boron",62810,"Chemical Products",6,2020,NaN,44384005
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Other Inorganic Acids",62811,"Chemical Products",6,2020,NaN,28708648
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Halides",62812,"Chemical Products",6,2020,NaN,4613692
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Ammonia",62814,"Chemical Products",6,2020,NaN,308934
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sodium or Potassium Peroxides",62815,"Chemical Products",6,2020,NaN,2985080
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Magnesium Hydroxide and Peroxide",62816,"Chemical Products",6,2020,NaN,266908
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Zinc Oxide and Peroxide",62817,"Chemical Products",6,2020,NaN,1229010
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Aluminium Oxide",62818,"Chemical Products",6,2020,NaN,59120920
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Manganese Oxides",62820,"Chemical Products",6,2020,NaN,976716
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Iron Oxides and Hydroxides",62821,"Chemical Products",6,2020,NaN,3771485
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Cobalt Oxides and Hydroxides",62822,"Chemical Products",6,2020,NaN,36346
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Titanium Oxides",62823,"Chemical Products",6,2020,NaN,357411
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Inorganic Salts",62825,"Chemical Products",6,2020,NaN,26310602
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Fluorides",62826,"Chemical Products",6,2020,NaN,3728773
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Chlorides",62827,"Chemical Products",6,2020,NaN,9537471
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Hypochlorites",62828,"Chemical Products",6,2020,NaN,692275
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Chlorates and Perchlorates",62829,"Chemical Products",6,2020,NaN,1857488
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sulfides",62830,"Chemical Products",6,2020,NaN,220246
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sulfites",62832,"Chemical Products",6,2020,NaN,71815
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Sulfates",62833,"Chemical Products",6,2020,NaN,16543236
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Nitrites and Nitrates",62834,"Chemical Products",6,2020,NaN,2630463
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Phosphinates and Phosphonates",62835,"Chemical Products",6,2020,NaN,5258296
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Carbonates",62836,"Chemical Products",6,2020,NaN,44614973
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Cyanides",62837,"Chemical Products",6,2020,NaN,116949
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Silicates",62839,"Chemical Products",6,2020,NaN,2772951
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Borates",62840,"Chemical Products",6,2020,NaN,140496407
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Oxometallic or Peroxometallic Acid Salts",62841,"Chemical Products",6,2020,NaN,4150615
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Other Inorganic Acids Salts",62842,"Chemical Products",6,2020,NaN,17483127
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Precious Metal Compounds",62843,"Chemical Products",6,2020,NaN,14070393
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Radioactive Chemicals",62844,"Chemical Products",6,2020,NaN,16823107
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Other Isotopes",62845,"Chemical Products",6,2020,NaN,39742718
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Rare-Earth Metal Compounds",62846,"Chemical Products",6,2020,NaN,98607432
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Hydrogen peroxide",62847,"Chemical Products",6,2020,NaN,700598
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Carbides",62849,"Chemical Products",6,2020,NaN,1993328
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Hydrides and other anions",62850,"Chemical Products",6,2020,NaN,29567773
+"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",628,"Other inorganic compounds",62853,"Chemical Products",6,2020,NaN,4641761
+"Organic chemicals",629,"Acyclic Hydrocarbons",62901,"Chemical Products",6,2020,NaN,365725242
+"Organic chemicals",629,"Cyclic Hydrocarbons",62902,"Chemical Products",6,2020,NaN,45650752
+"Organic chemicals",629,"Halogenated Hydrocarbons",62903,"Chemical Products",6,2020,NaN,86379380
+"Organic chemicals",629,"Sulfonated, Nitrated or Nitrosated Hydrocarbons",62904,"Chemical Products",6,2020,NaN,8020867
+"Organic chemicals",629,"Acyclic Alcohols",62905,"Chemical Products",6,2020,NaN,384052921
+"Organic chemicals",629,"Cyclic Alcohols",62906,"Chemical Products",6,2020,NaN,10294504
+"Organic chemicals",629,"Phenols",62907,"Chemical Products",6,2020,NaN,56335163
+"Organic chemicals",629,"Phenol Derivatives",62908,"Chemical Products",6,2020,NaN,9992788
+"Organic chemicals",629,"Ethers",62909,"Chemical Products",6,2020,NaN,97239556
+"Organic chemicals",629,"Epoxides",62910,"Chemical Products",6,2020,NaN,93501950
+"Organic chemicals",629,"Acetals and Hemiacetals",62911,"Chemical Products",6,2020,NaN,298857
+"Organic chemicals",629,"Aldehydes",62912,"Chemical Products",6,2020,NaN,12106539
+"Organic chemicals",629,"Aldehyde Derivatives",62913,"Chemical Products",6,2020,NaN,9172
+"Organic chemicals",629,"Ketones and Quinones",62914,"Chemical Products",6,2020,NaN,21808230
+"Organic chemicals",629,"Saturated Acyclic Monocarboxylic Acids",62915,"Chemical Products",6,2020,NaN,60803030
+"Organic chemicals",629,"Unsaturated Acyclic Monocarboxylic Acids",62916,"Chemical Products",6,2020,NaN,13621471
+"Organic chemicals",629,"Polycarboxylic Acids",62917,"Chemical Products",6,2020,NaN,28666346
+"Organic chemicals",629,"Carboxylic Acids",62918,"Chemical Products",6,2020,NaN,14922087
+"Organic chemicals",629,"Phosphoric Esters and Salts",62919,"Chemical Products",6,2020,NaN,3960982
+"Organic chemicals",629,"Other Esters",62920,"Chemical Products",6,2020,NaN,16769472
+"Organic chemicals",629,"Amine Compounds",62921,"Chemical Products",6,2020,NaN,166802271
+"Organic chemicals",629,"Oxygen Amino Compounds",62922,"Chemical Products",6,2020,NaN,59236211
+"Organic chemicals",629,"Quaternary Ammonium Salts and Hydroxides",62923,"Chemical Products",6,2020,NaN,19727505
+"Organic chemicals",629,"Carboxyamide Compounds",62924,"Chemical Products",6,2020,NaN,7656008
+"Organic chemicals",629,"Carboxyimide Compounds",62925,"Chemical Products",6,2020,NaN,17918504
+"Organic chemicals",629,"Nitrile Compounds",62926,"Chemical Products",6,2020,NaN,187711080
+"Organic chemicals",629,"Diazo, Azo or Aoxy Compounds",62927,"Chemical Products",6,2020,NaN,71245
+"Organic chemicals",629,"Hydrazine or Hydroxylamine Derivatives",62928,"Chemical Products",6,2020,NaN,2310593
+"Organic chemicals",629,"Other Nitrogen Compounds",62929,"Chemical Products",6,2020,NaN,6296941
+"Organic chemicals",629,"Organo-Sulfur Compounds",62930,"Chemical Products",6,2020,NaN,57848970
+"Organic chemicals",629,"Other Organo-Inorganic Compounds",62931,"Chemical Products",6,2020,NaN,55777940
+"Organic chemicals",629,"Oxygen Heterocyclic Compounds",62932,"Chemical Products",6,2020,NaN,25990420
+"Organic chemicals",629,"Nitrogen Heterocyclic Compounds",62933,"Chemical Products",6,2020,NaN,258857235
+"Organic chemicals",629,"Nucleic Acids",62934,"Chemical Products",6,2020,NaN,14690470
+"Organic chemicals",629,"Sulfonamides",62935,"Chemical Products",6,2020,NaN,8152326
+"Organic chemicals",629,"Vitamins",62936,"Chemical Products",6,2020,NaN,44274481
+"Organic chemicals",629,"Hormones",62937,"Chemical Products",6,2020,NaN,8648827
+"Organic chemicals",629,"Glycosides",62938,"Chemical Products",6,2020,NaN,2806935
+"Organic chemicals",629,"Vegetable Alkaloids",62939,"Chemical Products",6,2020,NaN,575354
+"Organic chemicals",629,"Chemically Pure Sugars",62940,"Chemical Products",6,2020,NaN,8586813
+"Organic chemicals",629,"Antibiotics",62941,"Chemical Products",6,2020,NaN,58841546
+"Organic chemicals",629,"Other Organic Compounds",62942,"Chemical Products",6,2020,NaN,10572945
+"Pharmaceutical products",630,"Glands and Other Organs",63001,"Chemical Products",6,2020,NaN,39815092
+"Pharmaceutical products",630,"Blood, antisera, vaccines, toxins and cultures",63002,"Chemical Products",6,2020,NaN,1518871853
+"Pharmaceutical products",630,"Unpackaged Medicaments",63003,"Chemical Products",6,2020,NaN,2516721
+"Pharmaceutical products",630,"Packaged Medicaments",63004,"Chemical Products",6,2020,NaN,2187707339
+"Pharmaceutical products",630,"Bandages",63005,"Chemical Products",6,2020,NaN,33143638
+"Pharmaceutical products",630,"Special Pharmaceuticals",63006,"Chemical Products",6,2020,NaN,175374330
+"Fertilizers",631,"Animal or Vegetable Fertilizers",63101,"Chemical Products",6,2020,NaN,567893
+"Fertilizers",631,"Nitrogenous Fertilizers",63102,"Chemical Products",6,2020,NaN,459919
+"Fertilizers",631,"Phosphatic Fertilizers",63103,"Chemical Products",6,2020,NaN,24672
+"Fertilizers",631,"Potassic Fertilizers",63104,"Chemical Products",6,2020,NaN,200442558
+"Fertilizers",631,"Mixed Mineral or Chemical Fertilizers",63105,"Chemical Products",6,2020,NaN,13237060
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Vegetable Tanning Extracts",63201,"Chemical Products",6,2020,NaN,72252
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Synthetic Tanning Extracts",63202,"Chemical Products",6,2020,NaN,889665
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Vegetable or Animal Dyes",63203,"Chemical Products",6,2020,NaN,2204435
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Synthetic Coloring Matter",63204,"Chemical Products",6,2020,NaN,54027310
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Lake Pigments",63205,"Chemical Products",6,2020,NaN,2267195
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Other Coloring Matter",63206,"Chemical Products",6,2020,NaN,69788222
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Prepared Pigments",63207,"Chemical Products",6,2020,NaN,58617750
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Nonaqueous Paints",63208,"Chemical Products",6,2020,NaN,45588067
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Aqueous Paints",63209,"Chemical Products",6,2020,NaN,26933174
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Other Paints",63210,"Chemical Products",6,2020,NaN,3845953
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Prepared Paint Driers",63211,"Chemical Products",6,2020,NaN,438261
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Nonaqueous Pigments",63212,"Chemical Products",6,2020,NaN,9193677
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Artistry Paints",63213,"Chemical Products",6,2020,NaN,1796846
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Glaziers Putty",63214,"Chemical Products",6,2020,NaN,51617909
+"Tanning or dyeing extracts; tannins and their derivatives; dyes, pigments and other colouring matter; paints, varnishes; putty, other mastics; inks",632,"Ink",63215,"Chemical Products",6,2020,NaN,18787357
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Essential Oils",63301,"Chemical Products",6,2020,NaN,69118929
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Scented Mixtures",63302,"Chemical Products",6,2020,NaN,62484573
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Perfumes",63303,"Chemical Products",6,2020,NaN,12423732
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Beauty Products",63304,"Chemical Products",6,2020,NaN,371578169
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Hair Products",63305,"Chemical Products",6,2020,NaN,11699337
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Dental Products",63306,"Chemical Products",6,2020,NaN,24036265
+"Essential oils and resinoids; perfumery, cosmetic or toilet preparations",633,"Shaving Products",63307,"Chemical Products",6,2020,NaN,66025710
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Soap",63401,"Chemical Products",6,2020,NaN,27329922
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Cleaning Products",63402,"Chemical Products",6,2020,NaN,202502525
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Lubricating Products",63403,"Chemical Products",6,2020,NaN,189298097
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Waxes",63404,"Chemical Products",6,2020,NaN,74061000
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Polishes and Creams",63405,"Chemical Products",6,2020,NaN,50905904
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Candles",63406,"Chemical Products",6,2020,NaN,2634074
+"Soap, organic surface-active agents; washing, lubricating, polishing or scouring preparations; artificial or prepared waxes, candles and similar articles, modelling pastes, "dental waxes" and dental preparations with a basis of plaster",634,"Pastes and Waxes",63407,"Chemical Products",6,2020,NaN,984068
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Casein",63501,"Chemical Products",6,2020,NaN,1121813
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Water Soluble Proteins",63502,"Chemical Products",6,2020,NaN,88133126
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Gelatin",63503,"Chemical Products",6,2020,NaN,7505955
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Peptones",63504,"Chemical Products",6,2020,NaN,37229499
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Dextrins",63505,"Chemical Products",6,2020,NaN,42102629
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Glues",63506,"Chemical Products",6,2020,NaN,103074714
+"Albuminoidal substances; modified starches; glues; enzymes",635,"Enzymes",63507,"Chemical Products",6,2020,NaN,57115915
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Propellant Powders",63601,"Chemical Products",6,2020,NaN,462917
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Prepared Explosives",63602,"Chemical Products",6,2020,NaN,6765557
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Detonating Fuses",63603,"Chemical Products",6,2020,NaN,17828785
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Fireworks",63604,"Chemical Products",6,2020,NaN,1888145
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Matches",63605,"Chemical Products",6,2020,NaN,2874
+"Explosives; pyrotechnic products; matches; pyrophoric alloys; certain combustible preparations",636,"Pyrophoric Alloys",63606,"Chemical Products",6,2020,NaN,7906147
+"Photographic or cinematographic goods",637,"Photographic Plates",63701,"Chemical Products",6,2020,NaN,95370183
+"Photographic or cinematographic goods",637,"Photographic Film",63702,"Chemical Products",6,2020,NaN,312761606
+"Photographic or cinematographic goods",637,"Photographic Paper",63703,"Chemical Products",6,2020,NaN,15479335
+"Photographic or cinematographic goods",637,"Undeveloped Exposed Photographic Material",63704,"Chemical Products",6,2020,NaN,215510
+"Photographic or cinematographic goods",637,"Developed Exposed Photographic Material",63705,"Chemical Products",6,2020,NaN,10789843
+"Photographic or cinematographic goods",637,"Photographic Chemicals",63707,"Chemical Products",6,2020,NaN,39340750
+"Chemical products n.e.s.",638,"Artificial Graphite",63801,"Chemical Products",6,2020,NaN,13029112
+"Chemical products n.e.s.",638,"Activated Carbon",63802,"Chemical Products",6,2020,NaN,27529795
+"Chemical products n.e.s.",638,"Tall Oil",63803,"Chemical Products",6,2020,NaN,7572892
+"Chemical products n.e.s.",638,"Wood Pulp Lyes",63804,"Chemical Products",6,2020,NaN,19083079
+"Chemical products n.e.s.",638,"Turpentine",63805,"Chemical Products",6,2020,NaN,752852
+"Chemical products n.e.s.",638,"Rosin",63806,"Chemical Products",6,2020,NaN,26615989
+"Chemical products n.e.s.",638,"Wood Tar, Oils and Pitch",63807,"Chemical Products",6,2020,NaN,9816905
+"Chemical products n.e.s.",638,"Pesticides",63808,"Chemical Products",6,2020,NaN,123853691
+"Chemical products n.e.s.",638,"Dyeing Finishing Agents",63809,"Chemical Products",6,2020,NaN,48860820
+"Chemical products n.e.s.",638,"Metal Pickling Preparations",63810,"Chemical Products",6,2020,NaN,14734461
+"Chemical products n.e.s.",638,"Antiknock",63811,"Chemical Products",6,2020,NaN,283942358
+"Chemical products n.e.s.",638,"Prepared Rubber Accelerators",63812,"Chemical Products",6,2020,NaN,32810418
+"Chemical products n.e.s.",638,"Fire Extinguishers Preparations",63813,"Chemical Products",6,2020,NaN,791336
+"Chemical products n.e.s.",638,"Organic Composite Solvents",63814,"Chemical Products",6,2020,NaN,13312340
+"Chemical products n.e.s.",638,"Reaction and Catalytic Products",63815,"Chemical Products",6,2020,NaN,511432102
+"Chemical products n.e.s.",638,"Refractory Cements",63816,"Chemical Products",6,2020,NaN,3714348
+"Chemical products n.e.s.",638,"Alkylbenzenes and Alkylnaphthalenes",63817,"Chemical Products",6,2020,NaN,17484914
+"Chemical products n.e.s.",638,"Disc Chemicals for Electronics",63818,"Chemical Products",6,2020,NaN,107639915
+"Chemical products n.e.s.",638,"Hydraulic Brake Fluid",63819,"Chemical Products",6,2020,NaN,1870141
+"Chemical products n.e.s.",638,"Antifreeze",63820,"Chemical Products",6,2020,NaN,3643779
+"Chemical products n.e.s.",638,"Micro-Organism Culture Preparations",63821,"Chemical Products",6,2020,NaN,129420448
+"Chemical products n.e.s.",638,"Laboratory Reagents",63822,"Chemical Products",6,2020,NaN,632518474
+"Chemical products n.e.s.",638,"Industrial Fatty Acids, Oils and Alcohols",63823,"Chemical Products",6,2020,NaN,8302776
+"Chemical products n.e.s.",638,"Prepr binder for foundry",63824,"Chemical Products",6,2020,NaN,426539568
+"Chemical products n.e.s.",638,"Residual products of the chemical or allied industries",63825,"Chemical Products",6,2020,NaN,694750
+"Chemical products n.e.s.",638,"Biodiesel and mixtures thereof",63826,"Chemical Products",6,2020,NaN,4936617
+"Plastics and articles thereof",739,"Ethylene Polymers",73901,"Plastics and Rubbers",7,2020,NaN,1176551608
+"Plastics and articles thereof",739,"Propylene Polymers",73902,"Plastics and Rubbers",7,2020,NaN,167691789
+"Plastics and articles thereof",739,"Styrene Polymers",73903,"Plastics and Rubbers",7,2020,NaN,137203444
+"Plastics and articles thereof",739,"Vinyl Chloride Polymers",73904,"Plastics and Rubbers",7,2020,NaN,253942563
+"Plastics and articles thereof",739,"Other Vinyl Polymers",73905,"Plastics and Rubbers",7,2020,NaN,69036345
+"Plastics and articles thereof",739,"Acrylic Polymers",73906,"Plastics and Rubbers",7,2020,NaN,112801280
+"Plastics and articles thereof",739,"Polyacetals",73907,"Plastics and Rubbers",7,2020,NaN,750821701
+"Plastics and articles thereof",739,"Polyamides",73908,"Plastics and Rubbers",7,2020,NaN,272314626
+"Plastics and articles thereof",739,"Amino-resins",73909,"Plastics and Rubbers",7,2020,NaN,84546148
+"Plastics and articles thereof",739,"Silicone",73910,"Plastics and Rubbers",7,2020,NaN,135225700
+"Plastics and articles thereof",739,"Petroleum Resins",73911,"Plastics and Rubbers",7,2020,NaN,194769987
+"Plastics and articles thereof",739,"Cellulose",73912,"Plastics and Rubbers",7,2020,NaN,216512279
+"Plastics and articles thereof",739,"Natural Polymers",73913,"Plastics and Rubbers",7,2020,NaN,20983163
+"Plastics and articles thereof",739,"Polymer Ion-Exchangers",73914,"Plastics and Rubbers",7,2020,NaN,26971053
+"Plastics and articles thereof",739,"Scrap Plastic",73915,"Plastics and Rubbers",7,2020,NaN,5811684
+"Plastics and articles thereof",739,"Monofilament",73916,"Plastics and Rubbers",7,2020,NaN,10291913
+"Plastics and articles thereof",739,"Plastic Pipes",73917,"Plastics and Rubbers",7,2020,NaN,107369243
+"Plastics and articles thereof",739,"Plastic Floor Coverings",73918,"Plastics and Rubbers",7,2020,NaN,3160295
+"Plastics and articles thereof",739,"Self-adhesive Plastics",73919,"Plastics and Rubbers",7,2020,NaN,193481062
+"Plastics and articles thereof",739,"Raw Plastic Sheeting",73920,"Plastics and Rubbers",7,2020,NaN,492265791
+"Plastics and articles thereof",739,"Other Plastic Sheetings",73921,"Plastics and Rubbers",7,2020,NaN,228432869
+"Plastics and articles thereof",739,"Plastic Wash Basins",73922,"Plastics and Rubbers",7,2020,NaN,315511
+"Plastics and articles thereof",739,"Plastic Lids",73923,"Plastics and Rubbers",7,2020,NaN,91354698
+"Plastics and articles thereof",739,"Plastic Housewares",73924,"Plastics and Rubbers",7,2020,NaN,5387212
+"Plastics and articles thereof",739,"Plastic Building Materials",73925,"Plastics and Rubbers",7,2020,NaN,16142042
+"Plastics and articles thereof",739,"Other Plastic Products",73926,"Plastics and Rubbers",7,2020,NaN,357902315
+"Rubber and articles thereof",740,"Rubber",74001,"Plastics and Rubbers",7,2020,NaN,596347
+"Rubber and articles thereof",740,"Synthetic Rubber",74002,"Plastics and Rubbers",7,2020,NaN,179971017
+"Rubber and articles thereof",740,"Reclaimed Rubber",74003,"Plastics and Rubbers",7,2020,NaN,129607
+"Rubber and articles thereof",740,"Scrap Rubber",74004,"Plastics and Rubbers",7,2020,NaN,2070851
+"Rubber and articles thereof",740,"Compounded Unvulcanised Rubber",74005,"Plastics and Rubbers",7,2020,NaN,50483531
+"Rubber and articles thereof",740,"Unvulcanised Rubber Products",74006,"Plastics and Rubbers",7,2020,NaN,2270572
+"Rubber and articles thereof",740,"Rubber Thread",74007,"Plastics and Rubbers",7,2020,NaN,550993
+"Rubber and articles thereof",740,"Rubber Sheets",74008,"Plastics and Rubbers",7,2020,NaN,10881449
+"Rubber and articles thereof",740,"Rubber Pipes",74009,"Plastics and Rubbers",7,2020,NaN,41614796
+"Rubber and articles thereof",740,"Rubber Belting",74010,"Plastics and Rubbers",7,2020,NaN,9376234
+"Rubber and articles thereof",740,"Rubber Tires",74011,"Plastics and Rubbers",7,2020,NaN,44767349
+"Rubber and articles thereof",740,"Used Rubber Tires",74012,"Plastics and Rubbers",7,2020,NaN,179246
+"Rubber and articles thereof",740,"Rubber Inner Tubes",74013,"Plastics and Rubbers",7,2020,NaN,25560
+"Rubber and articles thereof",740,"Pharmaceutical Rubber Products",74014,"Plastics and Rubbers",7,2020,NaN,1743136
+"Rubber and articles thereof",740,"Rubber Apparel",74015,"Plastics and Rubbers",7,2020,NaN,5880672
+"Rubber and articles thereof",740,"Other Rubber Products",74016,"Plastics and Rubbers",7,2020,NaN,107954962
+"Rubber and articles thereof",740,"Hard Rubber",74017,"Plastics and Rubbers",7,2020,NaN,528754
+"Raw hides and skins (other than furskins) and leather",841,"Equine and Bovine Hides",84101,"Animal Hides",8,2020,NaN,370099706
+"Raw hides and skins (other than furskins) and leather",841,"Sheep Hides",84102,"Animal Hides",8,2020,NaN,3396673
+"Raw hides and skins (other than furskins) and leather",841,"Other Hides and Skins",84103,"Animal Hides",8,2020,NaN,9692163
+"Raw hides and skins (other than furskins) and leather",841,"Tanned Equine and Bovine Hides",84104,"Animal Hides",8,2020,NaN,79874865
+"Raw hides and skins (other than furskins) and leather",841,"Tanned Sheep Hides",84105,"Animal Hides",8,2020,NaN,11894
+"Raw hides and skins (other than furskins) and leather",841,"Tanned Goat Hides",84106,"Animal Hides",8,2020,NaN,50000
+"Raw hides and skins (other than furskins) and leather",841,"Leather of Other Animals",84107,"Animal Hides",8,2020,NaN,4373449
+"Raw hides and skins (other than furskins) and leather",841,"Leather further prepared after tanning or crusting of sheep or lamb",84112,"Animal Hides",8,2020,NaN,52140
+"Raw hides and skins (other than furskins) and leather",841,"Leather further prepared after tanning or crusting of animals (other than ovine)",84113,"Animal Hides",8,2020,NaN,440738
+"Raw hides and skins (other than furskins) and leather",841,"Composition leather with a basis of leather or leather fibre",84115,"Animal Hides",8,2020,NaN,17770
+"Articles of leather; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",842,"Saddlery",84201,"Animal Hides",8,2020,NaN,400597
+"Articles of leather; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",842,"Trunks and Cases",84202,"Animal Hides",8,2020,NaN,25635806
+"Articles of leather; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",842,"Leather Apparel",84203,"Animal Hides",8,2020,NaN,1727286
+"Articles of leather; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",842,"Other Leather Articles",84205,"Animal Hides",8,2020,NaN,290154
+"Articles of leather; saddlery and harness; travel goods, handbags and similar containers; articles of animal gut (other than silk-worm gut)",842,"Articles of Gut",84206,"Animal Hides",8,2020,NaN,242326
+"Furskins and artificial fur; manufactures thereof",843,"Raw Furskins",84301,"Animal Hides",8,2020,NaN,1675680
+"Furskins and artificial fur; manufactures thereof",843,"Tanned Furskins",84302,"Animal Hides",8,2020,NaN,82911
+"Furskins and artificial fur; manufactures thereof",843,"Furskin Apparel",84303,"Animal Hides",8,2020,NaN,90259
+"Furskins and artificial fur; manufactures thereof",843,"Artificial Fur",84304,"Animal Hides",8,2020,NaN,7200
+"Wood and articles of wood; wood charcoal",944,"Fuel Wood",94401,"Wood Products",9,2020,NaN,2427918
+"Wood and articles of wood; wood charcoal",944,"Rough Wood",94403,"Wood Products",9,2020,NaN,705427258
+"Wood and articles of wood; wood charcoal",944,"Wood Wool",94405,"Wood Products",9,2020,NaN,13500
+"Wood and articles of wood; wood charcoal",944,"Sawn Wood",94407,"Wood Products",9,2020,NaN,823799733
+"Wood and articles of wood; wood charcoal",944,"Veneer Sheets",94408,"Wood Products",9,2020,NaN,4661496
+"Wood and articles of wood; wood charcoal",944,"Shaped Wood",94409,"Wood Products",9,2020,NaN,1382094
+"Wood and articles of wood; wood charcoal",944,"Particle Board",94410,"Wood Products",9,2020,NaN,139972
+"Wood and articles of wood; wood charcoal",944,"Wood Fiberboard",94411,"Wood Products",9,2020,NaN,537173
+"Wood and articles of wood; wood charcoal",944,"Plywood",94412,"Wood Products",9,2020,NaN,682719
+"Wood and articles of wood; wood charcoal",944,"Densified Wood",94413,"Wood Products",9,2020,NaN,27550
+"Wood and articles of wood; wood charcoal",944,"Wood Crates",94415,"Wood Products",9,2020,NaN,2039311
+"Wood and articles of wood; wood charcoal",944,"Wood Barrels",94416,"Wood Products",9,2020,NaN,3002913
+"Wood and articles of wood; wood charcoal",944,"Wooden Tool Handles",94417,"Wood Products",9,2020,NaN,130740
+"Wood and articles of wood; wood charcoal",944,"Wood Carpentry",94418,"Wood Products",9,2020,NaN,1050283
+"Wood and articles of wood; wood charcoal",944,"Wood Kitchenware",94419,"Wood Products",9,2020,NaN,668965
+"Wood and articles of wood; wood charcoal",944,"Wood Ornaments",94420,"Wood Products",9,2020,NaN,175386
+"Wood and articles of wood; wood charcoal",944,"Other Wood Articles",94421,"Wood Products",9,2020,NaN,534379
+"Cork and articles of cork",945,"Raw Cork",94501,"Wood Products",9,2020,NaN,17847
+"Cork and articles of cork",945,"Debacked Cork",94502,"Wood Products",9,2020,NaN,8446
+"Cork and articles of cork",945,"Agglomerated Cork",94504,"Wood Products",9,2020,NaN,50928
+"Manufactures of straw, esparto or other plaiting materials; basketware and wickerwork",946,"Plaiting Products",94601,"Wood Products",9,2020,NaN,44590
+"Manufactures of straw, esparto or other plaiting materials; basketware and wickerwork",946,"Basketwork",94602,"Wood Products",9,2020,NaN,637462
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Mechanical Wood Pulp",104701,"Paper Goods",10,2020,NaN,15112593
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Dissolving Grades Chemical Woodpulp",104702,"Paper Goods",10,2020,NaN,278143038
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Sulfate Chemical Woodpulp",104703,"Paper Goods",10,2020,NaN,1000799511
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Sulfite Chemical Woodpulp",104704,"Paper Goods",10,2020,NaN,3449297
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Semi chemical Woodpulp",104705,"Paper Goods",10,2020,NaN,76995
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Recovered Paper Pulp",104706,"Paper Goods",10,2020,NaN,119742274
+"Pulp of wood or other fibrous cellulosic material; waste and scrap of paper or paperboard",1047,"Recovered Paper",104707,"Paper Goods",10,2020,NaN,769308858
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Newsprint",104801,"Paper Goods",10,2020,NaN,39325
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Uncoated Paper",104802,"Paper Goods",10,2020,NaN,11544162
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Facial Tissue",104803,"Paper Goods",10,2020,NaN,2223963
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Uncoated Kraft Paper",104804,"Paper Goods",10,2020,NaN,418782739
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Other Uncoated Paper",104805,"Paper Goods",10,2020,NaN,18051611
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Vegetable Parchment",104806,"Paper Goods",10,2020,NaN,10784906
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Composite Paper",104807,"Paper Goods",10,2020,NaN,372130
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Corrugated Paper",104808,"Paper Goods",10,2020,NaN,6735138
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Carbon Paper",104809,"Paper Goods",10,2020,NaN,35168
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Kaolin Coated Paper",104810,"Paper Goods",10,2020,NaN,114754623
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Cellulose Fibers Paper",104811,"Paper Goods",10,2020,NaN,116729987
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Paper Pulp Filter Blocks",104812,"Paper Goods",10,2020,NaN,12758
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Wallpaper",104814,"Paper Goods",10,2020,NaN,655180
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Other Carbon Paper",104816,"Paper Goods",10,2020,NaN,212824
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Letter Stock",104817,"Paper Goods",10,2020,NaN,243798
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Toilet Paper",104818,"Paper Goods",10,2020,NaN,5333130
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Paper Containers",104819,"Paper Goods",10,2020,NaN,10248961
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Paper Notebooks",104820,"Paper Goods",10,2020,NaN,1383811
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Paper Labels",104821,"Paper Goods",10,2020,NaN,13055740
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Paper Spools",104822,"Paper Goods",10,2020,NaN,84600
+"Paper and paperboard; articles of paper pulp, of paper or paperboard",1048,"Shaped Paper",104823,"Paper Goods",10,2020,NaN,11490222
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Brochures",104901,"Paper Goods",10,2020,NaN,25986473
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Newspapers",104902,"Paper Goods",10,2020,NaN,90514
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Children's Picture Books",104903,"Paper Goods",10,2020,NaN,1681733
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Sheet Music",104904,"Paper Goods",10,2020,NaN,38226
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Maps",104905,"Paper Goods",10,2020,NaN,5681099
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Architectural Plans",104906,"Paper Goods",10,2020,NaN,177298
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Postage Stamps",104907,"Paper Goods",10,2020,NaN,3389461
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Decals",104908,"Paper Goods",10,2020,NaN,3804432
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Postcards",104909,"Paper Goods",10,2020,NaN,76816
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Calendars",104910,"Paper Goods",10,2020,NaN,181602
+"Printed books, newspapers, pictures and other products of the printing industry; manuscripts, typescripts and plans",1049,"Other Printed Material",104911,"Paper Goods",10,2020,NaN,45287760
+"Silk",1150,"Raw Silk",115002,"Textiles",11,2020,NaN,10342
+"Silk",1150,"Retail Silk Yarn",115006,"Textiles",11,2020,NaN,3691
+"Silk",1150,"Silk Fabrics",115007,"Textiles",11,2020,NaN,135231
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Wool",115101,"Textiles",11,2020,NaN,2494496
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Wool or Animal Hair Waste",115103,"Textiles",11,2020,NaN,83693
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Prepared Wool or Animal Hair",115105,"Textiles",11,2020,NaN,12184
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Non-Retail Combed Wool Yarn",115107,"Textiles",11,2020,NaN,5924
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Retail Wool or Animal Hair Yarn",115109,"Textiles",11,2020,NaN,22400
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Carded Wool or Animal Hair Fabric",115111,"Textiles",11,2020,NaN,209105
+"Wool, fine or coarse animal hair; horsehair yarn and woven fabric",1151,"Combed Wool or Animal Hair Fabric",115112,"Textiles",11,2020,NaN,67560
+"Cotton",1152,"Raw Cotton",115201,"Textiles",11,2020,NaN,1821317361
+"Cotton",1152,"Cotton Waste",115202,"Textiles",11,2020,NaN,2890
+"Cotton",1152,"Prepared Cotton",115203,"Textiles",11,2020,NaN,325305
+"Cotton",1152,"Non-Retail Pure Cotton Yarn",115205,"Textiles",11,2020,NaN,710362
+"Cotton",1152,"Light Pure Woven Cotton",115208,"Textiles",11,2020,NaN,249735
+"Cotton",1152,"Heavy Pure Woven Cotton",115209,"Textiles",11,2020,NaN,513446
+"Cotton",1152,"Light Mixed Woven Cotton",115210,"Textiles",11,2020,NaN,95499
+"Cotton",1152,"Heavy Mixed Woven Cotton",115211,"Textiles",11,2020,NaN,289967
+"Cotton",1152,"Other Cotton Fabrics",115212,"Textiles",11,2020,NaN,110835
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Flax Fibers",115301,"Textiles",11,2020,NaN,4700
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Hemp Fibers",115302,"Textiles",11,2020,NaN,9500
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Jute and Other Textile Fibers",115303,"Textiles",11,2020,NaN,3443
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Other Vegetable Fibers Yarn",115308,"Textiles",11,2020,NaN,4600
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Flax Woven Fabric",115309,"Textiles",11,2020,NaN,13088
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Jute Woven Fabric",115310,"Textiles",11,2020,NaN,4500
+"Vegetable textile fibres; paper yarn and woven fabrics of paper yarn",1153,"Other Vegetable Fibers Fabric",115311,"Textiles",11,2020,NaN,6865
+"Man-made filaments",1154,"Artificial Filament Sewing Thread",115401,"Textiles",11,2020,NaN,828883
+"Man-made filaments",1154,"Non-Retail Synthetic Filament Yarn",115402,"Textiles",11,2020,NaN,45303739
+"Man-made filaments",1154,"Non-Retail Artificial Filament Yarn",115403,"Textiles",11,2020,NaN,16930468
+"Man-made filaments",1154,"Synthetic Monofilament",115404,"Textiles",11,2020,NaN,11622904
+"Man-made filaments",1154,"Retail Artificial Filament Yarn",115406,"Textiles",11,2020,NaN,219816
+"Man-made filaments",1154,"Synthetic Filament Yarn Woven Fabric",115407,"Textiles",11,2020,NaN,8497482
+"Man-made filaments",1154,"Artificial Filament Yarn Woven Fabric",115408,"Textiles",11,2020,NaN,253453
+"Man-made staple fibres",1155,"Synthetic Filament Tow",115501,"Textiles",11,2020,NaN,3027460
+"Man-made staple fibres",1155,"Artificial Filament Tow",115502,"Textiles",11,2020,NaN,2452784
+"Man-made staple fibres",1155,"Unprocessed Synthetic Staple Fibers",115503,"Textiles",11,2020,NaN,22667990
+"Man-made staple fibres",1155,"Unprocessed Artificial Staple Fibers",115504,"Textiles",11,2020,NaN,2394506
+"Man-made staple fibres",1155,"Artificial Fibers Waste",115505,"Textiles",11,2020,NaN,16114
+"Man-made staple fibres",1155,"Processed Synthetic Staple Fibers",115506,"Textiles",11,2020,NaN,407618
+"Man-made staple fibres",1155,"Non-Retail Artificial Staple Fibers Sewing Thread",115508,"Textiles",11,2020,NaN,6686
+"Man-made staple fibres",1155,"Non-Retail Synthetic Staple Fibers Yarn",115509,"Textiles",11,2020,NaN,676988
+"Man-made staple fibres",1155,"Synthetic Fabrics",115512,"Textiles",11,2020,NaN,15952479
+"Man-made staple fibres",1155,"Light Synthetic Cotton Fabrics",115513,"Textiles",11,2020,NaN,135967
+"Man-made staple fibres",1155,"Heavy Synthetic Cotton Fabrics",115514,"Textiles",11,2020,NaN,12756
+"Man-made staple fibres",1155,"Other Synthetic Fabrics",115515,"Textiles",11,2020,NaN,420026
+"Man-made staple fibres",1155,"Woven Fabric of Synthetic Staple Fibers",115516,"Textiles",11,2020,NaN,218283
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Wadding",115601,"Textiles",11,2020,NaN,6474680
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Felt",115602,"Textiles",11,2020,NaN,2613565
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Non-woven Textiles",115603,"Textiles",11,2020,NaN,166581958
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Rubber Textiles",115604,"Textiles",11,2020,NaN,886500
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Metallic Yarn",115605,"Textiles",11,2020,NaN,464396
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Gimp Yarn",115606,"Textiles",11,2020,NaN,841423
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Twine and Rope",115607,"Textiles",11,2020,NaN,20405557
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Netting",115608,"Textiles",11,2020,NaN,28648
+"Wadding, felt and nonwovens, special yarns; twine, cordage, ropes and cables and articles thereof",1156,"Other Articles of Twine and Rope",115609,"Textiles",11,2020,NaN,213402
+"Carpets and other textile floor coverings",1157,"Knotted Carpets",115701,"Textiles",11,2020,NaN,25268
+"Carpets and other textile floor coverings",1157,"Hand-Woven Rugs",115702,"Textiles",11,2020,NaN,364796
+"Carpets and other textile floor coverings",1157,"Tufted Carpets",115703,"Textiles",11,2020,NaN,2689352
+"Carpets and other textile floor coverings",1157,"Felt Carpets",115704,"Textiles",11,2020,NaN,17909
+"Carpets and other textile floor coverings",1157,"Other Carpets",115705,"Textiles",11,2020,NaN,468756
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Woven Fabrics",115801,"Textiles",11,2020,NaN,2503640
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Terry Fabric",115802,"Textiles",11,2020,NaN,10508
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Tulles and Net Fabric",115804,"Textiles",11,2020,NaN,50789
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Hand-Woven Tapestries",115805,"Textiles",11,2020,NaN,6487
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Narrow Woven Fabric",115806,"Textiles",11,2020,NaN,2983565
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Labels",115807,"Textiles",11,2020,NaN,810552
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Ornamental Trimmings",115808,"Textiles",11,2020,NaN,286676
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Metallic Fabric",115809,"Textiles",11,2020,NaN,51516
+"Fabrics; special woven fabrics, tufted textile fabrics, lace, tapestries, trimmings, embroidery",1158,"Embroidery",115810,"Textiles",11,2020,NaN,120265
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Polyamide Fabric",115902,"Textiles",11,2020,NaN,1223109
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Plastic Coated Textile Fabric",115903,"Textiles",11,2020,NaN,15468387
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Textile Wall Coverings",115905,"Textiles",11,2020,NaN,102138
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Rubber Textile Fabric",115906,"Textiles",11,2020,NaN,5575679
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Coated Textile Fabric",115907,"Textiles",11,2020,NaN,17626296
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Textile Wicks",115908,"Textiles",11,2020,NaN,903989
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Hose Piping Textiles",115909,"Textiles",11,2020,NaN,1398639
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Conveyor Belt Textiles",115910,"Textiles",11,2020,NaN,1182205
+"Textile fabrics; impregnated, coated, covered or laminated; textile articles of a kind suitable for industrial use",1159,"Technical Use Textiles",115911,"Textiles",11,2020,NaN,33147394
+"Fabrics; knitted or crocheted",1160,"Pile Fabric",116001,"Textiles",11,2020,NaN,1594807
+"Fabrics; knitted or crocheted",1160,"Light Rubberized Knitted Fabric",116002,"Textiles",11,2020,NaN,104300
+"Fabrics; knitted or crocheted",1160,"Knitted or crocheted fabrics of a width not exceeding 30 cm",116003,"Textiles",11,2020,NaN,1135734
+"Fabrics; knitted or crocheted",1160,"Knitted or crocheted fabrics of a width exceeding 30 cm",116004,"Textiles",11,2020,NaN,311205
+"Fabrics; knitted or crocheted",1160,"Warp knit fabrics (including those made on galloon knitting machines)",116005,"Textiles",11,2020,NaN,6871477
+"Fabrics; knitted or crocheted",1160,"Other knitted or crocheted fabrics.",116006,"Textiles",11,2020,NaN,689793
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Men's Coats",116101,"Textiles",11,2020,NaN,1230806
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Women's Coats",116102,"Textiles",11,2020,NaN,42997
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Men's Suits",116103,"Textiles",11,2020,NaN,1097419
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Women's Suits",116104,"Textiles",11,2020,NaN,3387845
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Men's Shirts",116105,"Textiles",11,2020,NaN,877648
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Women's Shirts",116106,"Textiles",11,2020,NaN,214536
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Men's Undergarments",116107,"Textiles",11,2020,NaN,82143
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Women's Undergarments",116108,"Textiles",11,2020,NaN,837353
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit T-shirts",116109,"Textiles",11,2020,NaN,7141316
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Sweaters",116110,"Textiles",11,2020,NaN,5443178
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Babies' Garments",116111,"Textiles",11,2020,NaN,207600
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Active Wear",116112,"Textiles",11,2020,NaN,133588
+"Apparel and clothing accessories; knitted or crocheted",1161,"Garments of Impregnated Fabric",116113,"Textiles",11,2020,NaN,713526
+"Apparel and clothing accessories; knitted or crocheted",1161,"Other Knit Garments",116114,"Textiles",11,2020,NaN,1058027
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Socks and Hosiery",116115,"Textiles",11,2020,NaN,688240
+"Apparel and clothing accessories; knitted or crocheted",1161,"Knit Gloves",116116,"Textiles",11,2020,NaN,541658
+"Apparel and clothing accessories; knitted or crocheted",1161,"Other Knit Clothing Accessories",116117,"Textiles",11,2020,NaN,238031
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Men's Coats",116201,"Textiles",11,2020,NaN,3780940
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Women's Coats",116202,"Textiles",11,2020,NaN,1371901
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Men's Suits",116203,"Textiles",11,2020,NaN,2863099
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Women's Suits",116204,"Textiles",11,2020,NaN,2578718
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Men's Shirts",116205,"Textiles",11,2020,NaN,2084607
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Women's Shirts",116206,"Textiles",11,2020,NaN,274003
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Men's Undergarments",116207,"Textiles",11,2020,NaN,138490
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Women's Undergarments",116208,"Textiles",11,2020,NaN,576768
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Felt or Coated Fabric Garments",116210,"Textiles",11,2020,NaN,12639495
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Active Wear",116211,"Textiles",11,2020,NaN,1977592
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Other Women's Undergarments",116212,"Textiles",11,2020,NaN,1479424
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Handkerchiefs",116213,"Textiles",11,2020,NaN,7500
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Scarves",116214,"Textiles",11,2020,NaN,55990
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Non-Knit Gloves",116216,"Textiles",11,2020,NaN,110709
+"Apparel and clothing accessories; not knitted or crocheted",1162,"Other Non-Knit Clothing Accessories",116217,"Textiles",11,2020,NaN,1314927
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Blankets",116301,"Textiles",11,2020,NaN,2922446
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"House Linens",116302,"Textiles",11,2020,NaN,832725
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Window Dressings",116303,"Textiles",11,2020,NaN,794105
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Bedspreads",116304,"Textiles",11,2020,NaN,368376
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Packing Bags",116305,"Textiles",11,2020,NaN,441412
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Awnings, Tents, and Sails",116306,"Textiles",11,2020,NaN,371812
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Other Cloth Articles",116307,"Textiles",11,2020,NaN,25703902
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Packaged Sewing Sets",116308,"Textiles",11,2020,NaN,34638
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Used Clothing",116309,"Textiles",11,2020,NaN,625477
+"Textiles, made up articles; sets; worn clothing and worn textile articles; rags",1163,"Textile Scraps",116310,"Textiles",11,2020,NaN,26010
+"Footwear; gaiters and the like; parts of such articles",1264,"Waterproof Footwear",126401,"Footwear and Headwear",12,2020,NaN,253341
+"Footwear; gaiters and the like; parts of such articles",1264,"Rubber Footwear",126402,"Footwear and Headwear",12,2020,NaN,2475174
+"Footwear; gaiters and the like; parts of such articles",1264,"Leather Footwear",126403,"Footwear and Headwear",12,2020,NaN,5841923
+"Footwear; gaiters and the like; parts of such articles",1264,"Textile Footwear",126404,"Footwear and Headwear",12,2020,NaN,5901366
+"Footwear; gaiters and the like; parts of such articles",1264,"Other Footwear",126405,"Footwear and Headwear",12,2020,NaN,7078514
+"Footwear; gaiters and the like; parts of such articles",1264,"Footwear Parts",126406,"Footwear and Headwear",12,2020,NaN,50531582
+"Headgear and parts thereof",1265,"Hat Forms",126501,"Footwear and Headwear",12,2020,NaN,46377
+"Headgear and parts thereof",1265,"Hat Shapes",126502,"Footwear and Headwear",12,2020,NaN,2868
+"Headgear and parts thereof",1265,"Hats",126504,"Footwear and Headwear",12,2020,NaN,74199
+"Headgear and parts thereof",1265,"Knitted Hats",126505,"Footwear and Headwear",12,2020,NaN,943366
+"Headgear and parts thereof",1265,"Other Headwear",126506,"Footwear and Headwear",12,2020,NaN,2925989
+"Headgear and parts thereof",1265,"Headbands and Linings",126507,"Footwear and Headwear",12,2020,NaN,420628
+"Umbrellas, sun umbrellas, walking-sticks, seat sticks, whips, riding crops; and parts thereof",1266,"Umbrellas",126601,"Footwear and Headwear",12,2020,NaN,559519
+"Umbrellas, sun umbrellas, walking-sticks, seat sticks, whips, riding crops; and parts thereof",1266,"Walking Sticks",126602,"Footwear and Headwear",12,2020,NaN,10263
+"Umbrellas, sun umbrellas, walking-sticks, seat sticks, whips, riding crops; and parts thereof",1266,"Umbrella and Walking Stick Accessories",126603,"Footwear and Headwear",12,2020,NaN,85288
+"Feathers and down, prepared; and articles made of feather or of down; artificial flowers; articles of human hair",1267,"Bird Skins and Feathers",126701,"Footwear and Headwear",12,2020,NaN,70592
+"Feathers and down, prepared; and articles made of feather or of down; artificial flowers; articles of human hair",1267,"Artificial Vegetation",126702,"Footwear and Headwear",12,2020,NaN,175773
+"Feathers and down, prepared; and articles made of feather or of down; artificial flowers; articles of human hair",1267,"Processed Hair",126703,"Footwear and Headwear",12,2020,NaN,290504
+"Feathers and down, prepared; and articles made of feather or of down; artificial flowers; articles of human hair",1267,"Fake Hair",126704,"Footwear and Headwear",12,2020,NaN,4487882
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Building Stone",136802,"Stone And Glass",13,2020,NaN,297510
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Slate",136803,"Stone And Glass",13,2020,NaN,142849
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Milling Stones",136804,"Stone And Glass",13,2020,NaN,11120096
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Abrasive Powder",136805,"Stone And Glass",13,2020,NaN,36221347
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Rock Wool",136806,"Stone And Glass",13,2020,NaN,28478393
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Asphalt",136807,"Stone And Glass",13,2020,NaN,25257
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Vegetable Fiber",136808,"Stone And Glass",13,2020,NaN,87637
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Plaster Articles",136809,"Stone And Glass",13,2020,NaN,263081
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Cement Articles",136810,"Stone And Glass",13,2020,NaN,951890
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Asbestos Cement Articles",136811,"Stone And Glass",13,2020,NaN,90170
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Asbestos Fibres",136812,"Stone And Glass",13,2020,NaN,551693
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Friction Material",136813,"Stone And Glass",13,2020,NaN,19134662
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Mica",136814,"Stone And Glass",13,2020,NaN,450496
+"Stone, plaster, cement, asbestos, mica or similar materials; articles thereof",1368,"Other Stone Articles",136815,"Stone And Glass",13,2020,NaN,118366627
+"Ceramic products",1369,"Bricks",136901,"Stone And Glass",13,2020,NaN,22000
+"Ceramic products",1369,"Refractory Bricks",136902,"Stone And Glass",13,2020,NaN,11351385
+"Ceramic products",1369,"Refractory Ceramics",136903,"Stone And Glass",13,2020,NaN,15953503
+"Ceramic products",1369,"Ceramic Bricks",136904,"Stone And Glass",13,2020,NaN,57950
+"Ceramic products",1369,"Unglazed Ceramics",136907,"Stone And Glass",13,2020,NaN,160193
+"Ceramic products",1369,"Laboratory Ceramic Ware",136909,"Stone And Glass",13,2020,NaN,100055900
+"Ceramic products",1369,"Bathroom Ceramics",136910,"Stone And Glass",13,2020,NaN,826348
+"Ceramic products",1369,"Porcelain Tableware",136911,"Stone And Glass",13,2020,NaN,55220
+"Ceramic products",1369,"Ceramic Tableware",136912,"Stone And Glass",13,2020,NaN,1327976
+"Ceramic products",1369,"Ornamental Ceramics",136913,"Stone And Glass",13,2020,NaN,119008
+"Ceramic products",1369,"Other Ceramic Articles",136914,"Stone And Glass",13,2020,NaN,20238471
+"Glass and glassware",1370,"Glass Scraps",137001,"Stone And Glass",13,2020,NaN,21435052
+"Glass and glassware",1370,"Glass Balls",137002,"Stone And Glass",13,2020,NaN,56695356
+"Glass and glassware",1370,"Cast or Rolled Glass",137003,"Stone And Glass",13,2020,NaN,143645
+"Glass and glassware",1370,"Blown Glass",137004,"Stone And Glass",13,2020,NaN,76619
+"Glass and glassware",1370,"Float Glass",137005,"Stone And Glass",13,2020,NaN,2765600
+"Glass and glassware",1370,"Glass with Edge Workings",137006,"Stone And Glass",13,2020,NaN,1465251
+"Glass and glassware",1370,"Safety Glass",137007,"Stone And Glass",13,2020,NaN,2254058
+"Glass and glassware",1370,"Insulating Glass",137008,"Stone And Glass",13,2020,NaN,3196
+"Glass and glassware",1370,"Glass Mirrors",137009,"Stone And Glass",13,2020,NaN,139817133
+"Glass and glassware",1370,"Glass Bottles",137010,"Stone And Glass",13,2020,NaN,4865426
+"Glass and glassware",1370,"Glass Bulbs",137011,"Stone And Glass",13,2020,NaN,997702
+"Glass and glassware",1370,"Interior Decorative Glassware",137013,"Stone And Glass",13,2020,NaN,511732
+"Glass and glassware",1370,"Signaling Glassware",137014,"Stone And Glass",13,2020,NaN,5746094
+"Glass and glassware",1370,"Eyewear and Clock Glass",137015,"Stone And Glass",13,2020,NaN,20419
+"Glass and glassware",1370,"Glass Bricks",137016,"Stone And Glass",13,2020,NaN,1655423
+"Glass and glassware",1370,"Laboratory Glassware",137017,"Stone And Glass",13,2020,NaN,13870718
+"Glass and glassware",1370,"Glass Beads",137018,"Stone And Glass",13,2020,NaN,2182186
+"Glass and glassware",1370,"Glass Fibers",137019,"Stone And Glass",13,2020,NaN,75589991
+"Glass and glassware",1370,"Other Glass Articles",137020,"Stone And Glass",13,2020,NaN,21171433
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Pearls",147101,"Precious Metals",14,2020,NaN,48155
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Diamonds",147102,"Precious Metals",14,2020,NaN,6461432
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Precious Stones",147103,"Precious Metals",14,2020,NaN,314727
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Synthetic Reconstructed Jewellery Stones",147104,"Precious Metals",14,2020,NaN,1402450
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Precious Stone Dust",147105,"Precious Metals",14,2020,NaN,6512584
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Silver",147106,"Precious Metals",14,2020,NaN,22788513
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Silver Clad Metals",147107,"Precious Metals",14,2020,NaN,3354178
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Gold",147108,"Precious Metals",14,2020,NaN,5334544
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Platinum",147110,"Precious Metals",14,2020,NaN,11019730
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Platinum Clad Metals",147111,"Precious Metals",14,2020,NaN,1548595
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Precious Metal Scraps",147112,"Precious Metals",14,2020,NaN,707254
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Jewellery",147113,"Precious Metals",14,2020,NaN,4513017
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Metal-Clad Products",147114,"Precious Metals",14,2020,NaN,12136
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Other Precious Metal Products",147115,"Precious Metals",14,2020,NaN,43781700
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Pearl Products",147116,"Precious Metals",14,2020,NaN,37847290
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Imitation Jewellery",147117,"Precious Metals",14,2020,NaN,386475
+"Natural, cultured pearls; precious, semi-precious stones; precious metals, metals clad with precious metal, and articles thereof; imitation jewellery; coin",1471,"Coin",147118,"Precious Metals",14,2020,NaN,2960
+"Iron and steel",1572,"Ferroalloys",157202,"Metals",15,2020,NaN,6462118
+"Iron and steel",1572,"Iron Reductions",157203,"Metals",15,2020,NaN,167361878
+"Iron and steel",1572,"Scrap Iron",157204,"Metals",15,2020,NaN,40068867
+"Iron and steel",1572,"Iron Powder",157205,"Metals",15,2020,NaN,27187711
+"Iron and steel",1572,"Iron Ingots",157206,"Metals",15,2020,NaN,189573
+"Iron and steel",1572,"Semi-Finished Iron",157207,"Metals",15,2020,NaN,2938303
+"Iron and steel",1572,"Hot-Rolled Iron",157208,"Metals",15,2020,NaN,747686
+"Iron and steel",1572,"Cold-Rolled Iron",157209,"Metals",15,2020,NaN,1535085
+"Iron and steel",1572,"Coated Flat-Rolled Iron",157210,"Metals",15,2020,NaN,7320559
+"Iron and steel",1572,"Large Flat-Rolled Iron",157211,"Metals",15,2020,NaN,1369643
+"Iron and steel",1572,"Large Coated Flat-Rolled Iron",157212,"Metals",15,2020,NaN,7439680
+"Iron and steel",1572,"Hot-Rolled Iron Bars",157213,"Metals",15,2020,NaN,35368
+"Iron and steel",1572,"Raw Iron Bars",157214,"Metals",15,2020,NaN,58646
+"Iron and steel",1572,"Other Iron Bars",157215,"Metals",15,2020,NaN,2951403
+"Iron and steel",1572,"Iron Blocks",157216,"Metals",15,2020,NaN,749530
+"Iron and steel",1572,"Iron Wire",157217,"Metals",15,2020,NaN,3112022
+"Iron and steel",1572,"Stainless Steel Ingots",157218,"Metals",15,2020,NaN,2491825
+"Iron and steel",1572,"Large Flat-Rolled Stainless Steel",157219,"Metals",15,2020,NaN,8452680
+"Iron and steel",1572,"Flat-Rolled Stainless Steel",157220,"Metals",15,2020,NaN,27950491
+"Iron and steel",1572,"Hot-Rolled Stainless Steel Bars",157221,"Metals",15,2020,NaN,1925993
+"Iron and steel",1572,"Other Stainless Steel Bars",157222,"Metals",15,2020,NaN,42869149
+"Iron and steel",1572,"Stainless Steel Wire",157223,"Metals",15,2020,NaN,7454574
+"Iron and steel",1572,"Steel Ingots",157224,"Metals",15,2020,NaN,20619698
+"Iron and steel",1572,"Flat Flat-Rolled Steel",157225,"Metals",15,2020,NaN,26184059
+"Iron and steel",1572,"Flat-Rolled Iron",157226,"Metals",15,2020,NaN,3159306
+"Iron and steel",1572,"Steel Bars",157227,"Metals",15,2020,NaN,414590
+"Iron and steel",1572,"Other Steel Bars",157228,"Metals",15,2020,NaN,11950542
+"Iron and steel",1572,"Steel Wire",157229,"Metals",15,2020,NaN,3488491
+"Iron or steel articles",1573,"Iron Sheet Piling",157301,"Metals",15,2020,NaN,1399067
+"Iron or steel articles",1573,"Iron Railway Products",157302,"Metals",15,2020,NaN,802008
+"Iron or steel articles",1573,"Cast Iron Pipes",157303,"Metals",15,2020,NaN,258488
+"Iron or steel articles",1573,"Iron Pipes",157304,"Metals",15,2020,NaN,28547561
+"Iron or steel articles",1573,"Other Large Iron Pipes",157305,"Metals",15,2020,NaN,323000
+"Iron or steel articles",1573,"Other Small Iron Pipes",157306,"Metals",15,2020,NaN,16241694
+"Iron or steel articles",1573,"Iron Pipe Fittings",157307,"Metals",15,2020,NaN,70863879
+"Iron or steel articles",1573,"Iron Structures",157308,"Metals",15,2020,NaN,4044527
+"Iron or steel articles",1573,"Large Iron Containers",157309,"Metals",15,2020,NaN,2660614
+"Iron or steel articles",1573,"Small Iron Containers",157310,"Metals",15,2020,NaN,3925106
+"Iron or steel articles",1573,"Iron Gas Containers",157311,"Metals",15,2020,NaN,8160893
+"Iron or steel articles",1573,"Stranded Iron Wire",157312,"Metals",15,2020,NaN,9407763
+"Iron or steel articles",1573,"Barbed Wire",157313,"Metals",15,2020,NaN,104826
+"Iron or steel articles",1573,"Iron Cloth",157314,"Metals",15,2020,NaN,3855918
+"Iron or steel articles",1573,"Iron Chains",157315,"Metals",15,2020,NaN,9330873
+"Iron or steel articles",1573,"Iron Anchors",157316,"Metals",15,2020,NaN,311177
+"Iron or steel articles",1573,"Iron Nails",157317,"Metals",15,2020,NaN,202049
+"Iron or steel articles",1573,"Iron Fasteners",157318,"Metals",15,2020,NaN,144928270
+"Iron or steel articles",1573,"Iron Sewing Needles",157319,"Metals",15,2020,NaN,156307
+"Iron or steel articles",1573,"Iron Springs",157320,"Metals",15,2020,NaN,40985288
+"Iron or steel articles",1573,"Iron Stovetops",157321,"Metals",15,2020,NaN,1536451
+"Iron or steel articles",1573,"Iron Radiators",157322,"Metals",15,2020,NaN,924900
+"Iron or steel articles",1573,"Iron Housewares",157323,"Metals",15,2020,NaN,4189893
+"Iron or steel articles",1573,"Iron Toiletry",157324,"Metals",15,2020,NaN,411083
+"Iron or steel articles",1573,"Other Cast Iron Products",157325,"Metals",15,2020,NaN,7304635
+"Iron or steel articles",1573,"Other Iron Products",157326,"Metals",15,2020,NaN,140906560
+"Copper and articles thereof",1574,"Precipitated Copper",157401,"Metals",15,2020,NaN,120650
+"Copper and articles thereof",1574,"Raw Copper",157402,"Metals",15,2020,NaN,931246
+"Copper and articles thereof",1574,"Refined Copper",157403,"Metals",15,2020,NaN,8241635
+"Copper and articles thereof",1574,"Scrap Copper",157404,"Metals",15,2020,NaN,499182962
+"Copper and articles thereof",1574,"Copper Alloys",157405,"Metals",15,2020,NaN,251511
+"Copper and articles thereof",1574,"Copper Powder",157406,"Metals",15,2020,NaN,4377660
+"Copper and articles thereof",1574,"Copper Bars",157407,"Metals",15,2020,NaN,6930172
+"Copper and articles thereof",1574,"Copper Wire",157408,"Metals",15,2020,NaN,5868210
+"Copper and articles thereof",1574,"Copper Plating",157409,"Metals",15,2020,NaN,23033744
+"Copper and articles thereof",1574,"Copper Foil",157410,"Metals",15,2020,NaN,13487375
+"Copper and articles thereof",1574,"Copper Pipes",157411,"Metals",15,2020,NaN,46852603
+"Copper and articles thereof",1574,"Copper Pipe Fittings",157412,"Metals",15,2020,NaN,5190851
+"Copper and articles thereof",1574,"Stranded Copper Wire",157413,"Metals",15,2020,NaN,3869619
+"Copper and articles thereof",1574,"Copper Fasteners",157415,"Metals",15,2020,NaN,2743558
+"Copper and articles thereof",1574,"Copper Housewares",157418,"Metals",15,2020,NaN,19563
+"Copper and articles thereof",1574,"Other Copper Products",157419,"Metals",15,2020,NaN,8546742
+"Nickel and articles thereof",1575,"Nickel Mattes",157501,"Metals",15,2020,NaN,119672
+"Nickel and articles thereof",1575,"Raw Nickel",157502,"Metals",15,2020,NaN,12217792
+"Nickel and articles thereof",1575,"Nickel Powder",157504,"Metals",15,2020,NaN,9043726
+"Nickel and articles thereof",1575,"Nickel Bars",157505,"Metals",15,2020,NaN,109586160
+"Nickel and articles thereof",1575,"Nickel Sheets",157506,"Metals",15,2020,NaN,86431834
+"Nickel and articles thereof",1575,"Nickel Pipes",157507,"Metals",15,2020,NaN,9771621
+"Nickel and articles thereof",1575,"Other Nickel Products",157508,"Metals",15,2020,NaN,28653962
+"Aluminium and articles thereof",1576,"Raw Aluminium",157601,"Metals",15,2020,NaN,8158168
+"Aluminium and articles thereof",1576,"Scrap Aluminium",157602,"Metals",15,2020,NaN,155156434
+"Aluminium and articles thereof",1576,"Aluminium Powder",157603,"Metals",15,2020,NaN,375467
+"Aluminium and articles thereof",1576,"Aluminium Bars",157604,"Metals",15,2020,NaN,32473148
+"Aluminium and articles thereof",1576,"Aluminium Wire",157605,"Metals",15,2020,NaN,8719119
+"Aluminium and articles thereof",1576,"Aluminium Plating",157606,"Metals",15,2020,NaN,110753620
+"Aluminium and articles thereof",1576,"Aluminium Foil",157607,"Metals",15,2020,NaN,11836074
+"Aluminium and articles thereof",1576,"Aluminium Pipes",157608,"Metals",15,2020,NaN,2973276
+"Aluminium and articles thereof",1576,"Aluminium Pipe Fittings",157609,"Metals",15,2020,NaN,7561401
+"Aluminium and articles thereof",1576,"Aluminium Structures",157610,"Metals",15,2020,NaN,2501910
+"Aluminium and articles thereof",1576,"Large Aluminium Containers",157611,"Metals",15,2020,NaN,40293
+"Aluminium and articles thereof",1576,"Aluminium Cans",157612,"Metals",15,2020,NaN,284485
+"Aluminium and articles thereof",1576,"Aluminium Gas Containers",157613,"Metals",15,2020,NaN,4866183
+"Aluminium and articles thereof",1576,"Stranded Aluminium Wire",157614,"Metals",15,2020,NaN,494336
+"Aluminium and articles thereof",1576,"Aluminium Housewares",157615,"Metals",15,2020,NaN,321925
+"Aluminium and articles thereof",1576,"Other Aluminium Products",157616,"Metals",15,2020,NaN,35736631
+"Lead and articles thereof",1578,"Raw Lead",157801,"Metals",15,2020,NaN,79499
+"Lead and articles thereof",1578,"Scrap Lead",157802,"Metals",15,2020,NaN,4250
+"Lead and articles thereof",1578,"Lead Sheets",157804,"Metals",15,2020,NaN,228579
+"Lead and articles thereof",1578,"Other Lead Products",157806,"Metals",15,2020,NaN,377513
+"Zinc and articles thereof",1579,"Scrap Waste",157902,"Metals",15,2020,NaN,414497
+"Zinc and articles thereof",1579,"Zinc Powder",157903,"Metals",15,2020,NaN,17938812
+"Zinc and articles thereof",1579,"Zinc Bars",157904,"Metals",15,2020,NaN,2232440
+"Zinc and articles thereof",1579,"Zinc Sheets",157905,"Metals",15,2020,NaN,1486891
+"Zinc and articles thereof",1579,"Other Zinc Products",157907,"Metals",15,2020,NaN,2161766
+"Tin; articles thereof",1580,"Raw Tin",158001,"Metals",15,2020,NaN,174748
+"Tin; articles thereof",1580,"Tin Bars",158003,"Metals",15,2020,NaN,294385
+"Tin; articles thereof",1580,"Other Tin Products",158007,"Metals",15,2020,NaN,6436937
+"Metals; n.e.s., cermets and articles thereof",1581,"Tungsten",158101,"Metals",15,2020,NaN,2553774
+"Metals; n.e.s., cermets and articles thereof",1581,"Molybdenum",158102,"Metals",15,2020,NaN,4513505
+"Metals; n.e.s., cermets and articles thereof",1581,"Tantalum",158103,"Metals",15,2020,NaN,45610255
+"Metals; n.e.s., cermets and articles thereof",1581,"Magnesium",158104,"Metals",15,2020,NaN,3713194
+"Metals; n.e.s., cermets and articles thereof",1581,"Cobalt",158105,"Metals",15,2020,NaN,27251066
+"Metals; n.e.s., cermets and articles thereof",1581,"Bismuth",158106,"Metals",15,2020,NaN,369984
+"Metals; n.e.s., cermets and articles thereof",1581,"Cadmium",158107,"Metals",15,2020,NaN,40000
+"Metals; n.e.s., cermets and articles thereof",1581,"Titanium",158108,"Metals",15,2020,NaN,64625560
+"Metals; n.e.s., cermets and articles thereof",1581,"Zirconium",158109,"Metals",15,2020,NaN,2083714
+"Metals; n.e.s., cermets and articles thereof",1581,"Antimony",158110,"Metals",15,2020,NaN,92855
+"Metals; n.e.s., cermets and articles thereof",1581,"Manganese",158111,"Metals",15,2020,NaN,47005
+"Metals; n.e.s., cermets and articles thereof",1581,"Other Metals",158112,"Metals",15,2020,NaN,11699698
+"Metals; n.e.s., cermets and articles thereof",1581,"Cermets",158113,"Metals",15,2020,NaN,1913712
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Garden Tools",158201,"Metals",15,2020,NaN,811266
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Hand Saws",158202,"Metals",15,2020,NaN,14066840
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Hand Tools",158203,"Metals",15,2020,NaN,4673176
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Wrenches",158204,"Metals",15,2020,NaN,3010184
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Other Hand Tools",158205,"Metals",15,2020,NaN,11963042
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Tool Sets",158206,"Metals",15,2020,NaN,428805
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Interchangeable Tool Parts",158207,"Metals",15,2020,NaN,50405764
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Cutting Blades",158208,"Metals",15,2020,NaN,3929359
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Tool Plates",158209,"Metals",15,2020,NaN,12512041
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Cooking Hand Tools",158210,"Metals",15,2020,NaN,94214
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Knives",158211,"Metals",15,2020,NaN,977093
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Razor Blades",158212,"Metals",15,2020,NaN,11983188
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Scissors",158213,"Metals",15,2020,NaN,148019
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Other Cutlery",158214,"Metals",15,2020,NaN,341673
+"Tools, implements, cutlery, spoons and forks, of base metal; parts thereof, of base metal",1582,"Cutlery Sets",158215,"Metals",15,2020,NaN,221548
+"Metal; miscellaneous products of base metal",1583,"Padlocks",158301,"Metals",15,2020,NaN,28538730
+"Metal; miscellaneous products of base metal",1583,"Metal Mountings",158302,"Metals",15,2020,NaN,98016453
+"Metal; miscellaneous products of base metal",1583,"Safes",158303,"Metals",15,2020,NaN,264498
+"Metal; miscellaneous products of base metal",1583,"Filing Cabinets",158304,"Metals",15,2020,NaN,314967
+"Metal; miscellaneous products of base metal",1583,"Metal Office Supplies",158305,"Metals",15,2020,NaN,70321
+"Metal; miscellaneous products of base metal",1583,"Bells and Other Metal Ornaments",158306,"Metals",15,2020,NaN,558193
+"Metal; miscellaneous products of base metal",1583,"Flexible Metal Tubing",158307,"Metals",15,2020,NaN,10741256
+"Metal; miscellaneous products of base metal",1583,"Other Metal Fasteners",158308,"Metals",15,2020,NaN,2512613
+"Metal; miscellaneous products of base metal",1583,"Metal Stoppers",158309,"Metals",15,2020,NaN,1736884
+"Metal; miscellaneous products of base metal",1583,"Metal Signs",158310,"Metals",15,2020,NaN,2569860
+"Metal; miscellaneous products of base metal",1583,"Coated Metal Soldering Products",158311,"Metals",15,2020,NaN,15755158
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Nuclear Reactors",168401,"Machines",16,2020,NaN,18650939
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Steam Boilers",168402,"Machines",16,2020,NaN,2241762
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Central Heating Boilers",168403,"Machines",16,2020,NaN,1932464
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Boiler Plants",168404,"Machines",16,2020,NaN,850462
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Water and Gas Generators",168405,"Machines",16,2020,NaN,2474049
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Steam Turbines",168406,"Machines",16,2020,NaN,6683059
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Spark-Ignition Engines",168407,"Machines",16,2020,NaN,240613709
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Combustion Engines",168408,"Machines",16,2020,NaN,400549844
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Engine Parts",168409,"Machines",16,2020,NaN,250042974
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Hydraulic Turbines",168410,"Machines",16,2020,NaN,49853
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Gas Turbines",168411,"Machines",16,2020,NaN,149016484
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Engines",168412,"Machines",16,2020,NaN,86903488
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Liquid Pumps",168413,"Machines",16,2020,NaN,413675770
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Air Pumps",168414,"Machines",16,2020,NaN,208467542
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Air Conditioners",168415,"Machines",16,2020,NaN,35434736
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Liquid Fuel Furnaces",168416,"Machines",16,2020,NaN,9373666
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Industrial Furnaces",168417,"Machines",16,2020,NaN,8233767
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Refrigerators",168418,"Machines",16,2020,NaN,71919296
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Heating Machinery",168419,"Machines",16,2020,NaN,200322139
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Rolling Machines",168420,"Machines",16,2020,NaN,1064012
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Centrifuges",168421,"Machines",16,2020,NaN,745328877
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Washing and Bottling Machines",168422,"Machines",16,2020,NaN,28877781
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Scales",168423,"Machines",16,2020,NaN,8647719
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Liquid Dispersing Machines",168424,"Machines",16,2020,NaN,120700737
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Pulley Systems",168425,"Machines",16,2020,NaN,7346227
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Cranes",168426,"Machines",16,2020,NaN,13419371
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Fork-Lifts",168427,"Machines",16,2020,NaN,24357324
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Lifting Machinery",168428,"Machines",16,2020,NaN,53860401
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Large Construction Vehicles",168429,"Machines",16,2020,NaN,14872949
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Construction Vehicles",168430,"Machines",16,2020,NaN,24326241
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Excavation Machinery",168431,"Machines",16,2020,NaN,201293122
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Soil Preparation Machinery",168432,"Machines",16,2020,NaN,6053612
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Harvesting Machinery",168433,"Machines",16,2020,NaN,234643475
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Dairy Machinery",168434,"Machines",16,2020,NaN,11874370
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Fruit Pressing Machinery",168435,"Machines",16,2020,NaN,14086
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Agricultural Machinery",168436,"Machines",16,2020,NaN,25619795
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Mill Machinery",168437,"Machines",16,2020,NaN,1483075
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Industrial Food Preperation Machinery",168438,"Machines",16,2020,NaN,30957378
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Papermaking Machines",168439,"Machines",16,2020,NaN,19432182
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Book-binding Machines",168440,"Machines",16,2020,NaN,398890
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Paper Machinery",168441,"Machines",16,2020,NaN,19008999
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Print Production Machinery",168442,"Machines",16,2020,NaN,1085494
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Industrial Printers",168443,"Machines",16,2020,NaN,229471113
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Artificial Textile Machinery",168444,"Machines",16,2020,NaN,6499268
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Textile Fiber Machinery",168445,"Machines",16,2020,NaN,293884
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Looms",168446,"Machines",16,2020,NaN,8728
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Knitting Machines",168447,"Machines",16,2020,NaN,1507873
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Knitting Machine Accessories",168448,"Machines",16,2020,NaN,9035439
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Felt Machinery",168449,"Machines",16,2020,NaN,570289
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Household Washing Machines",168450,"Machines",16,2020,NaN,2821380
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Textile Processing Machines",168451,"Machines",16,2020,NaN,13628445
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Sewing Machines",168452,"Machines",16,2020,NaN,474990
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Leather Machinery",168453,"Machines",16,2020,NaN,230535
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Casting Machines",168454,"Machines",16,2020,NaN,14595799
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metal-Rolling Mills",168455,"Machines",16,2020,NaN,48667609
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Non-Mechanical Removal Machinery",168456,"Machines",16,2020,NaN,33341005
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metalworking Transfer Machines",168457,"Machines",16,2020,NaN,8611611
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metal Lathes",168458,"Machines",16,2020,NaN,10896362
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Drilling Machines",168459,"Machines",16,2020,NaN,1376038
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metal Finishing Machines",168460,"Machines",16,2020,NaN,13154177
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metalworking Machines",168461,"Machines",16,2020,NaN,6345167
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Forging Machines",168462,"Machines",16,2020,NaN,18692368
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Non-Metal Removal Machinery",168463,"Machines",16,2020,NaN,3804537
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Stone Working Machines",168464,"Machines",16,2020,NaN,7358190
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Woodworking machines",168465,"Machines",16,2020,NaN,2861680
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metalworking Machine Parts",168466,"Machines",16,2020,NaN,120734212
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Motor-working Tools",168467,"Machines",16,2020,NaN,32127952
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Soldering and Welding Machinery",168468,"Machines",16,2020,NaN,4659078
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Calculators",168470,"Machines",16,2020,NaN,4280200
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Computers",168471,"Machines",16,2020,NaN,622088091
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Other Office Machines",168472,"Machines",16,2020,NaN,942218
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Office Machine Parts",168473,"Machines",16,2020,NaN,328135814
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Stone Processing Machines",168474,"Machines",16,2020,NaN,31967225
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Glass Working Machines",168475,"Machines",16,2020,NaN,83645366
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Vending Machines",168476,"Machines",16,2020,NaN,1449212
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Rubberworking Machinery",168477,"Machines",16,2020,NaN,74288380
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Tobacco Processing Machines",168478,"Machines",16,2020,NaN,7712
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Machinery Having Individual Functions",168479,"Machines",16,2020,NaN,316117749
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Metal Molds",168480,"Machines",16,2020,NaN,35910397
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Valves",168481,"Machines",16,2020,NaN,741901972
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Ball Bearings",168482,"Machines",16,2020,NaN,105273553
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Transmissions",168483,"Machines",16,2020,NaN,334655158
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Gaskets",168484,"Machines",16,2020,NaN,84789791
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Machines and apparatus of a kind used solely or principally for the manufacture of semiconductor boules or wafers, semiconductor devices, electronic integrated circuits or flat panel displays",168486,"Machines",16,2020,NaN,2446385744
+"Nuclear reactors, boilers, machinery and mechanical appliances; parts thereof",1684,"Machinery parts, not containing electrical connectors, insulators, coils, contacts or other electrical features, not specified or included elsewhere in this Chapter.",168487,"Machines",16,2020,NaN,39607958
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Motors",168501,"Machines",16,2020,NaN,406479050
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Generating Sets",168502,"Machines",16,2020,NaN,27372528
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Motor Parts",168503,"Machines",16,2020,NaN,57497755
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Transformers",168504,"Machines",16,2020,NaN,271878847
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electromagnets",168505,"Machines",16,2020,NaN,31781576
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Batteries",168506,"Machines",16,2020,NaN,7434892
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Batteries",168507,"Machines",16,2020,NaN,268904752
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Vacuum Cleaners",168508,"Machines",16,2020,NaN,10140651
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Other Domestic Electric Housewares",168509,"Machines",16,2020,NaN,15708912
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Hair Trimmers",168510,"Machines",16,2020,NaN,1514066
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Ignitions",168511,"Machines",16,2020,NaN,38924315
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Lighting and Signalling Equipment",168512,"Machines",16,2020,NaN,260977136
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Portable Lighting",168513,"Machines",16,2020,NaN,2004740
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Furnaces",168514,"Machines",16,2020,NaN,52878040
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Soldering Equipment",168515,"Machines",16,2020,NaN,28297171
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Heaters",168516,"Machines",16,2020,NaN,43792805
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Telephones",168517,"Machines",16,2020,NaN,581226704
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Microphones and Headphones",168518,"Machines",16,2020,NaN,59451280
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Sound Recording Equipment",168519,"Machines",16,2020,NaN,3762909
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Video Recording Equipment",168521,"Machines",16,2020,NaN,1617763
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Audio and Video Recording Accessories",168522,"Machines",16,2020,NaN,1997544
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Blank Audio Media",168523,"Machines",16,2020,NaN,330480452
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Broadcasting Equipment",168525,"Machines",16,2020,NaN,66598314
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Navigation Equipment",168526,"Machines",16,2020,NaN,72581702
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Radio Receivers",168527,"Machines",16,2020,NaN,2084894
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Video Displays",168528,"Machines",16,2020,NaN,18385272
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Broadcasting Accessories",168529,"Machines",16,2020,NaN,70808956
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Traffic Signals",168530,"Machines",16,2020,NaN,1690929
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Audio Alarms",168531,"Machines",16,2020,NaN,57633557
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Capacitors",168532,"Machines",16,2020,NaN,66435138
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Resistors",168533,"Machines",16,2020,NaN,43909527
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Printed Circuit Boards",168534,"Machines",16,2020,NaN,92617160
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"High-voltage Protection Equipment",168535,"Machines",16,2020,NaN,23037203
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Low-voltage Protection Equipment",168536,"Machines",16,2020,NaN,510892496
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Control Boards",168537,"Machines",16,2020,NaN,353023990
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Power Accessories",168538,"Machines",16,2020,NaN,195674857
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electric Filament",168539,"Machines",16,2020,NaN,27213582
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Cathode Tubes",168540,"Machines",16,2020,NaN,15941992
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Semiconductor Devices",168541,"Machines",16,2020,NaN,772878363
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Integrated Circuits",168542,"Machines",16,2020,NaN,8513397203
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Other Electrical Machinery",168543,"Machines",16,2020,NaN,277756506
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Insulated Wire",168544,"Machines",16,2020,NaN,313518705
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Carbon-based Electronics",168545,"Machines",16,2020,NaN,12040227
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Insulators",168546,"Machines",16,2020,NaN,5033824
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Metal Insulating Fittings",168547,"Machines",16,2020,NaN,84094670
+"Electrical machinery and equipment and parts thereof; sound recorders and reproducers; television image and sound recorders and reproducers, parts and accessories of such articles",1685,"Electrical Parts",168548,"Machines",16,2020,NaN,3322347
+"Railway, tramway locomotives, rolling-stock and parts thereof; railway or tramway track fixtures and fittings and parts thereof; mechanical (including electro-mechanical) traffic signalling equipment of all kinds",1786,"Railway Maintenance Vehicles",178604,"Transportation",17,2020,NaN,33537
+"Railway, tramway locomotives, rolling-stock and parts thereof; railway or tramway track fixtures and fittings and parts thereof; mechanical (including electro-mechanical) traffic signalling equipment of all kinds",1786,"Locomotive Parts",178607,"Transportation",17,2020,NaN,13409693
+"Railway, tramway locomotives, rolling-stock and parts thereof; railway or tramway track fixtures and fittings and parts thereof; mechanical (including electro-mechanical) traffic signalling equipment of all kinds",1786,"Railway Track Fixtures",178608,"Transportation",17,2020,NaN,1691964
+"Railway, tramway locomotives, rolling-stock and parts thereof; railway or tramway track fixtures and fittings and parts thereof; mechanical (including electro-mechanical) traffic signalling equipment of all kinds",1786,"Railway Cargo Containers",178609,"Transportation",17,2020,NaN,1907264
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Tractors",178701,"Transportation",17,2020,NaN,6315819
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Buses",178702,"Transportation",17,2020,NaN,428850
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Cars",178703,"Transportation",17,2020,NaN,6081303823
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Delivery Trucks",178704,"Transportation",17,2020,NaN,62139416
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Specialized Vehicles",178705,"Transportation",17,2020,NaN,34004397
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Vehicle Chassis",178706,"Transportation",17,2020,NaN,228085
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Vehicle Bodies",178707,"Transportation",17,2020,NaN,1944558
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Vehicle Parts",178708,"Transportation",17,2020,NaN,1894011646
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Work Trucks",178709,"Transportation",17,2020,NaN,1266500
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Motorcycles",178711,"Transportation",17,2020,NaN,13699602
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Bicycles",178712,"Transportation",17,2020,NaN,139697
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Wheelchairs",178713,"Transportation",17,2020,NaN,402982
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Bi-Wheel Vehicle Parts",178714,"Transportation",17,2020,NaN,7831538
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Baby Carriages",178715,"Transportation",17,2020,NaN,1263795
+"Vehicles; other than railway or tramway rolling stock, and parts and accessories thereof",1787,"Trailers",178716,"Transportation",17,2020,NaN,23921317
+"Aircraft, spacecraft and parts thereof",1788,"Non-powered Aircraft",178801,"Transportation",17,2020,NaN,88563
+"Aircraft, spacecraft and parts thereof",1788,"Aircraft Parts",178803,"Transportation",17,2020,NaN,3478786696
+"Aircraft, spacecraft and parts thereof",1788,"Parachutes",178804,"Transportation",17,2020,NaN,779800
+"Ships, boats and floating structures",1789,"Passenger and Cargo Ships",178901,"Transportation",17,2020,NaN,434066
+"Ships, boats and floating structures",1789,"Recreational Boats",178903,"Transportation",17,2020,NaN,7868215
+"Ships, boats and floating structures",1789,"Special Purpose Ships",178905,"Transportation",17,2020,NaN,45118
+"Ships, boats and floating structures",1789,"Other Sea Vessels",178906,"Transportation",17,2020,NaN,606787
+"Ships, boats and floating structures",1789,"Other Floating Structures",178907,"Transportation",17,2020,NaN,1134848
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Optical Fibers",189001,"Instruments",18,2020,NaN,414034746
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Mirrors and Lenses",189002,"Instruments",18,2020,NaN,30320078
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Eyewear Frames",189003,"Instruments",18,2020,NaN,1092401
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Eyewear",189004,"Instruments",18,2020,NaN,3819859
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Binoculars and Telescopes",189005,"Instruments",18,2020,NaN,1587144
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Cameras",189006,"Instruments",18,2020,NaN,2241331
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Video Cameras",189007,"Instruments",18,2020,NaN,771327
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Image Projectors",189008,"Instruments",18,2020,NaN,1475015
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Photo Lab Equipment",189010,"Instruments",18,2020,NaN,2265921
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Microscopes",189011,"Instruments",18,2020,NaN,9099568
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Non-optical Microscopes",189012,"Instruments",18,2020,NaN,16144274
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"LCDs",189013,"Instruments",18,2020,NaN,125827318
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Compasses",189014,"Instruments",18,2020,NaN,11387022
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Surveying Equipment",189015,"Instruments",18,2020,NaN,103430768
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Balances",189016,"Instruments",18,2020,NaN,556760
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Drafting Tools",189017,"Instruments",18,2020,NaN,10805867
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Medical Instruments",189018,"Instruments",18,2020,NaN,2471886077
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Therapeutic Appliances",189019,"Instruments",18,2020,NaN,59863268
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Breathing Appliances",189020,"Instruments",18,2020,NaN,30006688
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Orthopedic Appliances",189021,"Instruments",18,2020,NaN,513584722
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"X-Ray Equipment",189022,"Instruments",18,2020,NaN,526662459
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Instructional Models",189023,"Instruments",18,2020,NaN,40484612
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Tensile Testing Machines",189024,"Instruments",18,2020,NaN,133749088
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Hydrometers",189025,"Instruments",18,2020,NaN,41214365
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Gas and Liquid Flow Measuring Instruments",189026,"Instruments",18,2020,NaN,232293462
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Chemical Analysis Instruments",189027,"Instruments",18,2020,NaN,1156865652
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Utility Meters",189028,"Instruments",18,2020,NaN,6949914
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Revolution Counters",189029,"Instruments",18,2020,NaN,7671513
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Oscilloscopes",189030,"Instruments",18,2020,NaN,652079135
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Other Measuring Instruments",189031,"Instruments",18,2020,NaN,364500458
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Thermostats",189032,"Instruments",18,2020,NaN,163893427
+"Optical, photographic, cinematographic, measuring, checking, medical or surgical instruments and apparatus; parts and accessories",1890,"Opto-Electric Instrument Parts",189033,"Instruments",18,2020,NaN,10346580
+"Clocks and watches and parts thereof",1891,"Precious Metal Watches",189101,"Instruments",18,2020,NaN,280699
+"Clocks and watches and parts thereof",1891,"Base Metal Watches",189102,"Instruments",18,2020,NaN,845457
+"Clocks and watches and parts thereof",1891,"Clocks with Watch Movements",189103,"Instruments",18,2020,NaN,149300
+"Clocks and watches and parts thereof",1891,"Dashboard Clocks",189104,"Instruments",18,2020,NaN,376143
+"Clocks and watches and parts thereof",1891,"Other Clocks",189105,"Instruments",18,2020,NaN,122831
+"Clocks and watches and parts thereof",1891,"Time Recording Instruments",189106,"Instruments",18,2020,NaN,431096
+"Clocks and watches and parts thereof",1891,"Time Switches",189107,"Instruments",18,2020,NaN,151190
+"Clocks and watches and parts thereof",1891,"Watch Movements",189108,"Instruments",18,2020,NaN,513241
+"Clocks and watches and parts thereof",1891,"Watch Cases and Parts",189111,"Instruments",18,2020,NaN,2650
+"Clocks and watches and parts thereof",1891,"Watch Straps",189113,"Instruments",18,2020,NaN,339690
+"Clocks and watches and parts thereof",1891,"Other Clocks and Watches",189114,"Instruments",18,2020,NaN,29636
+"Musical instruments; parts and accessories of such articles",1892,"Pianos",189201,"Instruments",18,2020,NaN,448625
+"Musical instruments; parts and accessories of such articles",1892,"String Instruments",189202,"Instruments",18,2020,NaN,3555849
+"Musical instruments; parts and accessories of such articles",1892,"Wind Instruments",189205,"Instruments",18,2020,NaN,604483
+"Musical instruments; parts and accessories of such articles",1892,"Percussion",189206,"Instruments",18,2020,NaN,2039311
+"Musical instruments; parts and accessories of such articles",1892,"Electric Musical Instruments",189207,"Instruments",18,2020,NaN,4928967
+"Musical instruments; parts and accessories of such articles",1892,"Other Musical Instruments",189208,"Instruments",18,2020,NaN,65819
+"Musical instruments; parts and accessories of such articles",1892,"Musical Instrument Parts",189209,"Instruments",18,2020,NaN,5723907
+"Arms and ammunition; parts and accessories thereof",1993,"Military Weapons",199301,"Weapons",19,2020,NaN,666948
+"Arms and ammunition; parts and accessories thereof",1993,"Other Firearms",199303,"Weapons",19,2020,NaN,10400
+"Arms and ammunition; parts and accessories thereof",1993,"Spring, Air, and Gas Guns",199304,"Weapons",19,2020,NaN,16066
+"Arms and ammunition; parts and accessories thereof",1993,"Weapons Parts and Accessories",199305,"Weapons",19,2020,NaN,104294
+"Arms and ammunition; parts and accessories thereof",1993,"Explosive Ammunition",199306,"Weapons",19,2020,NaN,45706
+"Arms and ammunition; parts and accessories thereof",1993,"Bladed Weapons and Accessories",199307,"Weapons",19,2020,NaN,155024
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Seats",209401,"Miscellaneous",20,2020,NaN,45031550
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Medical Furniture",209402,"Miscellaneous",20,2020,NaN,20849604
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Other Furniture",209403,"Miscellaneous",20,2020,NaN,20943548
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Mattresses",209404,"Miscellaneous",20,2020,NaN,4086341
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Light Fixtures",209405,"Miscellaneous",20,2020,NaN,48878667
+"Furniture; bedding, mattresses, mattress supports, cushions and similar stuffed furnishings; lamps and lighting fittings, n.e.s.; illuminated signs, illuminated name-plates and the like; prefabricated buildings",2094,"Prefabricated Buildings",209406,"Miscellaneous",20,2020,NaN,4172441
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Models and Stuffed Animals",209503,"Miscellaneous",20,2020,NaN,15488277
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Video and Card Games",209504,"Miscellaneous",20,2020,NaN,17614698
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Party Decorations",209505,"Miscellaneous",20,2020,NaN,1611772
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Sports Equipment",209506,"Miscellaneous",20,2020,NaN,33030346
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Fishing and Hunting Equipment",209507,"Miscellaneous",20,2020,NaN,3876833
+"Toys, games and sports requisites; parts and accessories thereof",2095,"Fairground Amusements",209508,"Miscellaneous",20,2020,NaN,26426339
+"Miscellaneous manufactured articles",2096,"Worked Ivory and Bone",209601,"Miscellaneous",20,2020,NaN,336717
+"Miscellaneous manufactured articles",2096,"Vegetable and Mineral Carvings",209602,"Miscellaneous",20,2020,NaN,4682821
+"Miscellaneous manufactured articles",2096,"Brooms",209603,"Miscellaneous",20,2020,NaN,11744572
+"Miscellaneous manufactured articles",2096,"Hand Sifters",209604,"Miscellaneous",20,2020,NaN,32101
+"Miscellaneous manufactured articles",2096,"Travel Kits",209605,"Miscellaneous",20,2020,NaN,22014
+"Miscellaneous manufactured articles",2096,"Buttons",209606,"Miscellaneous",20,2020,NaN,622785
+"Miscellaneous manufactured articles",2096,"Zippers",209607,"Miscellaneous",20,2020,NaN,972200
+"Miscellaneous manufactured articles",2096,"Pens",209608,"Miscellaneous",20,2020,NaN,2219191
+"Miscellaneous manufactured articles",2096,"Pencils and Crayons",209609,"Miscellaneous",20,2020,NaN,1854497
+"Miscellaneous manufactured articles",2096,"Chalkboards",209610,"Miscellaneous",20,2020,NaN,220341
+"Miscellaneous manufactured articles",2096,"Rubber Stamps",209611,"Miscellaneous",20,2020,NaN,124573
+"Miscellaneous manufactured articles",2096,"Ink Ribbons",209612,"Miscellaneous",20,2020,NaN,630584
+"Miscellaneous manufactured articles",2096,"Lighters",209613,"Miscellaneous",20,2020,NaN,31167713
+"Miscellaneous manufactured articles",2096,"Smoking Pipes",209614,"Miscellaneous",20,2020,NaN,18051
+"Miscellaneous manufactured articles",2096,"Combs",209615,"Miscellaneous",20,2020,NaN,51372
+"Miscellaneous manufactured articles",2096,"Scent Sprays",209616,"Miscellaneous",20,2020,NaN,918139
+"Miscellaneous manufactured articles",2096,"Vacuum Flask",209617,"Miscellaneous",20,2020,NaN,1388080
+"Miscellaneous manufactured articles",2096,"Mannequins",209618,"Miscellaneous",20,2020,NaN,52440
+"Miscellaneous manufactured articles",2096,"Sanitary towels (pads) and tampons, napkins and napkin liners for babies and similar articles, of any material",209619,"Miscellaneous",20,2020,NaN,6671150
+"Miscellaneous manufactured articles",2096,"Monopods, bipods, tripods and similar articles",209620,"Miscellaneous",20,2020,NaN,449302
+"Works of art; collectors' pieces and antiques",2197,"Paintings",219701,"Arts and Antiques",21,2020,NaN,25243036
+"Works of art; collectors' pieces and antiques",2197,"Prints",219702,"Arts and Antiques",21,2020,NaN,233117
+"Works of art; collectors' pieces and antiques",2197,"Sculptures",219703,"Arts and Antiques",21,2020,NaN,12346499
+"Works of art; collectors' pieces and antiques",2197,"Revenue Stamps",219704,"Arts and Antiques",21,2020,NaN,28754
+"Works of art; collectors' pieces and antiques",2197,"Collector's Items",219705,"Arts and Antiques",21,2020,NaN,1086596
+"Works of art; collectors' pieces and antiques",2197,"Antiques",219706,"Arts and Antiques",21,2020,NaN,11234604
+"Commodities not specified according to kind",2299,"Commodities not elsewhere specified",229999,"Unspecified",22,2020,NaN,346456344
