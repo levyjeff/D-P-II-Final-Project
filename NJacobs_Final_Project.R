@@ -27,6 +27,12 @@ library(ggthemes)
 library(wesanderson)
 library(kableExtra)
 
+#Grading comments:
+# - Good use of tidyverse and dplyr
+# - Good use of comments that explain why things are being done
+# - I like your sentiments function
+
+
 setwd("/Users/Nate/Desktop/Graduate School/Courses/Second Year/Winter Quarter/Data and Programming II/Final Project/D-P-II-Final-Project")
 
 rm(list = ls())
